@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import ViteRestart from 'vite-plugin-restart';
 
 export default defineConfig(({command} : ConfigEnv) => ({
 
@@ -14,6 +15,18 @@ export default defineConfig(({command} : ConfigEnv) => ({
      
      outDir: 'web/dist',
     },
+
+    plugins: [
+        ViteRestart(
+            {
+            restart: ['./templates/**']
+            }
+            )
+    ],
+
+
+
+
 
     server: {
         host: '0.0.0.0',

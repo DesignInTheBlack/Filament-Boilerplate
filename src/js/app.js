@@ -5,5 +5,3 @@ if (import.meta.hot) {
     console.log("Hot Module Replacement Occurred");
 }
 
-
-alert("Hello There")
