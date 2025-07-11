@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en
+name: Filament-Boilerplate
+primary: true
+siteGroup: 72cc4092-dce2-4057-a061-5bf104dd7d96 # Filament-Boilerplate
+sortOrder: 1
