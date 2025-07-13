@@ -1,0 +1,16 @@
+currLabel: Dashboard
+customIcon: null
+enabled: false
+handle: dashboard
+icon: gauge
+layout: 161e35c5-199b-4d9c-b090-9dc1c61bc616 # Default
+level: 1
+newWindow: false
+parent: null
+prevLabel: Dashboard
+prevLevel: 1
+prevParent: null
+prevUrl: dashboard
+sortOrder: 0
+type: craft
+url: dashboard

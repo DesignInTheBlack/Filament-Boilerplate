@@ -1,0 +1,16 @@
+currLabel: Playbook
+customIcon: null
+enabled: true
+handle: visitPlaybook
+icon: scribble
+layout: 161e35c5-199b-4d9c-b090-9dc1c61bc616 # Default
+level: 1
+newWindow: false
+parent: null
+prevLabel: 'Visit Playbook'
+prevLevel: null
+prevParent: null
+prevUrl: null
+sortOrder: 5
+type: manual
+url: 'https://www.playbook.com/'

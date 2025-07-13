@@ -1,0 +1,353 @@
+/* Rara Default Style For Sites - To Be Used Within CRAFT CMS Settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body.login main {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Blurred background image */
+body.login main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.pexels.com/photos/114820/pexels-photo-114820.jpeg?_gl=1*c292t5*_ga*ODQyNTExMDguMTc1MjQyODQyMg..*_ga_8JE65Q40S6*czE3NTI0Mjg0MjIkbzEkZzEkdDE3NTI0MjkxNjMkajQ2JGwwJGgw");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -2;
+}
+
+/* Color overlay */
+body.login main::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(33, 41, 49, 0.8); /* dark overlay, adjustable alpha */
+  mix-blend-mode: multiply; /* optional — helps blend with image */
+  z-index: -1;
+}
+
+body, html { 
+background: #212931;
+}
+
+#alerts {
+    background-color:#212931 !important;
+    padding-top:16px;
+    padding-bottom:16px;
+}
+
+#alerts li {
+    box-shadow:none;
+}
+
+#alerts>li .btn, #alerts>li a.go {
+    border: 1px solid #755cef;
+}
+
+
+span[data-icon="external"][data-icon-size="puny"] {
+  color:white;
+}
+
+external
+
+#system-info {
+    height:100px !important;
+}
+
+.btn {
+    color:white;
+}
+
+.global-sidebar__header {
+    height:64px;
+}
+
+.nav-item__subnav {
+    padding-bottom:16px;
+}
+
+:root {
+  --focus-ring-color: #755cef;
+  --primary-button-bg:#755cef;
+  --primary-button-bg--hover:#8e78fe;
+  --nav-item-bg-hover:#755cef;
+  --primary-button-bg--active:#8e78fe;
+  --text-color:#303b46;
+  --link-color:#755cef;
+  --nav-item-bg-active:#3b4956;
+  --error-color: #755cef;
+  --fg-error: #755cef;
+  --red-050: #1b2229;
+  --header-bg:#755cef;
+}
+
+#sidebar nav li a:not(.sel):hover {
+    background-color:#8e78fe;
+}
+
+#newgroupbtn {
+    background-color:#755cef;
+    color:white;
+}
+
+#groupsettingsbtn {
+    background-color:#755cef;
+    color:white;
+}
+
+.sidebar-action--sub .sidebar-action__prefix:before {
+    background-color:white;
+}
+
+.sidebar nav li a {
+    color:white;
+}
+
+
+.readable .h1, .readable h1 {
+    color:white;
+}
+
+.crumb-link {
+    color:white !important;
+}
+
+login-modal-intro readable {
+    color:white;
+}
+
+#crumb-list li.crumb:not(.current):after, #crumb-list li.crumb:not(.current):before {
+    background: #0e1215;
+    content: "";
+    display: block;
+    height: calc(var(--arrow-c)*1rem/16);
+    inset-inline-end: calc(var(--arrow-width)*.5rem/16);
+    pointer-events: none;
+    position: absolute;
+    width: 1px;
+}
+
+div.modal.login-modal.fitted {
+    background-color:rgba(51, 63, 77, 0.8);
+    color:white;
+}
+
+ul.icons li a:hover {
+    background-color:#eeebfd;
+    border-color:transparent;
+}
+
+.sidebar nav li a .icon.icon-mask svg circle, .sidebar nav li a .icon.icon-mask svg ellipse, .sidebar nav li a .icon.icon-mask svg line, .sidebar nav li a .icon.icon-mask svg path, .sidebar nav li a .icon.icon-mask svg polygon, .sidebar nav li a .icon.icon-mask svg polyline, .sidebar nav li a .icon.icon-mask svg rect, .sidebar nav li a .icon.icon-mask svg text {
+    color:white;
+    background-color:white;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+p, span, strong, em, b, i,
+li, a, blockquote, label,
+th, td, caption, figcaption, small {
+  
+}
+
+button.fullwidth.last.submit.btn {
+    background-color:#755cef !important;
+}
+
+div.pane.secondary.login-form-container {
+    padding-left:0px;
+    padding-right:0px;
+}
+
+a {
+    color:#755cef
+}
+
+.border-box.focus,
+.passwordwrapper.focus,
+.selectize.multiselect.selectize-input.focus,
+.text.focus {
+  box-shadow: 0 0 0 1px #755cef, 0 0 0 3px #755cef;
+}
+
+a#system-info:focus, a#system-info:hover {
+    background-color:#755cef;
+}
+
+.global-sidebar__nav {
+    margin-top:32px;
+}
+
+.pane {
+    background-color:transparent;
+    color:white;
+    box-shadow:none;
+} 
+
+.pane.secondary {
+    background-color:transparent;
+    box-shadow:none;
+}
+
+[data-sidebar=collapsed] .nav-item__trigger .menubtn {
+    color:white;
+    min-width:50px;
+}
+
+.btn.submit {
+    background-color:#755cef
+}
+
+.dashboard-grid.item {
+    background-color:none;
+}
+
+#global-sidebar {
+   
+   background-color: rgba(41, 50, 60, 0.8); /* 0.0 to 1.0 = transparent to solid */
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+  background-blend-mode: multiply; /* or overlay, soft-light, etc. */
+}
+
+/* Header background color */
+#main-container #main #header {
+
+}
+
+#system-info {
+    display:flex;
+    color:white;
+}
+
+#system-name span {
+    
+}
+
+#nav-dashboard-link {
+padding-left:8px;
+padding-top:8px;
+padding-bottom:8px;
+min-width:50px;
+}
+
+#nav-graphql-link {
+padding-left:8px;
+padding-top:8px;
+padding-bottom:8px;
+min-width:50px;
+}
+
+#nav-utilities-link {
+padding-left:8px;
+padding-top:8px;
+padding-bottom:8px;
+min-width:50px;
+}
+
+#nav-settings-link {
+padding-left:8px;
+padding-top:8px;
+padding-bottom:8px;
+min-width:50px;
+}
+
+#nav-plugin-store-link {
+padding-left:8px;
+padding-top:8px;
+padding-bottom:8px;
+min-width:50px;
+}
+
+a#nav-settings-link.sidebar-action.sel::before {
+background-color:#755cef
+}
+
+a#nav-dashboard-link.sidebar-action.sel::before {
+background-color:#755cef
+}
+
+a#nav-graphql-link.sidebar-action.sel::before {
+background-color:#755cef
+}
+
+a#nav-plugin-store-link.sidebar-action.sel::before {
+background-color:#755cef
+}
+
+a#nav-utilities-link.sidebar-action.sel::before {
+background-color:#755cef
+}
+
+
+.nav-icon {
+    color:white;
+}
+
+#site-icon {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-7aadeaef-bbf6-4b99-9af4-5654b1662955' xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 226 137'%3E%3C!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142) --%3E%3Cdefs%3E%3Cstyle%3E .st0 %7B fill: %23e7e3da; %7D %3C/style%3E%3C/defs%3E%3Cg id='uuid-8ea56dec-51d4-411c-8ae9-71fd3c87655a'%3E%3Cpath class='st0' d='M221.9,10.3c1.7-2.7,3.6-7.4,4.1-10.1,0,0,0,0,0,0,0,0-.1.1-.2.2,0,0,0,0,0,0-13.9,13.6-28.1,25-42,34.6-8.9,6.1-24.5,16.2-33.3,21.1-9.4,5.3-17.2,10.6-22.5,19.5-2.1,3.5-2.3,7.3-4.2,10.8-1.5,2.7-3.6,3.9-4.8,4.9-2.2,1.9-4.8,12.5-6.1,19.2-1.2-6.7-3.9-17.3-6.1-19.2-1.1-1-3.2-2.2-4.8-4.9-1.9-3.5-2.1-7.3-4.2-10.8-5.2-8.9-13-14.2-22.5-19.5-8.7-4.9-24.4-14.9-33.3-21.1C28.3,25.3,14.2,14,.2.3c0,0,0,0,0,0,0,0-.2-.2-.2-.2C0,.2,0,.2,0,.1c.5,2.8,2.5,7.5,4.1,10.1,5.2,9,17.6,17.1,22.6,20.5-6-3.4-12-7.2-17.9-11.2.5,2.4,1.8,4.2,3.2,6.4,5.1,7.6,13.1,12.2,19.6,16.1-4.2-1.9-8.8-4.5-13-6.6,4,10.8,14.5,15.3,22.6,19-2.2-.7-8.5-3-10.6-3.9-.7-.3.8,2.2.9,2.4,5,8.5,14.7,10.9,21.9,13.7-3-.6-8.1-2.2-11.1-2.8,4.6,6.6,12.5,10.8,20.4,13.5-3-.5-8.9-2.1-8.9-2.1,2.2,2.3,5,5.2,7.7,7.2,2.2,1.6,4.6,3.2,7.1,4.5,2.4,1.2,4.9,2.3,7.5,3.1,3.4,1,6.9,1.6,10.5,1.6,1.8,0,3.5,0,5.2-.3.9-.1,1.7-.3,2.5-.4.2,0,.8-.1,1.1-.2.6.7,1.2,3.7,2,4.8,0,0,0,0,0,0-2,1.3-4.1,2.6-5.8,4-.2.2-.4.4-.5.6-1,1.7-.1,3.4,1,5.1.7-.4,1.5-.9,2.2-1.3-1.1,1.6-1.9,1.9-2.1,4.2,0,.2,0,.3,0,.5,0,0,0,.1,0,.2,0,.9.4,1.7.9,2.4.3.5.6,1,1,1.4,0,0,0,.1.1.2.3-.4,1.5-1.7,1.8-2.2,0,0,0,.2,0,.3-.5,1.4-1.4,3.7-1,5.1.4,1.2,1.1,2.4,2,3.3.5-1,1.1-2,1.6-3.1-.5,1.4-.6,3-.4,4.5.2,1.7,1.1,3.4,2.3,4.6.6-1.5,1.2-2.9,1.7-4.4-.9,3.8-.9,8.5,2.2,11.5.6-2.3,1.3-4.6,1.9-6.9-.3,3.3-.4,5.6-.4,6.7,0,.8.2,2.4,2.3,3.6,1.3.5,2.7.9,4.1,1.1,0,0,.7-7.8.7-7.8v.4c0,0,0-.1,0-.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,.1,0,.2v-.4s.7,7.8.7,7.8c1.4-.2,2.7-.6,4.1-1.1,2.1-1.2,2.3-2.8,2.3-3.6,0-1.1-.1-3.4-.4-6.7.6,2.3,1.3,4.6,1.9,6.9,3.1-3,3.1-7.6,2.2-11.5.6,1.5,1.2,2.9,1.7,4.4,1.3-1.2,2.1-2.8,2.3-4.6.2-1.5,0-3.1-.4-4.5.5,1,1.1,2,1.6,3.1.9-.9,1.6-2.1,2-3.3.4-1.4-.5-3.7-1-5.1,0,0,0-.2,0-.3.3.4,1.5,1.7,1.8,2.2,0,0,0-.1.1-.2.4-.4.7-.9,1-1.4.5-.7.8-1.6.9-2.4,0,0,0-.1,0-.2,0-.2,0-.3,0-.5-.3-2.3-1-2.7-2.1-4.2.7.4,1.5.9,2.2,1.3,1.1-1.7,2-3.4,1-5.1-.1-.2-.3-.4-.5-.6-1.7-1.4-3.8-2.6-5.8-4,0,0,0,0,0,0,.8-1,1.5-4.1,2-4.8.2.1.8.2,1.1.2.8.2,1.7.3,2.5.4,1.7.2,3.5.3,5.2.3,3.5,0,7.1-.6,10.5-1.6,2.6-.8,5.2-1.9,7.5-3.1,2.5-1.3,4.9-2.8,7.1-4.5,2.7-2,5.5-4.8,7.7-7.2,0,0-5.9,1.6-8.9,2.1,7.9-2.7,15.8-6.9,20.4-13.5-3,.7-8.1,2.3-11.1,2.8,7.2-2.8,16.9-5.2,21.9-13.7.1-.2,1.6-2.7.9-2.4-2.2.9-8.5,3.2-10.6,3.9,8.1-3.7,18.6-8.2,22.6-19-4.2,2.1-8.8,4.7-13,6.6,6.5-3.9,14.5-8.6,19.6-16.1,1.4-2.2,2.7-4,3.2-6.4-5.9,4.1-11.9,7.8-17.9,11.2,5-3.4,17.5-11.5,22.6-20.5h0Z'/%3E%3C/g%3E%3C/svg%3E");
+background-repeat: no-repeat no-repeat;
+background-position: center center;
+background-size: cover;
+height:21px;
+width:32px;
+}
+
+#site-icon svg {
+    
+}
+
+#site-icon svg {
+    visibility: hidden;
+    
+}
+
+/* H1 tags */
+h1 {
+    color: #ffffff;
+}
+
+.label {
+    color:white;
+}
+
+
+
+/* Standard button color */
+.btn.submit {
+    background: #da5a47;
+}
+/* Hover button color */
+.btn.submit:not(.disabled):not(.inactive):hover,
+.btn.submit:not(.disabled):not(.inactive).hover {
+    background: #bf503f;
+}
+/* Active button color */
+.btn.submit:not(.disabled):not(.inactive):active,
+.btn.submit:not(.disabled):not(.inactive).active {
+    background: #8c3b2e;
+}
+
+body.fixed-header #header {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color:#212931;
+    padding-top:16px;
+    padding-bottom:16px;
+}
+
+.widget.craft\\widgets\\craftsupport .front .pane .cs-screen-home .cs-opt:hover {
+    background-color:#2f3944;
+}
+
+.sidebar nav li:not(.has-subnav) [data-source-item].active-drop-target, .sidebar nav li:not(.has-subnav) [data-source-item].sel, .sidebar nav li:not(.has-subnav)>a.active-drop-target, .sidebar nav li:not(.has-subnav)>a.sel {
+    background-color:#755cef;
+}

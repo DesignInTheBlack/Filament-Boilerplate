@@ -148,8 +148,8 @@ textarea:not([rows]) {
     }
 }
 
-.text\:white,  .text\:white {
-color: #FCFCFC;
+.text\:red,  .text\:red {
+color: #D82A54;
 }
 
 .contain,  .contain {
