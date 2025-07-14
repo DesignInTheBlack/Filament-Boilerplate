@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: aa15edf9-5fc0-40cc-8eb1-570557b0c72f # StandardPage
+handle: pages
+maxAuthors: 1
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  48eabee0-5886-430a-ac24-e708a30e425a: # Filament-Boilerplate
+    enabledByDefault: true
+    hasUrls: true
+    template: page.twig
+    uriFormat: '{slug}'
+type: single

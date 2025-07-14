@@ -1,0 +1,46 @@
+/* Regular (400) */
+@font-face {
+    font-family: 'Playfair';
+    src: url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* Regular (400) */
+@font-face {
+    font-family: 'Caviar';
+    src: url('/fonts/CaviarDreams.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Bold (700) */
+@font-face {
+    font-family: 'Caviar';
+    src: url('/fonts/CaviarDreams_Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'Caviar';
+    src: url('/fonts/CaviarDreams_Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Caviar';
+    src: url('/fonts/CaviarDreams_BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Quickpen */
+@font-face {
+    font-family: 'Quickpen';
+    src: url('/fonts/Quickpen.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}

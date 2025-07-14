@@ -1,16 +1,16 @@
-currLabel: Settings
+currLabel: Pages
 customIcon: null
 enabled: true
-handle: settings
-icon: gear
+handle: entries
+icon: newspaper
 layout: 161e35c5-199b-4d9c-b090-9dc1c61bc616 # Default
 level: 1
 newWindow: false
 parent: null
-prevLabel: Settings
+prevLabel: Entries
 prevLevel: 1
 prevParent: null
-prevUrl: settings
-sortOrder: 10
+prevUrl: entries
+sortOrder: 1
 type: craft
-url: settings
+url: entries

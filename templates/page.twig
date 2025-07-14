@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -9,13 +10,16 @@
     <meta name="referrer" content="origin-when-cross-origin" />
   
 </head>
-<body class="bg-color:blue">
+<body class="bg-color:red+2">
 
 
-<div class = "contain">
-<p class = "text:white font:h2:fancy">This Is Artwork</p>
-<p class = "text:white font:h2:cursive">This Is Artwork</p>
-</div>
+{% block content %}
+  {% for block in entry.pageBlocks.all() %}
+    {% include '_blocks/' ~ block.type.handle
+      with { block }
+    %}
+  {% endfor %}
+{% endblock %}
 
 </body>
 </html>

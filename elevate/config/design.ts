@@ -12,6 +12,7 @@ import { spacing } from "../core/system/design/spacing.js";
 import { typography } from "../core/system/design/typography.js";
 import { breakpoints } from '../core/system/design/breakpoints.js';
 import { effects } from '../core/system/design/effects.js';
+import { clientFonts } from '../design/client-fonts.js';
 
 //Token Definitions
 export const designSystem = {
@@ -19,7 +20,7 @@ export const designSystem = {
     BreakPointToken: breakpoints,
     SpacingToken: {...spacing,...dimensionUtility},
     FontSizeToken: typography.size,
-    FontFamilyToken: typography.family,
+    FontFamilyToken:clientFonts,
     LineHeightToken: typography.leading,
     LetterSpacingToken: typography.tracking,
     MeasureToken: typography.measure,

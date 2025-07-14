@@ -148,17 +148,96 @@ textarea:not([rows]) {
     }
 }
 
-.text\:red,  .text\:red {
-color: #D82A54;
+.bg-color\:red\+2,  .bg-color\:red\+2 {
+background-color: #FF627F;
+}
+
+.font\:h2\:cursive,  .font\:h2\:cursive {
+font-size: 5.062rem;
+font-family: Quickpen, serif;
+}
+
+.text\:white,  .text\:white {
+color: #FCFCFC;
+}
+
+.font\:h2\:fancy,  .font\:h2\:fancy {
+font-size: 5.062rem;
+font-family: Caviar, sans-serif;
 }
 
 .contain,  .contain {
 
 }
 
-.bg-color\:green,  .bg-color\:green {
-background-color: #3CAA96;
+.bg-color\:blue,  .bg-color\:blue {
+background-color: #1673F5;
+}
+
+.font\:h6\:cursive,  .font\:h6\:cursive {
+font-size: 1.125rem;
+font-family: Quickpen, serif;
+}
+
+.mg-b\:d4,  .mg-b\:d4 {
+margin-bottom: 1rem;
+}
+
+.font\:h3\:fancy,  .font\:h3\:fancy {
+font-size: 3.375rem;
+font-family: Caviar, sans-serif;
+}
+
+.mg-y\:c1,  .mg-y\:c1 {
+margin-top: 4rem;
+margin-bottom: 4rem;
 }
 
 
 
+/* Regular (400) */
+@font-face {
+    font-family: 'Playfair';
+    src: url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* Regular (400) */
+@font-face {
+    font-family: 'Caviar';
+    src: url('/fonts/CaviarDreams.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Bold (700) */
+@font-face {
+    font-family: 'Caviar';
+    src: url('/fonts/CaviarDreams_Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'Caviar';
+    src: url('/fonts/CaviarDreams_Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Caviar';
+    src: url('/fonts/CaviarDreams_BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Quickpen */
+@font-face {
+    font-family: 'Quickpen';
+    src: url('/fonts/Quickpen.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}

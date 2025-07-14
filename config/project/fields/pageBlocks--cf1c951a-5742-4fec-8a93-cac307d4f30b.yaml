@@ -1,0 +1,38 @@
+columnSuffix: null
+handle: pageBlocks
+instructions: null
+name: 'Page Blocks'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 3158c64d-4653-44d7-8ef9-18f805862e13 # exampleModule
+        -
+          - name
+          - 'Example Module'
+        -
+          - handle
+          - exampleModule
+        -
+          - description
+          - 'An example of how a module is built in Filament Boilerplate'
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
