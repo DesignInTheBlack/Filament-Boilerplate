@@ -1,25 +1,29 @@
 
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" class = "bg-color:white">
 <head>
    {{ craft.vite.script('src/js/app.js',false) }}
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
-    <title>Welcome to Craft CMS</title>
+    <title>Poured Out Art</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="referrer" content="origin-when-cross-origin" />
   
 </head>
-<body class="bg-color:red+2">
+
+<body class="relative">
+<canvas class = "absolute w:full h:full top:0 left:0 z:0.0"></canvas>
 
 
-{% block content %}
-  {% for block in entry.pageBlocks.all() %}
-    {% include '_blocks/' ~ block.type.handle
-      with { block }
-    %}
-  {% endfor %}
-{% endblock %}
+<div class = "relative z:1 events:none">
+  {% block content %}
+    {% for block in entry.pageBlocks.all() %}
+      {% include '_blocks/' ~ block.type.handle
+        with { block }
+      %}
+    {% endfor %}
+  {% endblock %}
+</div>
 
 </body>
 </html>

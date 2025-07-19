@@ -1,7 +1,7 @@
 color: null
 description: null
 fieldLayouts:
-  5426a408-46cf-435b-a17e-247c0bda8b9b:
+  d0b49bea-7bc2-42ac-b727-fc48c1169125:
     cardThumbAlignment: end
     tabs:
       -
@@ -12,7 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-07-14T14:15:56+00:00'
+            dateAdded: '2025-07-18T21:44:34+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -33,34 +33,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 3f70c556-5505-456d-9fab-63c1211eaa8a
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-07-14T14:17:22+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: cf1c951a-5742-4fec-8a93-cac307d4f30b # Page Blocks
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: d3bc591f-f9b7-4396-9b96-a457a0186712
+            uid: 4aab3bd6-bb76-460a-abc2-2b3a3c5c6fcf
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 9f250b8d-aff4-4ae4-a489-837de4db6f5e
+        uid: 3d391cc9-933b-49df-a27b-cb123f738fe0
         userCondition: null
-handle: standardpage
+handle: spaceMD
 hasTitleField: true
-icon: memo
-name: StandardPage
+icon: angles-up-down
+name: 'Medium Spacer'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

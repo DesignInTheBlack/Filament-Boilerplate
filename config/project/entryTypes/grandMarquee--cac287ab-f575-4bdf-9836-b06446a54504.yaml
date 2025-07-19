@@ -1,0 +1,22 @@
+color: null
+description: 'Marquee component supporting a full width image on the background and modifiable copy. '
+fieldLayouts:
+  e803e5fb-035f-4e51-a26a-6410371fe5da:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: cea4f451-8c71-41cb-8896-242ad1025c28
+        userCondition: null
+handle: grandMarquee
+hasTitleField: false
+icon: tv
+name: 'Grand Marquee'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

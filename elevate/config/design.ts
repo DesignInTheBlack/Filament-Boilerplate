@@ -5,6 +5,7 @@ import { dimensionUtility } from "../core/system/etc/dimension.js";
 
 //Example Custom Values Import
 import { BrandColors } from "../design/example-brandTokens.js";
+import { clientColors } from "../design/client-colors.js";
 
 //System Standard Imports
 import { colors } from "../core/system/design/colors.js";
@@ -16,7 +17,7 @@ import { clientFonts } from '../design/client-fonts.js';
 
 //Token Definitions
 export const designSystem = {
-    ColorToken: colors,
+    ColorToken: clientColors,
     BreakPointToken: breakpoints,
     SpacingToken: {...spacing,...dimensionUtility},
     FontSizeToken: typography.size,

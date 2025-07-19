@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  f34dca34-546a-4feb-857c-fbd7a4e5f509:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: bcd46de9-a5a2-4211-842d-9156a7c72b92
+        userCondition: null
+handle: editorialCollage
+hasTitleField: false
+icon: objects-column
+name: 'Editorial Collage'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

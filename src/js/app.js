@@ -5,5 +5,5 @@ if (import.meta.hot) {
     console.log("Hot Module Replacement Occurred");
 }
 
-
+import './paint.js';
 import '../styles/elevate.css';

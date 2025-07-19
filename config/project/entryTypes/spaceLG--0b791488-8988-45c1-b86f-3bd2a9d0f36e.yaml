@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  ab8104b3-dce3-449e-aac7-32bdb6f900d2:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: ea7c6992-e058-4287-ab25-e267b27a9b4c
+        userCondition: null
+handle: spaceLG
+hasTitleField: false
+icon: angles-up-down
+name: 'Large Spacer'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

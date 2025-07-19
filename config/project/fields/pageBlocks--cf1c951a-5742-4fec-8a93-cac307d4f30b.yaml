@@ -25,6 +25,54 @@ settings:
         -
           - group
           - General
+    -
+      __assoc__:
+        -
+          - uid
+          - cac287ab-f575-4bdf-9836-b06446a54504 # Grand Marquee
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 0b791488-8988-45c1-b86f-3bd2a9d0f36e # Large Spacer
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - f5d67f5c-dd8e-4565-a1bc-e0aed82e9f75 # Medium Spacer
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 1e0e84fb-9ba3-41ec-87d0-22472b8c1ae9 # Small Spacer
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - b49dcac4-4dca-4e71-9925-c677816d034c # Aside Paragraph
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 840e4b3e-cde9-4478-8400-f2e9f30c147c # Editorial Collage
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null
