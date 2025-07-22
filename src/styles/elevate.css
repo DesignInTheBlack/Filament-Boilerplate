@@ -212,6 +212,10 @@ color: #EDF4F4;
 background-color: #1E1E1F;
 }
 
+.opacity\:0\.95,  .opacity\:0\.95 {
+opacity: 0.95;
+}
+
 .z\:0\.0,  .z\:0\.0 {
 z-index: 0;
 }
