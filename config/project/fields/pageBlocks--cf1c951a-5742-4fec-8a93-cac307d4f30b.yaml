@@ -73,6 +73,30 @@ settings:
         -
           - group
           - General
+    -
+      __assoc__:
+        -
+          - uid
+          - b5253cdf-98b0-4938-9366-0b2d4914edb3 # Billboard Split
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 0ca218cb-9082-405d-93a1-5f3fe4324099 # Editorial Columns
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 0372f3ed-21a0-4fba-b318-c137111d8d27 # Pattern Spacer
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null

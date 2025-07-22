@@ -1,18 +1,18 @@
 color: null
 description: null
 fieldLayouts:
-  2fa0d3d2-d0c2-403f-8c4c-f8887a6177ef:
+  d14de5b2-3619-48cf-a0eb-b06a280300a0:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         name: Content
-        uid: 1202c056-d5c4-4c3d-8bca-73d9575cd406
+        uid: f05edd17-64c1-4310-ad03-6a090877e1ed
         userCondition: null
-handle: spaceSM
+handle: spacePattern
 hasTitleField: false
-icon: angles-up-down
-name: 'Small Spacer'
+icon: pallet
+name: 'Pattern Spacer'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

@@ -1,0 +1,8 @@
+.-roundtop {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    }
+
+.-boldshadow {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}

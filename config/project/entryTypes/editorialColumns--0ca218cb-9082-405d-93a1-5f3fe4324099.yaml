@@ -1,18 +1,18 @@
 color: null
 description: null
 fieldLayouts:
-  2fa0d3d2-d0c2-403f-8c4c-f8887a6177ef:
+  13004682-0f44-48b8-bc50-67c5ed58ce58:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         name: Content
-        uid: 1202c056-d5c4-4c3d-8bca-73d9575cd406
+        uid: 126465ae-b60f-47b0-b5b0-87a7a56414b7
         userCondition: null
-handle: spaceSM
+handle: editorialColumns
 hasTitleField: false
-icon: angles-up-down
-name: 'Small Spacer'
+icon: newspaper
+name: 'Editorial Columns'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

@@ -1,18 +1,18 @@
 color: null
 description: null
 fieldLayouts:
-  2fa0d3d2-d0c2-403f-8c4c-f8887a6177ef:
+  02f2aec1-b560-491d-b6ef-2bda4dc34903:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         name: Content
-        uid: 1202c056-d5c4-4c3d-8bca-73d9575cd406
+        uid: 52498aa0-4b32-4dec-afb7-81ad666eabb2
         userCondition: null
-handle: spaceSM
+handle: billboardSplit
 hasTitleField: false
-icon: angles-up-down
-name: 'Small Spacer'
+icon: billboard
+name: 'Billboard Split'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

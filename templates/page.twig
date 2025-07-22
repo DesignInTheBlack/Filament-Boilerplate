@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en-US" class = "bg-color:white">
+<html lang="en-US" class = "bg-color:gold">
 <head>
    {{ craft.vite.script('src/js/app.js',false) }}
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,14 +15,38 @@
 <canvas class = "absolute w:full h:full top:0 left:0 z:0.0"></canvas>
 
 
-<div class = "relative z:1 events:none">
-  {% block content %}
-    {% for block in entry.pageBlocks.all() %}
-      {% include '_blocks/' ~ block.type.handle
-        with { block }
-      %}
-    {% endfor %}
-  {% endblock %}
+  
+<div class = "bg-color:black">
+
+
+  <nav class = "contain row:y-center gap:d8 pd-b:d8 pd-t:d12">
+    <p class = "text:white font:fancy:h6:medium">Home</p>
+    <p class = "text:white font:fancy:h6:medium">About</p>
+    <p class = "text:white font:fancy:h6:medium">Gallery</p>
+  </nav>
+
+  <div class = "-roundtop bg-attr:repeat:contain" style = "background-image: url({{ craft.vite.asset("src/images/canvas.png") }}); background-size: 500px 500px;">
+
+    <nav class = "contain row:x-between:y-center pd-b:d8 pd-t:d12">
+
+      <div class = "row:y-center gap:d8">
+        <p class = "text:black font:fancy:h6:medium">Shop</p>
+        <p class = "text:black font:fancy:h6:medium">Contact</p>
+      </div>
+      
+    </nav>
+
+    <div class = "relative z:1 events:none">
+      {% block content %}
+        {% for block in entry.pageBlocks.all() %}
+          {% include '_blocks/' ~ block.type.handle
+            with { block }
+          %}
+        {% endfor %}
+      {% endblock %}
+    </div>
+
+  </div>
 </div>
 
 </body>
