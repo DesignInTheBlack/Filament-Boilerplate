@@ -8,12 +8,12 @@ canvas.height = canvas.clientHeight;
 
 let config = {
   TEXTURE_DOWNSAMPLE: 2,
-  DENSITY_DISSIPATION: 0.968, // Keep this for stability
+  DENSITY_DISSIPATION: 0.87, // Keep this for stability
   VELOCITY_DISSIPATION: 0.998,
   PRESSURE_DISSIPATION: 0.8,
   PRESSURE_ITERATIONS: 24,
   CURL: 16,                 // ⬆️ Increased from 6 to add much more detail
-  SPLAT_RADIUS: 0.000015,
+  SPLAT_RADIUS: 0.000005,
   // --- New "Wet" Look Config ---
   SHININESS: 256.0,      // Sharp, tight highlights like water
   LIGHT_COLOR: [0.25, 0.25, 0.25], // White light
@@ -22,12 +22,11 @@ let config = {
 
 
 const palette = [
-  [1.000, 0.102, 0.102], // #FF1A1A bright arterial
-  [1.000, 0.302, 0.302], // #FF4D4D fresh splash
-  [0.722, 0.059, 0.039], // #B80F0A rich crimson
-  [0.541, 0.027, 0.027], // #8A0707 oxidized red
-  [0.494, 0.110, 0.110], // #7E1C1C clotted dark
-  [0.290, 0.051, 0.051]  // #4A0D0D dried stain
+  [0.243, 0.082, 0.494], // #3E157E royal purple
+  [0.827, 0.729, 0.486], // #D3BA7C soft gold
+  [0.494, 0.290, 0.675], // #7E4AAC violet
+  [0.188, 0.051, 0.369], // #300D5E deep indigo
+  [0.141, 0.075, 0.176]  // #24132D plum black
 ];
 
 

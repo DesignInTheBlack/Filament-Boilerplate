@@ -7,23 +7,23 @@ canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 
 let config = {
-  TEXTURE_DOWNSAMPLE: 2,
+  TEXTURE_DOWNSAMPLE: 1,
   DENSITY_DISSIPATION: 0.968, // Keep this for stability
-  VELOCITY_DISSIPATION: 0.998,
+  VELOCITY_DISSIPATION: 0.999,
   PRESSURE_DISSIPATION: 0.8,
   PRESSURE_ITERATIONS: 24,
   CURL: 16,                 // ⬆️ Increased from 6 to add much more detail
-  SPLAT_RADIUS: 0.000015  
+  SPLAT_RADIUS: 0.0005,
 };
 
 
 const palette = [
-  [1.0, 0.0, 0.0], // Red
-  [0.0, 1.0, 0.0], // Green
-  [0.0, 0.0, 1.0], // Blue
-  [1.0, 1.0, 0.0], // Yellow
-  [1.0, 0.0, 1.0], // Magenta
-  [0.0, 1.0, 1.0]  // Cyan
+  [0.494, 0.290, 0.675], // #7E4AAC violet
+  [0.243, 0.082, 0.494], // #3E157E royal purple
+   [0.494, 0.290, 0.675], // #7E4AAC violet
+  [0.243, 0.082, 0.494], // #3E157E royal purple
+  [0.827, 0.729, 0.486], // #D3BA7C soft gold
+  [0.188, 0.051, 0.369], // #300D5E deep indigo
 ];
 
 
@@ -51,7 +51,7 @@ function getWebGLContext(canvas) {
     supportLinearFiltering = gl.getExtension('OES_texture_half_float_linear');
   }
 
-  gl.clearColor(0.0, 0.0, 0.0, 0);
+  gl.clearColor(0.0, 0.0, 0.0, 1.0);
   gl.enable(gl.BLEND);
   gl.blendFunc(gl.ONE, gl.ONE);  
 
