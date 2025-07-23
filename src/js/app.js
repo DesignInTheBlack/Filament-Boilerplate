@@ -6,5 +6,6 @@ if (import.meta.hot) {
 }
 
 import './paint.js';
+import './paintflood.js';
 import '../styles/elevate.css';
 

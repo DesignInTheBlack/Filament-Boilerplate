@@ -1,8 +1,8 @@
 
-
+document.addEventListener('DOMContentLoaded', (event) => {
 'use strict';
 
-const canvas = document.getElementsByTagName('canvas')[0];
+const canvas = document.getElementById('MarqueeCanvas');
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 
@@ -13,21 +13,17 @@ let config = {
   PRESSURE_DISSIPATION: 0.8,
   PRESSURE_ITERATIONS: 24,
   CURL: 16,                 // ⬆️ Increased from 6 to add much more detail
-  SPLAT_RADIUS: 0.000015,
-  // --- New "Wet" Look Config ---
-  SHININESS: 256.0,      // Sharp, tight highlights like water
-  LIGHT_COLOR: [0.25, 0.25, 0.25], // White light
-  NORMAL_SCALE: 10.0      // How much "depth" the fluid has
+  SPLAT_RADIUS: 0.000015  
 };
 
 
 const palette = [
-  [1.000, 0.102, 0.102], // #FF1A1A bright arterial
-  [1.000, 0.302, 0.302], // #FF4D4D fresh splash
-  [0.722, 0.059, 0.039], // #B80F0A rich crimson
-  [0.541, 0.027, 0.027], // #8A0707 oxidized red
-  [0.494, 0.110, 0.110], // #7E1C1C clotted dark
-  [0.290, 0.051, 0.051]  // #4A0D0D dried stain
+  [1.0, 0.0, 0.0], // Red
+  [0.0, 1.0, 0.0], // Green
+  [0.0, 0.0, 1.0], // Blue
+  [1.0, 1.0, 0.0], // Yellow
+  [1.0, 0.0, 1.0], // Magenta
+  [0.0, 1.0, 1.0]  // Cyan
 ];
 
 
@@ -56,6 +52,8 @@ function getWebGLContext(canvas) {
   }
 
   gl.clearColor(0.0, 0.0, 0.0, 0);
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.ONE, gl.ONE);  
 
   const halfFloatTexType = isWebGL2 ? gl.HALF_FLOAT : halfFloat.HALF_FLOAT_OES;
   let formatRGBA;
@@ -215,52 +213,24 @@ const displayShader = compileShader(gl.FRAGMENT_SHADER, `
   precision mediump sampler2D;
 
   varying vec2 vUv;
-  uniform sampler2D uTexture; // This is the density texture
-  uniform vec2 texelSize;
-  
-  // --- New Uniforms for "Wet" Look ---
-  uniform vec3 lightColor;
-  uniform vec3 lightPosition; // We'll pass the mouse coordinates here
-  uniform float shininess;     // Controls how sharp the highlight is
-  uniform float normalScale;   // Controls how "bumpy" the fluid appears
+  uniform sampler2D uTexture;
 
-  void main () {
-    // Un-premultiply the fluid color from the texture
+ void main () {
     vec4 color = texture2D(uTexture, vUv);
-    if (color.a < 0.001) {
-        gl_FragColor = vec4(0.0, 0.0, 0.0, 0.0);
-        return;
+   
+   float fresnel = pow(1.0 - dot(vec3(0.0, 0.0, 1.0),
+    normalize(vec3(vUv - 0.5, 0.2))), 3.0);
+vec3 spec = vec3(1.0) * fresnel * 0.35;  
+color.rgb += spec * color.a;
+   
+    // modulate by paint thicknes
+    // Un-premultiply for correct display
+    if (color.a > 0.001) {
+        gl_FragColor = vec4(color.rgb / color.a, 1.0);
+    } else {
+        gl_FragColor = vec4(0.0, 0.0, 0.0, 0);
     }
-    vec3 baseColor = color.rgb / color.a;
-
-    // --- 1. Calculate the Surface Normal ---
-    // Sample density at neighboring pixels to find the gradient (slope)
-    float n = texture2D(uTexture, vUv + vec2(0.0, texelSize.y)).r;
-    float s = texture2D(uTexture, vUv - vec2(0.0, texelSize.y)).r;
-    float e = texture2D(uTexture, vUv + vec2(texelSize.x, 0.0)).r;
-    float w = texture2D(uTexture, vUv - vec2(texelSize.x, 0.0)).r;
-
-    // The normal vector is derived from the difference in density
-    vec3 normal = normalize(vec3((w - e) * normalScale, (s - n) * normalScale, 1.0));
-
-    // --- 2. Calculate Lighting ---
-    vec3 viewDir = vec3(0.0, 0.0, 1.0); // Viewer is looking straight at the canvas
-    vec3 lightDir = normalize(vec3(lightPosition.xy - vUv, lightPosition.z));
-    vec3 halfDir = normalize(lightDir + viewDir);
-
-    // Diffuse component (makes parts facing the light brighter)
-    float diffuse = max(0.0, dot(normal, lightDir));
-
-    // Specular component (the shiny highlight)
-    float specular = pow(max(0.0, dot(normal, halfDir)), shininess);
-
-    // --- 3. Combine Everything ---
-    // Make the base color a little darker so highlights pop
-    vec3 darkBase = baseColor * 0.7; 
-    vec3 finalColor = darkBase + (baseColor * diffuse * 0.3) + (lightColor * specular);
-
-    gl_FragColor = vec4(finalColor, 1.0);
-  }
+}
 `);
 
 const splatShader = compileShader(gl.FRAGMENT_SHADER, `
@@ -649,16 +619,8 @@ function update() {
 
   gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight);
   displayProgram.bind();
-
-  // --- Set the new uniforms for the wet look ---
-  const lightPos = pointers[0]; // Use the main mouse pointer
-  gl.uniform3f(displayProgram.uniforms.lightPosition, lightPos.x / canvas.width, 1.0 - lightPos.y / canvas.height, 0.05);
-  gl.uniform3fv(displayProgram.uniforms.lightColor, config.LIGHT_COLOR);
-  gl.uniform1f(displayProgram.uniforms.shininess, config.SHININESS);
-  gl.uniform1f(displayProgram.uniforms.normalScale, config.NORMAL_SCALE);
-  gl.uniform2f(displayProgram.uniforms.texelSize, 1.0 / textureWidth, 1.0 / textureHeight);
+  gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
   gl.uniform1i(displayProgram.uniforms.uTexture, density.read[2]);
-  
   blit(null);
 
   requestAnimationFrame(update);
@@ -825,3 +787,5 @@ window.addEventListener('touchend', e => {
   if (touches[i].identifier == pointers[j].id)
   pointers[j].down = false;
 });
+});
+
