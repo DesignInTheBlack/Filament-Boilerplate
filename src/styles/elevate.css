@@ -453,12 +453,24 @@ padding-top: 8rem;
 padding-bottom: 8rem;
 }
 
+.bg-color\:grey,  .bg-color\:grey {
+background-color: #7D8491;
+}
+
 .ctx\:editorialColumn3.h\:c4, .ctx\:editorialColumn3 .h\:c4 {
 height: 5.5rem;
 }
 
 .ctx\:editorialColumn3.bg-color\:gold, .ctx\:editorialColumn3 .bg-color\:gold {
 background-color: #B1740F;
+}
+
+.ctx\:editorialColumn3.z\:0\.0, .ctx\:editorialColumn3 .z\:0\.0 {
+z-index: 0;
+}
+
+.ctx\:editorialColumn3.relative, .ctx\:editorialColumn3 .relative {
+position: relative;
 }
 
 .ctx\:editorialColumn3.child\:grow, .ctx\:editorialColumn3 .child\:grow {
@@ -487,6 +499,10 @@ height: 24rem;
 
 .ctx\:editorialColumn1.bg-color\:grey, .ctx\:editorialColumn1 .bg-color\:grey {
 background-color: #7D8491;
+}
+
+.events\:auto,  .events\:auto {
+pointer-events: auto;
 }
 
 .ctx\:billboardSplit.mg-b\:d4, .ctx\:billboardSplit .mg-b\:d4 {

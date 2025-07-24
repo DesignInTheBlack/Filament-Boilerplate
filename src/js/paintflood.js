@@ -1,24 +1,36 @@
+document.addEventListener('DOMContentLoaded', () => {
+  // Select all canvas elements you want to apply the effect to
+  const canvases = document.querySelectorAll('canvas.-fluid'); // <--- CHANGE THIS SELECTOR
+                                                                    //     to match your HTML
+
+  canvases.forEach(canvas => {
+    createFluidSimulation(canvas); // Initialize a simulation for each canvas
+  });
+});
 
 
-document.addEventListener('DOMContentLoaded', (event) => {
+function createFluidSimulation(canvas) {
   'use strict';
-  
-  const canvas = document.getElementById('MarqueeCanvas');
+
   canvas.width = canvas.clientWidth;
   canvas.height = canvas.clientHeight;
+
+  const SPLAT_RADIUS_PX = 1; 
   
   let config = {
     TEXTURE_DOWNSAMPLE: 1,
     DENSITY_DISSIPATION: 1, // Keep this for stability
-    VELOCITY_DISSIPATION: 1,
+    VELOCITY_DISSIPATION: 0.999,
     PRESSURE_DISSIPATION: 0.8,
     PRESSURE_ITERATIONS: 8,
     CURL: 5,                 // ⬆️ Increased from 6 to add much more detail
-    SPLAT_RADIUS: 0.001,
   };
   
   
   const palette = [
+    [0.494, 0.290, 0.675], // #7E4AAC violet
+    [0.188, 0.051, 0.369], // #300D5E deep indigo
+    [0.141, 0.075, 0.176],  // #24132D plum black
     [0.243, 0.082, 0.494], // #3E157E royal purple
     [0.827, 0.729, 0.486], // #D3BA7C soft gold
     [0.494, 0.290, 0.675], // #7E4AAC violet
@@ -731,14 +743,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (canvas.width != canvas.clientWidth || canvas.height != canvas.clientHeight) {
       canvas.width = canvas.clientWidth;
       canvas.height = canvas.clientHeight;
+
+      // Add this line BEFORE initFramebuffers();
+      // It calculates the normalized splat radius based on the smaller dimension
+      config.SPLAT_RADIUS = SPLAT_RADIUS_PX / Math.min(canvas.width, canvas.height);
+
       initFramebuffers();
     }
   }
   
   canvas.addEventListener('mousemove', e => {
     pointers[0].moved = pointers[0].down;
-    pointers[0].dx = (e.offsetX - pointers[0].x) * 18.0;
-    pointers[0].dy = (e.offsetY - pointers[0].y) * 9.0;
+    pointers[0].dx = (e.offsetX - pointers[0].x) * 12.0;
+    pointers[0].dy = -(-Math.abs((e.offsetY - pointers[0].y) * 24.0)); 
     pointers[0].x = e.offsetX;
     pointers[0].y = e.offsetY;
   });
@@ -787,6 +804,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (touches[i].identifier == pointers[j].id)
     pointers[j].down = false;
   });
-  });
+  
+}
   
   
