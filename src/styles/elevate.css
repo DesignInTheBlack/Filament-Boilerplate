@@ -284,8 +284,8 @@ left: 0;
 top: 0;
 }
 
-.ctx\:grandMarquee.z\:1, .ctx\:grandMarquee .z\:1 {
-z-index: 1;
+.ctx\:grandMarquee.z\:2, .ctx\:grandMarquee .z\:2 {
+z-index: 2;
 }
 
 .ctx\:grandMarquee.absolute, .ctx\:grandMarquee .absolute {
@@ -294,6 +294,21 @@ position: absolute;
 
 .ctx\:grandMarquee.text\:white\:hug, .ctx\:grandMarquee .text\:white\:hug {
 color: #EDF4F4;
+line-height: 1.2;
+}
+
+.ctx\:grandMarquee.font\:cursive\:bold\:h5, .ctx\:grandMarquee .font\:cursive\:bold\:h5 {
+font-family: Quickpen, serif;
+font-weight: 700;
+font-size: 1.5rem;
+}
+
+.ctx\:grandMarquee.pd-b\:c9, .ctx\:grandMarquee .pd-b\:c9 {
+padding-bottom: 9rem;
+}
+
+.ctx\:grandMarquee.text\:grey\:hug, .ctx\:grandMarquee .text\:grey\:hug {
+color: #7D8491;
 line-height: 1.2;
 }
 
@@ -310,8 +325,8 @@ justify-content: center;
 align-items: center;
 }
 
-.ctx\:grandMarquee.bg-color\:grey, .ctx\:grandMarquee .bg-color\:grey {
-background-color: #7D8491;
+.ctx\:grandMarquee.bg-color\:lightgrey, .ctx\:grandMarquee .bg-color\:lightgrey {
+background-color: #F0F4F4;
 }
 
 .ctx\:grandMarquee.bg-attr\:no-repeat\:cover\:center, .ctx\:grandMarquee .bg-attr\:no-repeat\:cover\:center {
@@ -453,16 +468,30 @@ padding-top: 8rem;
 padding-bottom: 8rem;
 }
 
-.bg-color\:grey,  .bg-color\:grey {
-background-color: #7D8491;
+.text\:white\:hug,  .text\:white\:hug {
+color: #EDF4F4;
+line-height: 1.2;
+}
+
+.font\:fancy\:bold\:h5,  .font\:fancy\:bold\:h5 {
+font-family: Caviar, sans-serif;
+font-weight: 700;
+font-size: 1.5rem;
 }
 
 .ctx\:editorialColumn3.h\:c4, .ctx\:editorialColumn3 .h\:c4 {
 height: 5.5rem;
 }
 
-.ctx\:editorialColumn3.bg-color\:gold, .ctx\:editorialColumn3 .bg-color\:gold {
-background-color: #B1740F;
+.ctx\:editorialColumn3.row\:x-center\:y-center, .ctx\:editorialColumn3 .row\:x-center\:y-center {
+display:flex;
+flex-direction:row;
+justify-content: center;
+align-items: center;
+}
+
+.ctx\:editorialColumn3.bg-color\:black, .ctx\:editorialColumn3 .bg-color\:black {
+background-color: #1E1E1F;
 }
 
 .ctx\:editorialColumn3.z\:0\.0, .ctx\:editorialColumn3 .z\:0\.0 {
@@ -475,6 +504,10 @@ position: relative;
 
 .ctx\:editorialColumn3.child\:grow, .ctx\:editorialColumn3 .child\:grow {
 flex-grow: 1;
+}
+
+.ctx\:editorialColumn3.bg-color\:gold, .ctx\:editorialColumn3 .bg-color\:gold {
+background-color: #B1740F;
 }
 
 .ctx\:editorialColumn3.h\:s4, .ctx\:editorialColumn3 .h\:s4 {
@@ -608,7 +641,7 @@ border-radius: 1.5rem;
 }
 
 .ctx\:aside.bg-color\:lightgrey, .ctx\:aside .bg-color\:lightgrey {
-background-color: #C8CBD0;
+background-color: #F0F4F4;
 }
 
 .ctx\:aside.h\:d0, .ctx\:aside .h\:d0 {
@@ -809,6 +842,14 @@ flex-wrap: FlexWrapRule;
 gap: 1rem;
 }
 
+.font\:h4,  .font\:h4 {
+font-size: 2.25rem;
+}
+
+.z\:2,  .z\:2 {
+z-index: 2;
+}
+
 .grid\:gap-d4\:rows-2\:cols-3-fr,  .grid\:gap-d4\:rows-2\:cols-3-fr {
 display:grid;
 gap: 1rem;
@@ -902,12 +943,20 @@ gap: 1rem;
 height: 56rem;
 }
 
-.ctx\:grandMarquee.font\:h2, .ctx\:grandMarquee .font\:h2 {
-font-size: 5.062rem;
+.ctx\:grandMarquee.font\:h5, .ctx\:grandMarquee .font\:h5 {
+font-size: 1.5rem;
 }
 
-.ctx\:grandMarquee.z\:2, .ctx\:grandMarquee .z\:2 {
-z-index: 2;
+.ctx\:grandMarquee.z\:1, .ctx\:grandMarquee .z\:1 {
+z-index: 1;
+}
+
+.ctx\:grandMarquee.font\:h4, .ctx\:grandMarquee .font\:h4 {
+font-size: 2.25rem;
+}
+
+.ctx\:grandMarquee.z\:3, .ctx\:grandMarquee .z\:3 {
+z-index: 3;
 }
 
 }
@@ -967,4 +1016,36 @@ z-index: 2;
 
 .-boldshadow {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.-lumino {
+    text-shadow:
+    0 0 18px rgba(255, 255, 255, 1),
+    1px 1px 6px rgba(0, 0, 0, 0.3),
+    0 0 45px rgba(0, 15, 45, 0.8),
+    0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+.-fluid {
+    border-top: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-bottom: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-image: linear-gradient(
+      45deg,
+      #9B7C37 0%,    /* Deep, warm base gold */
+      #F0D785 15%,   /* Medium highlight */
+      #FFF8DC 25%,   /* Brightest, almost white highlight */
+      #F0D785 35%,   /* Medium highlight */
+      #A0823F 50%,   /* Slightly darker contour for depth */
+      #F0D785 65%,   /* Medium highlight */
+      #FFF8DC 75%,   /* Brightest, almost white highlight */
+      #F0D785 85%,   /* Medium highlight */
+      #9B7C37 100%    /* Deep, warm base gold */
+    );
+    border-image-slice: 1; /* Essential to apply the gradient to the border */
+    
+    /* Layered box-shadows for subtle depth and shine */
+    box-shadow:
+      0 0 8px rgba(255, 215, 0, 0.4), /* Soft, subtle outer glow */
+      inset 0 0 5px rgba(255, 250, 205, 0.7), /* Inner highlight for a polished look */
+      inset 0 0 10px rgba(139, 69, 19, 0.2); /* Very subtle inner shadow for material thickness */
 }

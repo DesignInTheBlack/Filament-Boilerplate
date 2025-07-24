@@ -35,7 +35,11 @@ function createFluidSimulation(canvas) {
     [0.827, 0.729, 0.486], // #D3BA7C soft gold
     [0.494, 0.290, 0.675], // #7E4AAC violet
     [0.188, 0.051, 0.369], // #300D5E deep indigo
-    [0.141, 0.075, 0.176]  // #24132D plum black
+    [0.141, 0.075, 0.176],  // #24132D plum black
+    [0.494, 0.290, 0.675], // #7E4AAC violet
+    [0.188, 0.051, 0.369], // #300D5E deep indigo
+    [0.141, 0.075, 0.176],  // #24132D plum black
+    [0.243, 0.082, 0.494], // #3E157E royal purple
   ];
   
   
