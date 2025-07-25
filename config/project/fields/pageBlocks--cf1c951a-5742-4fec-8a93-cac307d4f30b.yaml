@@ -97,6 +97,14 @@ settings:
         -
           - group
           - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 9655ee03-f1c7-4a52-b72b-f82b1e908aa7 # Cinema Slider
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null

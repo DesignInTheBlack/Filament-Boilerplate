@@ -15,7 +15,7 @@
     0 0 100px rgba(0, 0, 0, 0.2);
 }
 
-.-fluid {
+.-golden {
     border-top: 2px solid transparent; /* Keep border relatively thin for sleekness */
     border-bottom: 2px solid transparent; /* Keep border relatively thin for sleekness */
     border-image: linear-gradient(
@@ -31,10 +31,24 @@
       #9B7C37 100%    /* Deep, warm base gold */
     );
     border-image-slice: 1; /* Essential to apply the gradient to the border */
-    
-    /* Layered box-shadows for subtle depth and shine */
-    box-shadow:
-      0 0 8px rgba(255, 215, 0, 0.4), /* Soft, subtle outer glow */
-      inset 0 0 5px rgba(255, 250, 205, 0.7), /* Inner highlight for a polished look */
-      inset 0 0 10px rgba(139, 69, 19, 0.2); /* Very subtle inner shadow for material thickness */
+}
+
+.-goldenFour {
+    border-top: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-bottom: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-left: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-right: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-image: linear-gradient(
+      45deg,
+      #9B7C37 0%,    /* Deep, warm base gold */
+      #F0D785 15%,   /* Medium highlight */
+      #FFF8DC 25%,   /* Brightest, almost white highlight */
+      #F0D785 35%,   /* Medium highlight */
+      #A0823F 50%,   /* Slightly darker contour for depth */
+      #F0D785 65%,   /* Medium highlight */
+      #FFF8DC 75%,   /* Brightest, almost white highlight */
+      #F0D785 85%,   /* Medium highlight */
+      #9B7C37 100%    /* Deep, warm base gold */
+    );
+    border-image-slice: 1; /* Essential to apply the gradient to the border */
 }

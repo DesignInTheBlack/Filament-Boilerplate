@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   canvases.forEach(canvas => {
     createFluidSimulation(canvas); // Initialize a simulation for each canvas
+
+    simulateMouseTraverseBounce(canvas, {
+      bounceDuration: 1000,
+      totalDuration: 6000
+    });
+
+
   });
 });
 
@@ -759,7 +766,7 @@ function createFluidSimulation(canvas) {
   canvas.addEventListener('mousemove', e => {
     pointers[0].moved = pointers[0].down;
     pointers[0].dx = (e.offsetX - pointers[0].x) * 12.0;
-    pointers[0].dy = -(-Math.abs((e.offsetY - pointers[0].y) * 24.0)); 
+    pointers[0].dy = (e.offsetY - pointers[0].y) * 12.0;
     pointers[0].x = e.offsetX;
     pointers[0].y = e.offsetY;
   });
@@ -810,5 +817,67 @@ function createFluidSimulation(canvas) {
   });
   
 }
-  
-  
+
+
+function simulateMouseTraverseBounce(canvas, options = {}) {
+  const {
+    bounceDuration = 1000,   // how long each left→right or right→left takes
+    totalDuration = 5000     // how long the simulation runs in total
+  } = options;
+
+  const startX = canvas.width * 0.2;
+  const endX = canvas.width * 0.8;
+  const baseY = canvas.height - 200;
+
+  const totalFrames = 40;
+  const frameInterval = bounceDuration / totalFrames;
+
+  let frame = 0;
+  let direction = 1;
+  let lastFrameTime = null;
+  let startTime = null;
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    if (!lastFrameTime) lastFrameTime = timestamp;
+
+    const elapsed = timestamp - startTime;
+    if (elapsed > totalDuration) return; // Stop after total duration
+
+    const delta = timestamp - lastFrameTime;
+    if (delta < frameInterval) {
+      requestAnimationFrame(step);
+      return;
+    }
+    lastFrameTime = timestamp;
+
+    const t = frame / totalFrames;
+    const x = direction === 1
+      ? startX + (endX - startX) * t
+      : endX - (endX - startX) * t;
+
+    const jitterAmplitude = 200;
+    const y = baseY + Math.sin(t * Math.PI * 2) * 5 + (Math.random() - 0.5) * jitterAmplitude;
+
+    const event = new MouseEvent('mousemove', {
+      bubbles: true,
+      cancelable: true,
+      clientX: x,
+      clientY: y,
+      offsetX: x,
+      offsetY: y
+    });
+
+    canvas.dispatchEvent(event);
+
+    frame++;
+    if (frame > totalFrames) {
+      frame = 0;
+      direction *= -1;
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+}

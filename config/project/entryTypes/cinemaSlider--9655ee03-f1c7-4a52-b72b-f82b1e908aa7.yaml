@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  f0173d49-02c4-4831-8ce2-ad98175da19a:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: a89fc1d6-e01c-4d29-ae99-e40d33b29808
+        userCondition: null
+handle: cinemaSlider
+hasTitleField: false
+icon: rectangle-vertical-history
+name: 'Cinema Slider'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

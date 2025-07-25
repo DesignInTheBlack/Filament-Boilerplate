@@ -208,6 +208,30 @@ background-size: contain;
 color: #EDF4F4;
 }
 
+.font\:h4\:fancy,  .font\:h4\:fancy {
+font-size: 2.25rem;
+font-family: Caviar, sans-serif;
+}
+
+.h\:d12,  .h\:d12 {
+height: 3rem;
+}
+
+.w\:auto,  .w\:auto {
+width: auto;
+}
+
+.gap\:d6,  .gap\:d6 {
+gap: 1.5rem;
+}
+
+.row\:y-center\:x-between,  .row\:y-center\:x-between {
+display:flex;
+flex-direction:row;
+align-items: center;
+justify-content: space-between;
+}
+
 .bg-color\:black,  .bg-color\:black {
 background-color: #1E1E1F;
 }
@@ -253,9 +277,9 @@ padding-bottom: 1.5rem;
 background-size: cover;
 }
 
-.pd-y\:d10,  .pd-y\:d10 {
-padding-top: 2.5rem;
-padding-bottom: 2.5rem;
+.pd-y\:d9,  .pd-y\:d9 {
+padding-top: 2.25rem;
+padding-bottom: 2.25rem;
 }
 
 .pd-y\:d12,  .pd-y\:d12 {
@@ -534,12 +558,43 @@ height: 24rem;
 background-color: #7D8491;
 }
 
-.events\:auto,  .events\:auto {
+.ctx\:cinemaSlider.gap\:d4, .ctx\:cinemaSlider .gap\:d4 {
+gap: 1rem;
+}
+
+.ctx\:cinemaSlider.col, .ctx\:cinemaSlider .col {
+display:flex;
+flex-direction:column;
+align-items: x;
+justify-content: y;
+flex-wrap: FlexWrapRule;
+}
+
+.ctx\:cinemaSlider.events\:auto, .ctx\:cinemaSlider .events\:auto {
 pointer-events: auto;
 }
 
-.ctx\:billboardSplit.mg-b\:d4, .ctx\:billboardSplit .mg-b\:d4 {
-margin-bottom: 1rem;
+.ctx\:cinemaSlider.contain, .ctx\:cinemaSlider .contain {
+
+}
+
+.ctx\:cinemaSlider.row\:x-center\:y-center, .ctx\:cinemaSlider .row\:x-center\:y-center {
+display:flex;
+flex-direction:row;
+justify-content: center;
+align-items: center;
+}
+
+.ctx\:cinemaSlider.bg-color\:gold, .ctx\:cinemaSlider .bg-color\:gold {
+background-color: #B1740F;
+}
+
+.ctx\:cinemaSlider.h\:s3, .ctx\:cinemaSlider .h\:s3 {
+height: 32rem;
+}
+
+.ctx\:cinemaSlider.w\:full, .ctx\:cinemaSlider .w\:full {
+width: 100%;
 }
 
 .ctx\:billboardSplit.text\:grey\:snug\:blog, .ctx\:billboardSplit .text\:grey\:snug\:blog {
@@ -559,10 +614,14 @@ letter-spacing: 0.01rem;
 display: block;
 }
 
-.ctx\:billboardSplit.col\:y-between\:x-end, .ctx\:billboardSplit .col\:y-between\:x-end {
+.ctx\:billboardSplit.h\:full, .ctx\:billboardSplit .h\:full {
+height: 100%;
+}
+
+.ctx\:billboardSplit.col\:y-end\:x-end, .ctx\:billboardSplit .col\:y-end\:x-end {
 display:flex;
 flex-direction:column;
-justify-content: space-between;
+justify-content: flex-end;
 align-items: flex-end;
 }
 
@@ -570,8 +629,12 @@ align-items: flex-end;
 border-radius: 1.5rem;
 }
 
-.ctx\:billboardSplit.font\:h2\:fancy, .ctx\:billboardSplit .font\:h2\:fancy {
-font-size: 5.062rem;
+.ctx\:billboardSplit.text\:none, .ctx\:billboardSplit .text\:none {
+line-height: 1;
+}
+
+.ctx\:billboardSplit.font\:h3\:fancy, .ctx\:billboardSplit .font\:h3\:fancy {
+font-size: 3.375rem;
 font-family: Caviar, sans-serif;
 }
 
@@ -579,15 +642,11 @@ font-family: Caviar, sans-serif;
 width: 100%;
 }
 
-.ctx\:billboardSplit.row\:x-start\:y-start, .ctx\:billboardSplit .row\:x-start\:y-start {
+.ctx\:billboardSplit.row\:x-start\:y-end, .ctx\:billboardSplit .row\:x-start\:y-end {
 display:flex;
 flex-direction:row;
 justify-content: flex-start;
-align-items: flex-start;
-}
-
-.ctx\:billboardSplit.h\:full, .ctx\:billboardSplit .h\:full {
-height: 100%;
+align-items: flex-end;
 }
 
 .ctx\:billboardSplit.col\:x-start\:y-end, .ctx\:billboardSplit .col\:x-start\:y-end {
@@ -640,8 +699,8 @@ align-items: flex-end;
 border-radius: 1.5rem;
 }
 
-.ctx\:aside.bg-color\:lightgrey, .ctx\:aside .bg-color\:lightgrey {
-background-color: #F0F4F4;
+.ctx\:aside.bg-color\:divide, .ctx\:aside .bg-color\:divide {
+background-color: #ebebeb;
 }
 
 .ctx\:aside.h\:d0, .ctx\:aside .h\:d0 {
@@ -765,15 +824,15 @@ grid-column-end: 6;
 font-size: 1.125rem;
 }
 
-.grid\:gap-d4\:rows-2\:cols-4,  .grid\:gap-d4\:rows-2\:cols-4 {
+.ctx\:cinemaSlider.grid\:gap-d4\:rows-2\:cols-4-fr, .ctx\:cinemaSlider .grid\:gap-d4\:rows-2\:cols-4-fr {
 display:grid;
 gap: 1rem;
 grid-template-rows: repeat(2,auto);
-grid-template-columns: repeat(4,auto);
+grid-template-columns: repeat(4,1fr);
 }
 
-.h\:s7,  .h\:s7 {
-height: 56rem;
+.ctx\:cinemaSlider.h\:s6, .ctx\:cinemaSlider .h\:s6 {
+height: 48rem;
 }
 
 .ctx\:editorialColumn1.h\:auto, .ctx\:editorialColumn1 .h\:auto {
@@ -951,8 +1010,8 @@ font-size: 1.5rem;
 z-index: 1;
 }
 
-.ctx\:grandMarquee.font\:h4, .ctx\:grandMarquee .font\:h4 {
-font-size: 2.25rem;
+.ctx\:grandMarquee.font\:h3, .ctx\:grandMarquee .font\:h3 {
+font-size: 3.375rem;
 }
 
 .ctx\:grandMarquee.z\:3, .ctx\:grandMarquee .z\:3 {
@@ -1026,7 +1085,7 @@ z-index: 3;
     0 0 100px rgba(0, 0, 0, 0.2);
 }
 
-.-fluid {
+.-golden {
     border-top: 2px solid transparent; /* Keep border relatively thin for sleekness */
     border-bottom: 2px solid transparent; /* Keep border relatively thin for sleekness */
     border-image: linear-gradient(
@@ -1042,10 +1101,24 @@ z-index: 3;
       #9B7C37 100%    /* Deep, warm base gold */
     );
     border-image-slice: 1; /* Essential to apply the gradient to the border */
-    
-    /* Layered box-shadows for subtle depth and shine */
-    box-shadow:
-      0 0 8px rgba(255, 215, 0, 0.4), /* Soft, subtle outer glow */
-      inset 0 0 5px rgba(255, 250, 205, 0.7), /* Inner highlight for a polished look */
-      inset 0 0 10px rgba(139, 69, 19, 0.2); /* Very subtle inner shadow for material thickness */
+}
+
+.-goldenFour {
+    border-top: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-bottom: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-left: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-right: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-image: linear-gradient(
+      45deg,
+      #9B7C37 0%,    /* Deep, warm base gold */
+      #F0D785 15%,   /* Medium highlight */
+      #FFF8DC 25%,   /* Brightest, almost white highlight */
+      #F0D785 35%,   /* Medium highlight */
+      #A0823F 50%,   /* Slightly darker contour for depth */
+      #F0D785 65%,   /* Medium highlight */
+      #FFF8DC 75%,   /* Brightest, almost white highlight */
+      #F0D785 85%,   /* Medium highlight */
+      #9B7C37 100%    /* Deep, warm base gold */
+    );
+    border-image-slice: 1; /* Essential to apply the gradient to the border */
 }

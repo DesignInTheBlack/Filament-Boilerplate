@@ -19,10 +19,18 @@
 <div class = "bg-color:black">
 
 
-  <nav class = "contain row:y-center gap:d8 pd-b:d8 pd-t:d12">
-    <p class = "text:white font:fancy:h6:medium">Home</p>
-    <p class = "text:white font:fancy:h6:medium">About</p>
-    <p class = "text:white font:fancy:h6:medium">Gallery</p>
+  <nav class = "contain row:y-center:x-between gap:d8 pd-b:d8 pd-t:d12">
+    
+    <div class = "row:y-center gap:d6">
+      <img class = "w:auto h:d12" src="{{ craft.vite.asset("src/images/pouredlogo.svg") }}" alt="Logo">
+      <h1 class="font:h4:fancy text:white">Poured Out</h1>
+    </div>
+
+    <div class = "row:y-center gap:d8">
+      <p class = "text:white font:fancy:h6:medium">Home</p>
+      <p class = "text:white font:fancy:h6:medium">About</p>
+      <p class = "text:white font:fancy:h6:medium">Gallery</p>
+    </div>
   </nav>
 
   <div class = "-roundtop bg-attr:repeat:contain" style = "background-image: url({{ craft.vite.asset("src/images/canvas.png") }}); background-size: 500px 500px;">
