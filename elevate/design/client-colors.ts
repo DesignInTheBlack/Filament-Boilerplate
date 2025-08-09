@@ -3,7 +3,7 @@ export const clientColors = {
     black: '#1E1E1F',
     grey: '#7D8491',
     lightgrey:'#F0F4F4',
-    divide:'#ebebeb',
+    divide:'#e2e4e4',
     gold: '#B1740F'
 };
 

@@ -236,14 +236,6 @@ justify-content: space-between;
 background-color: #1E1E1F;
 }
 
-.opacity\:0\.95,  .opacity\:0\.95 {
-opacity: 0.95;
-}
-
-.z\:0\.0,  .z\:0\.0 {
-z-index: 0;
-}
-
 .left\:0,  .left\:0 {
 left: 0;
 }
@@ -365,10 +357,6 @@ height: 32rem;
 
 .ctx\:grandMarquee.contain, .ctx\:grandMarquee .contain {
 
-}
-
-.ctx\:grandMarquee.z\:0\.0, .ctx\:grandMarquee .z\:0\.0 {
-z-index: 0;
 }
 
 .ctx\:grandMarquee.relative, .ctx\:grandMarquee .relative {
@@ -503,23 +491,28 @@ font-weight: 700;
 font-size: 1.5rem;
 }
 
-.ctx\:editorialColumn3.h\:c4, .ctx\:editorialColumn3 .h\:c4 {
-height: 5.5rem;
+.ctx\:editorialColumn3.pd-t\:d7, .ctx\:editorialColumn3 .pd-t\:d7 {
+padding-top: 1.75rem;
 }
 
-.ctx\:editorialColumn3.row\:x-center\:y-center, .ctx\:editorialColumn3 .row\:x-center\:y-center {
+.ctx\:editorialColumn3.pd-b\:d6, .ctx\:editorialColumn3 .pd-b\:d6 {
+padding-bottom: 1.5rem;
+}
+
+.ctx\:editorialColumn3.pd-x\:d6, .ctx\:editorialColumn3 .pd-x\:d6 {
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+}
+
+.ctx\:editorialColumn3.row\:x-between\:y-center, .ctx\:editorialColumn3 .row\:x-between\:y-center {
 display:flex;
 flex-direction:row;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 }
 
 .ctx\:editorialColumn3.bg-color\:black, .ctx\:editorialColumn3 .bg-color\:black {
 background-color: #1E1E1F;
-}
-
-.ctx\:editorialColumn3.z\:0\.0, .ctx\:editorialColumn3 .z\:0\.0 {
-z-index: 0;
 }
 
 .ctx\:editorialColumn3.relative, .ctx\:editorialColumn3 .relative {
@@ -558,43 +551,88 @@ height: 24rem;
 background-color: #7D8491;
 }
 
-.ctx\:cinemaSlider.gap\:d4, .ctx\:cinemaSlider .gap\:d4 {
-gap: 1rem;
-}
-
-.ctx\:cinemaSlider.col, .ctx\:cinemaSlider .col {
-display:flex;
-flex-direction:column;
-align-items: x;
-justify-content: y;
-flex-wrap: FlexWrapRule;
-}
-
-.ctx\:cinemaSlider.events\:auto, .ctx\:cinemaSlider .events\:auto {
+.events\:auto,  .events\:auto {
 pointer-events: auto;
 }
 
-.ctx\:cinemaSlider.contain, .ctx\:cinemaSlider .contain {
-
+.mg-t\:d6,  .mg-t\:d6 {
+margin-top: 1.5rem;
 }
 
-.ctx\:cinemaSlider.row\:x-center\:y-center, .ctx\:cinemaSlider .row\:x-center\:y-center {
+.bg-color\:grey,  .bg-color\:grey {
+background-color: #7D8491;
+}
+
+.h\:s7,  .h\:s7 {
+height: 56rem;
+}
+
+.transition\:slow,  .transition\:slow {
+transition: all 0.3s ease-in-out;
+}
+
+.\@hover\:\[text\:white_bg-color\:black_pd\:d6\]:hover,  .\@hover\:\[text\:white_bg-color\:black_pd\:d6\]:hover {
+color: #EDF4F4;
+background-color: #1E1E1F;
+padding-top: 1.5rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+padding-bottom: 1.5rem;
+}
+
+.row\:x-center\:y-center,  .row\:x-center\:y-center {
 display:flex;
 flex-direction:row;
 justify-content: center;
 align-items: center;
 }
 
-.ctx\:cinemaSlider.bg-color\:gold, .ctx\:cinemaSlider .bg-color\:gold {
-background-color: #B1740F;
+.w\:c6,  .w\:c6 {
+width: 7rem;
 }
 
-.ctx\:cinemaSlider.h\:s3, .ctx\:cinemaSlider .h\:s3 {
-height: 32rem;
+.h\:c6,  .h\:c6 {
+height: 7rem;
 }
 
-.ctx\:cinemaSlider.w\:full, .ctx\:cinemaSlider .w\:full {
-width: 100%;
+.text\:grey,  .text\:grey {
+color: #7D8491;
+}
+
+.bg-color\:white,  .bg-color\:white {
+background-color: #EDF4F4;
+}
+
+.font\:h4,  .font\:h4 {
+font-size: 2.25rem;
+}
+
+.pd\:d0,  .pd\:d0 {
+padding-top: 0.125rem;
+padding-left: 0.125rem;
+padding-right: 0.125rem;
+padding-bottom: 0.125rem;
+}
+
+.pd\:d4,  .pd\:d4 {
+padding-top: 1rem;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-bottom: 1rem;
+}
+
+.bd\:width-d0\:solid\:white,  .bd\:width-d0\:solid\:white {
+border-width: 0.125rem;
+border-style: solid;
+border-color: #EDF4F4;
+}
+
+.min-w\:c6,  .min-w\:c6 {
+min-width: 7rem;
+}
+
+.min-h\:c6,  .min-h\:c6 {
+min-height: 7rem;
 }
 
 .ctx\:billboardSplit.text\:grey\:snug\:blog, .ctx\:billboardSplit .text\:grey\:snug\:blog {
@@ -700,7 +738,7 @@ border-radius: 1.5rem;
 }
 
 .ctx\:aside.bg-color\:divide, .ctx\:aside .bg-color\:divide {
-background-color: #ebebeb;
+background-color: #e2e4e4;
 }
 
 .ctx\:aside.h\:d0, .ctx\:aside .h\:d0 {
@@ -824,14 +862,25 @@ grid-column-end: 6;
 font-size: 1.125rem;
 }
 
-.ctx\:cinemaSlider.grid\:gap-d4\:rows-2\:cols-4-fr, .ctx\:cinemaSlider .grid\:gap-d4\:rows-2\:cols-4-fr {
+.w\:auto,  .w\:auto {
+width: auto;
+}
+
+.row\:x-center\:y-center,  .row\:x-center\:y-center {
+display:flex;
+flex-direction:row;
+justify-content: center;
+align-items: center;
+}
+
+.grid\:gap-d4\:rows-2\:cols-4-fr,  .grid\:gap-d4\:rows-2\:cols-4-fr {
 display:grid;
 gap: 1rem;
 grid-template-rows: repeat(2,auto);
 grid-template-columns: repeat(4,1fr);
 }
 
-.ctx\:cinemaSlider.h\:s6, .ctx\:cinemaSlider .h\:s6 {
+.h\:s6,  .h\:s6 {
 height: 48rem;
 }
 
@@ -901,8 +950,8 @@ flex-wrap: FlexWrapRule;
 gap: 1rem;
 }
 
-.font\:h4,  .font\:h4 {
-font-size: 2.25rem;
+.font\:h5,  .font\:h5 {
+font-size: 1.5rem;
 }
 
 .z\:2,  .z\:2 {
@@ -914,10 +963,6 @@ display:grid;
 gap: 1rem;
 grid-template-rows: repeat(2,auto);
 grid-template-columns: repeat(3,1fr);
-}
-
-.h\:s6,  .h\:s6 {
-height: 48rem;
 }
 
 .ctx\:editorialColumns1.h\:auto, .ctx\:editorialColumns1 .h\:auto {
@@ -1086,8 +1131,8 @@ z-index: 3;
 }
 
 .-golden {
-    border-top: 2px solid transparent; /* Keep border relatively thin for sleekness */
-    border-bottom: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-top: 3px solid transparent; /* Keep border relatively thin for sleekness */
+    border-bottom: 3px solid transparent; /* Keep border relatively thin for sleekness */
     border-image: linear-gradient(
       45deg,
       #9B7C37 0%,    /* Deep, warm base gold */
@@ -1104,10 +1149,10 @@ z-index: 3;
 }
 
 .-goldenFour {
-    border-top: 2px solid transparent; /* Keep border relatively thin for sleekness */
-    border-bottom: 2px solid transparent; /* Keep border relatively thin for sleekness */
-    border-left: 2px solid transparent; /* Keep border relatively thin for sleekness */
-    border-right: 2px solid transparent; /* Keep border relatively thin for sleekness */
+    border-top: 3px solid transparent; /* Keep border relatively thin for sleekness */
+    border-bottom: 3px solid transparent; /* Keep border relatively thin for sleekness */
+    border-left: 3px solid transparent; /* Keep border relatively thin for sleekness */
+    border-right: 3px solid transparent; /* Keep border relatively thin for sleekness */
     border-image: linear-gradient(
       45deg,
       #9B7C37 0%,    /* Deep, warm base gold */
@@ -1122,3 +1167,10 @@ z-index: 3;
     );
     border-image-slice: 1; /* Essential to apply the gradient to the border */
 }
+
+.-circle {
+right:-6.75rem;
+bottom:43%;
+border-radius:100%;
+}
+

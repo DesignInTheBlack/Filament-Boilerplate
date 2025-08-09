@@ -12,6 +12,7 @@
     "elevate": "tsx elevate/core/index.ts"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.7.1",
     "elevate-framework": "^1.0.44",
     "lucide": "^0.525.0"
   }
