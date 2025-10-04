@@ -6,14 +6,62 @@ document.addEventListener('DOMContentLoaded', () => {
   canvases.forEach(canvas => {
     createFluidSimulation(canvas); // Initialize a simulation for each canvas
 
-    simulateMouseTraverseBounce(canvas, {
-      bounceDuration: 1000,
-      totalDuration: 6000
+    autoSplatFromCenter(canvas, {
+      startFrame: 50,
+      endFrame: 200,
+      splatsPerFrame: 2
     });
 
 
   });
 });
+
+
+
+function autoSplatFromCenter(canvas, options = {}) {
+  const {
+    startFrame = 50,
+    endFrame = 140,
+    splatsPerFrame = 2
+  } = options;
+
+  let currentFrame = 0;
+
+  function step() {
+    currentFrame++;
+    
+    if (currentFrame >= startFrame && currentFrame <= endFrame) {
+      // Get canvas position in viewport
+      const rect = canvas.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      
+      for (let i = 0; i < splatsPerFrame; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const distance = Math.random() * 100;
+        
+        const clientX = centerX + Math.cos(angle) * distance;
+        const clientY = centerY + Math.sin(angle) * distance;
+        
+        // Only set clientX/clientY - browser calculates offsetX/offsetY automatically
+        const event = new MouseEvent('mousemove', {
+          bubbles: true,
+          cancelable: true,
+          clientX: clientX,
+          clientY: clientY
+        });
+        
+        canvas.dispatchEvent(event);
+      }
+    }
+    
+    if (currentFrame <= endFrame + 60) {
+      requestAnimationFrame(step);
+    }
+  }
+
+  requestAnimationFrame(step);
+}
 
 
 function createFluidSimulation(canvas) {
