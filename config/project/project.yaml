@@ -1,4 +1,4 @@
-dateModified: 1759598336
+dateModified: 1764782985
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -23,6 +23,7 @@ meta:
     9655ee03-f1c7-4a52-b72b-f82b1e908aa7: 'Cinema Slider' # Cinema Slider
     aa15edf9-5fc0-40cc-8eb1-570557b0c72f: StandardPage # StandardPage
     ab2a1412-8d01-4b29-a57d-80a0f008efab: Pages # Pages
+    addc69ef-1366-47cc-b9aa-477cbdd76685: 'Large Hero' # Large Hero
     b49dcac4-4dca-4e71-9925-c677816d034c: 'Aside Paragraph' # Aside Paragraph
     b5253cdf-98b0-4938-9366-0b2d4914edb3: 'Billboard Split' # Billboard Split
     cac287ab-f575-4bdf-9836-b06446a54504: 'Grand Marquee' # Grand Marquee

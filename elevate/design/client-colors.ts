@@ -4,6 +4,7 @@ export const clientColors = {
     grey: '#7D8491',
     lightgrey:'#F0F4F4',
     divide:'#e2e4e4',
-    gold: '#B1740F'
+    gold: '#B1740F',
+    gold95:'rgba(181, 141, 94, 0.95)'
 };
 

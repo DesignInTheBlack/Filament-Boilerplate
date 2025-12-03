@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en-US" class = "bg-color:gold">
+<html lang="en-US">
 <head>
    {{ craft.vite.script('src/js/app.js',false) }}
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,11 +15,19 @@
 <canvas class = "absolute w:full h:full top:0 left:0 z:0.0 opacity:0.95"></canvas>
 
 
-  
-<div class = "bg-color:black">
 
+  <div>
 
-  <nav class = "contain row:y-center:x-between gap:d8 pd-b:d8 pd-t:d12">
+    <nav class = "contain row:x-between:y-center pd-b:d8 pd-t:d12">
+
+      <div class = "row:y-center gap:d8">
+        <p class = "text:black font:fancy:h6:medium">Shop</p>
+        <p class = "text:black font:fancy:h6:medium">Contact</p>
+      </div>
+      
+    </nav>
+
+      <nav class = "contain row:y-center:x-between gap:d8 pd-b:d8 pd-t:d12">
     
     <div class = "row:y-center gap:d6">
       <img class = "w:auto h:d12" src="{{ craft.vite.asset("src/images/pouredlogo.svg") }}" alt="Logo">
@@ -33,17 +41,6 @@
     </div>
   </nav>
 
-  <div class = "-roundtop bg-attr:repeat:contain" style = "background-image: url({{ craft.vite.asset("src/images/canvas.png") }}); background-size: 500px 500px;">
-
-    <nav class = "contain row:x-between:y-center pd-b:d8 pd-t:d12">
-
-      <div class = "row:y-center gap:d8">
-        <p class = "text:black font:fancy:h6:medium">Shop</p>
-        <p class = "text:black font:fancy:h6:medium">Contact</p>
-      </div>
-      
-    </nav>
-
     <div class = "relative z:1 events:none">
       {% block content %}
         {% for block in entry.pageBlocks.all() %}
@@ -55,7 +52,7 @@
     </div>
 
   </div>
-</div>
+
 
 </body>
 </html>

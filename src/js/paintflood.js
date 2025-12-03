@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     autoSplatFromCenter(canvas, {
       startFrame: 50,
-      endFrame: 200,
+      endFrame: 250,
       splatsPerFrame: 2
     });
 
@@ -20,8 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function autoSplatFromCenter(canvas, options = {}) {
   const {
-    startFrame = 50,
-    endFrame = 140,
+    wave1Start = 50,
+    wave1End = 200,
+    wave2Start = 350,
+    wave2End = 425,
     splatsPerFrame = 2
   } = options;
 
@@ -30,20 +32,24 @@ function autoSplatFromCenter(canvas, options = {}) {
   function step() {
     currentFrame++;
     
-    if (currentFrame >= startFrame && currentFrame <= endFrame) {
-      // Get canvas position in viewport
+    // Check if we're in either wave
+    const inWave1 = currentFrame >= wave1Start && currentFrame <= wave1End;
+    const inWave2 = currentFrame >= wave2Start && currentFrame <= wave2End;
+    
+    if (inWave1 || inWave2) {
       const rect = canvas.getBoundingClientRect();
       const centerX = rect.left + rect.width / 2;
       const centerY = rect.top + rect.height / 2;
       
       for (let i = 0; i < splatsPerFrame; i++) {
         const angle = Math.random() * Math.PI * 2;
-        const distance = Math.random() * 100;
+        const distance = inWave1 
+        ? Math.random() * 200      // Wave 1: original speed
+        : Math.random() * 45;      // Wave 2: slower/tighter
         
         const clientX = centerX + Math.cos(angle) * distance;
         const clientY = centerY + Math.sin(angle) * distance;
         
-        // Only set clientX/clientY - browser calculates offsetX/offsetY automatically
         const event = new MouseEvent('mousemove', {
           bubbles: true,
           cancelable: true,
@@ -55,7 +61,7 @@ function autoSplatFromCenter(canvas, options = {}) {
       }
     }
     
-    if (currentFrame <= endFrame + 60) {
+    if (currentFrame <= wave2End + 60) {
       requestAnimationFrame(step);
     }
   }

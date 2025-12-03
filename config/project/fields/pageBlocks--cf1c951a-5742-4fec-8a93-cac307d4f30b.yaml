@@ -29,14 +29,6 @@ settings:
       __assoc__:
         -
           - uid
-          - cac287ab-f575-4bdf-9836-b06446a54504 # Grand Marquee
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
           - 0b791488-8988-45c1-b86f-3bd2a9d0f36e # Large Spacer
         -
           - group
@@ -102,6 +94,20 @@ settings:
         -
           - uid
           - 9655ee03-f1c7-4a52-b72b-f82b1e908aa7 # Cinema Slider
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - addc69ef-1366-47cc-b9aa-477cbdd76685 # Large Hero
+        -
+          - name
+          - 'Grand Marquee'
+        -
+          - handle
+          - grandMarquee
         -
           - group
           - General
