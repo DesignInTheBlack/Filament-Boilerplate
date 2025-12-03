@@ -170,34 +170,34 @@ export const declarationMap = {
         "border-color": "ColorToken",
         "border-width": "BorderWidthRule",
         "border-radius": "BorderRadiusRule",
+        "border-top-left-radius": "BorderTopLeftRadiusRule",
+        "border-top-right-radius": "BorderTopRightRadiusRule",
+        "border-bottom-left-radius": "BorderBottomLeftRadiusRule",
+        "border-bottom-right-radius": "BorderBottomRightRadiusRule",
         "border-style": "BorderStyleRule"
     },
 
     'bd-l': {
         "border-left-color": "ColorToken",
         "border-left-width": "BorderWidthRule",
-        "border-left-radius": "BorderRadiusRule",
         "border-left-style": "BorderStyleRule"
     },
 
     'bd-r': {
         "border-right-color": "ColorToken",
         "border-right-width": "BorderWidthRule",
-        "border-right-radius": "BorderRadiusRule",
         "border-right-style": "BorderStyleRule"
     },
 
     'bd-t': {
         "border-top-color": "ColorToken",
         "border-top-width": "BorderWidthRule",
-        "border-top-radius": "BorderRadiusRule",
         "border-top-style": "BorderStyleRule"
     },
 
     'bd-b': {
         "border-bottom-color": "ColorToken",
         "border-bottom-width": "BorderWidthRule",
-        "border-bottom-radius": "BorderRadiusRule",
         "border-bottom-style": "BorderStyleRule"
     },
 
@@ -213,6 +213,7 @@ export const declarationMap = {
         "background-origin": "BackgroundOriginRule",
         "background-clip": "BackgroundClipRule",
     },
+    'bg-exact': { "background-size": "PassThroughToken" },
 
 
     // =============================
@@ -384,6 +385,19 @@ export const declarationMap = {
 
     'empty':{"content": "''"},
 
+    // =============================
+    // Select
+    // =============================
+
+    'select': { "user-select": "SelectRule" },
+    
+
+   // =============================
+    //Transform & Filters
+    // =============================
+    'origin': { "transform-origin": "PassThroughToken" },
+    'transform': { "transform": "PassThroughToken" },
+    'filter': { "filter": "PassThroughToken" },
 
     // =============================
     // Allow User Overrides and Extensions

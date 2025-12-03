@@ -21,7 +21,7 @@ export const designSystem = {
     BreakPointToken: breakpoints,
     SpacingToken: {...spacing,...dimensionUtility},
     FontSizeToken: typography.size,
-    FontFamilyToken:clientFonts,
+    FontFamilyToken: clientFonts,
     LineHeightToken: typography.leading,
     LetterSpacingToken: typography.tracking,
     MeasureToken: typography.measure,

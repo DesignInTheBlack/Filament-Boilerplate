@@ -46,13 +46,5 @@ export const spacing = {
     's12': '90rem',   // 1440pt (h3)
     's13': '120rem',  // 1920pt (h4)
 
-    // Dimensions:
-    'half':'50%',
-    'quarter':'25%',
-    'third':'33.33%',
-    'sixth':'16.66%',
-    'eighth':'12.5%',
-    'twelfth':'8.33%'
-
 } 
 

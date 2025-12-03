@@ -260,22 +260,26 @@ export function getModifierType(
 ): string[] {
     const matches = [];
 
+    
+
     // Extract the part after the first ':' if it exists, preserving the entire parenthetical content
-    const cleanedModifier = modifier.includes(':')
-        ? modifier.slice(modifier.indexOf('('))
-        : modifier;
+    const cleanedModifier = modifier.includes('(')
+    ? modifier.slice(modifier.indexOf('('))
+    : modifier;
 
 
     if (/^\(.*\)$/.test(cleanedModifier)) {
         matches.push("PassThroughToken");
     }
 
-    // Direct lookup for matches
+  
+    
     for (const [typeName, values] of Object.entries(types)) {
         if (modifier in values) {
             matches.push(typeName); // Add to matches array
         }
     }
+
 
   
 
@@ -320,11 +324,19 @@ export function getModifierValue(modifier: string, criteria: any, context?: { fi
 
     const modifierType = getModifierType(modifier, context);
 
-     if (modifierType[0] === "PassThroughToken") {
-        // Extract value inside parentheses
-        const match = modifier.match(/^\((.*)\)$/);
-        return match ? match[1] : modifier;
-    }
+    if (
+        modifierType.includes("NumericToken") &&
+        !isNaN(Number(modifier))
+      ) {
+        return numeric.NumericToken.validate(modifier);
+      }
+
+      if (modifierType[0] === "PassThroughToken") {
+        const m = modifier.match(/^\((.*)\)$/);
+        const inner = m ? m[1] : modifier;
+        const decoded = inner.replace(/_/g, ' ');
+        return decoded;
+      }
 
     if (modifierType[0] === "NumericToken") {
         return types.NumericToken.validate(modifier);

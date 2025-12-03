@@ -80,71 +80,71 @@ textarea:not([rows]) {
 @media only screen and (min-width:20rem) {
 .contain {
     margin:auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     }
 }
 @media only screen and (min-width:30rem) {
 .contain {
     margin:auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     }
 }
 @media only screen and (min-width:40rem) {
 .contain {
     margin:auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     }
 }
 @media only screen and (min-width:48rem) {
 .contain {
     margin:auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     }
 }
 @media only screen and (min-width:64rem) {
 .contain {
     margin:auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     }
 }
 @media only screen and (min-width:80rem) {
 .contain {
     margin:auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     }
 }
 @media only screen and (min-width:96rem) {
 .contain {
     margin:auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     }
 }
 @media only screen and (min-width:120rem) {
 .contain {
     margin:auto;
-    padding-left: 5.5rem;
-    padding-right: 5.5rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
     }
 }
 @media only screen and (min-width:160rem) {
 .contain {
     margin:auto;
-    padding-left: 5.5rem;
-    padding-right: 5.5rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
     }
 }
 @media only screen and (min-width:240rem) {
 .contain {
     margin:auto;
-    padding-left: 5.5rem;
-    padding-right: 5.5rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
     }
 }
 
@@ -225,6 +225,14 @@ display:flex;
 flex-direction:row;
 justify-content: space-between;
 align-items: center;
+}
+
+.opacity\:0\.95,  .opacity\:0\.95 {
+opacity: 0.95;
+}
+
+.z\:0\.0,  .z\:0\.0 {
+z-index: 0;
 }
 
 .left\:0,  .left\:0 {
@@ -384,7 +392,7 @@ height: 32rem;
 }
 
 .ctx\:grandMarquee.z\:0, .ctx\:grandMarquee .z\:0 {
-z-index: undefined;
+z-index: 0;
 }
 
 .ctx\:grandMarquee.relative, .ctx\:grandMarquee .relative {
@@ -534,6 +542,10 @@ align-items: center;
 
 .ctx\:editorialColumn3.bg-color\:black, .ctx\:editorialColumn3 .bg-color\:black {
 background-color: #1E1E1F;
+}
+
+.ctx\:editorialColumn3.z\:0\.0, .ctx\:editorialColumn3 .z\:0\.0 {
+z-index: 0;
 }
 
 .ctx\:editorialColumn3.relative, .ctx\:editorialColumn3 .relative {
