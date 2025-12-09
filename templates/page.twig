@@ -8,6 +8,7 @@
     <title>Poured Out Art</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="referrer" content="origin-when-cross-origin" />
+    <script src="https://kit.fontawesome.com/ac65d94ae4.js" crossorigin="anonymous"></script>
   
 </head>
 
@@ -16,30 +17,9 @@
 
 
 
-  <div>
 
-    <nav class = "contain row:x-between:y-center pd-b:d8 pd-t:d12">
 
-      <div class = "row:y-center gap:d8">
-        <p class = "text:black font:fancy:h6:medium">Shop</p>
-        <p class = "text:black font:fancy:h6:medium">Contact</p>
-      </div>
-      
-    </nav>
-
-      <nav class = "contain row:y-center:x-between gap:d8 pd-b:d8 pd-t:d12">
-    
-    <div class = "row:y-center gap:d6">
-      <img class = "w:auto h:d12" src="{{ craft.vite.asset("src/images/pouredlogo.svg") }}" alt="Logo">
-      <h1 class="font:h4:fancy text:white">Poured Out</h1>
-    </div>
-
-    <div class = "row:y-center gap:d8">
-      <p class = "text:white font:fancy:h6:medium">Home</p>
-      <p class = "text:white font:fancy:h6:medium">About</p>
-      <p class = "text:white font:fancy:h6:medium">Gallery</p>
-    </div>
-  </nav>
+   
 
     <div class = "relative z:1 events:none">
       {% block content %}
@@ -51,7 +31,6 @@
       {% endblock %}
     </div>
 
-  </div>
 
 
 </body>

@@ -12,7 +12,7 @@ const options = {
       /\bclassName\s*=\s*{\s*"([^"]*)"\s*}/g,   // className={"..."}
       /\bclassName\s*=\s*{\s*'([^']*)'\s*}/g,   // className={'...'}
       ],
-    SafeList:['glide__slides','glide__slide','glide__track','glide']
+    SafeList:['glide__slides','glide__slide','glide__track','glide','fa-brands','fa-square-facebook','fa-square-instagram']
 }
 
 export const config = options

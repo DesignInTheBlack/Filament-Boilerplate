@@ -9,7 +9,7 @@ export const typography = {
       h6: '1.125rem',
       h5: '1.5rem',
       h4: '2.25rem',
-      h3: '3.375rem',
+      h3: '3rem',
       h2: '5.062rem',
       h1: '7.594rem',
       eyebrow: '0.583rem'

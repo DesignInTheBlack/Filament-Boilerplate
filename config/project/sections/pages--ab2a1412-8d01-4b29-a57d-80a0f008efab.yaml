@@ -25,4 +25,7 @@ siteSettings:
     hasUrls: true
     template: page.twig
     uriFormat: '{slug}'
-type: single
+structure:
+  maxLevels: null
+  uid: 2ed93057-e98e-4642-8052-7d22a104db17
+type: structure

@@ -1,18 +1,18 @@
-color: purple
+color: null
 description: null
 fieldLayouts:
-  a2716d61-4dec-47e3-9cd1-f3c5b55aa979:
+  92acdb65-53d8-45a9-8bcb-d4328d4cd86f:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         name: Content
-        uid: 27ba66a8-bdc1-4ffb-9ced-5f38d633813c
+        uid: b15aa583-1277-4de8-bf06-8ebf18c6494d
         userCondition: null
-handle: examplemodule
+handle: miniMarquee
 hasTitleField: false
-icon: alien-8bit
-name: exampleModule
+icon: gallery-thumbnails
+name: 'Mini Marquee'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

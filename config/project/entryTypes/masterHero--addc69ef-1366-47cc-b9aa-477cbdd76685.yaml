@@ -1,4 +1,4 @@
-color: red
+color: null
 description: null
 fieldLayouts:
   ed26ddf9-ad31-498c-9464-85124f573227:
@@ -6,42 +6,11 @@ fieldLayouts:
     tabs:
       -
         elementCondition: null
-        elements:
-          -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2025-12-03T17:23:10+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            required: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: ceb29e26-ecd5-4b05-819a-1587bae127e8
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: 578fa02d-ec4c-41c8-9c35-d7068b212333
         userCondition: null
 handle: masterHero
-hasTitleField: true
+hasTitleField: false
 icon: mask
 name: 'Large Hero'
 showSlugField: true

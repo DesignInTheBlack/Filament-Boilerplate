@@ -1,18 +1,18 @@
-color: purple
+color: null
 description: null
 fieldLayouts:
-  a2716d61-4dec-47e3-9cd1-f3c5b55aa979:
+  f34dca34-546a-4feb-857c-fbd7a4e5f509:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         name: Content
-        uid: 27ba66a8-bdc1-4ffb-9ced-5f38d633813c
+        uid: bcd46de9-a5a2-4211-842d-9156a7c72b92
         userCondition: null
-handle: examplemodule
+handle: editorialIntro
 hasTitleField: false
-icon: alien-8bit
-name: exampleModule
+icon: objects-column
+name: 'Editorial Collage'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

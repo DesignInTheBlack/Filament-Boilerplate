@@ -1,18 +1,18 @@
 color: null
 description: null
 fieldLayouts:
-  f34dca34-546a-4feb-857c-fbd7a4e5f509:
+  c866adc0-9581-4cd1-9a73-06e6e260a18e:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         name: Content
-        uid: bcd46de9-a5a2-4211-842d-9156a7c72b92
+        uid: a185920d-3f48-4d30-b4dc-d3b1cea68420
         userCondition: null
-handle: editorialCollage
+handle: navigationHero
 hasTitleField: false
-icon: objects-column
-name: 'Editorial Collage'
+icon: map-location-dot
+name: 'Navigation With Hero'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

@@ -4,10 +4,10 @@ export const contain = {
     'xs': 'd5',
     'sm': 'd5',
     'md': 'd8',
-    'lg': 'd8',
-    'xl': 'd8',
-    '2xl': 'd8',
-    '3xl': 'c12',
-    '4xl': 'c12',
-    '5xl': 'c12'
+    'lg': 'c2',
+    'xl': 'c2',
+    '2xl': 'c2',
+    '3xl': 'c2',
+    '4xl': 'c2',
+    '5xl': 'c2'
 };

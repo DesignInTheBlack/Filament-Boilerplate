@@ -111,6 +111,46 @@ settings:
         -
           - group
           - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 5bd0a3b2-88ff-464d-8c51-ae2aea23b8d1 # Navigation
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 8fde69fc-adc8-470f-ace8-add4c0a4de74 # Announcements
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 4446a9d7-df5f-441f-8d02-6cf3df460582 # Navigation With Hero
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - ea82e941-3e2c-4cd7-bcbb-70ce15e46ac7 # Mini Marquee
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 7eb60045-099b-4bfe-ac3a-d4d44ba037a1 # Site Footer
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null

@@ -1,18 +1,18 @@
-color: purple
+color: null
 description: null
 fieldLayouts:
-  a2716d61-4dec-47e3-9cd1-f3c5b55aa979:
+  bffe9425-e1bd-48cc-9941-d3f8ab592a47:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         name: Content
-        uid: 27ba66a8-bdc1-4ffb-9ced-5f38d633813c
+        uid: 43e46f54-132d-4e0e-8c75-6a29c04a2e2a
         userCondition: null
-handle: examplemodule
+handle: announcements
 hasTitleField: false
-icon: alien-8bit
-name: exampleModule
+icon: megaphone
+name: Announcements
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

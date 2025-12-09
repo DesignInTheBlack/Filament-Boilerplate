@@ -1,18 +1,18 @@
 color: null
 description: null
 fieldLayouts:
-  13004682-0f44-48b8-bc50-67c5ed58ce58:
+  ee75400f-9013-4960-ba92-f5718f73ba06:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         name: Content
-        uid: 126465ae-b60f-47b0-b5b0-87a7a56414b7
+        uid: 139ace05-4adc-49e5-923e-e0ee76dd8855
         userCondition: null
-handle: editorialColumns
+handle: navigation
 hasTitleField: false
-icon: newspaper
-name: 'Editorial Columns'
+icon: bars
+name: Navigation
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

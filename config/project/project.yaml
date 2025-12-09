@@ -1,4 +1,4 @@
-dateModified: 1764782985
+dateModified: 1765243912
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -13,6 +13,9 @@ meta:
     0ca218cb-9082-405d-93a1-5f3fe4324099: 'Editorial Columns' # Editorial Columns
     1e0e84fb-9ba3-41ec-87d0-22472b8c1ae9: 'Small Spacer' # Small Spacer
     2db1f353-5cc8-40db-b2de-583a39d92a64: 'Public Schema' # Public Schema
+    5bd0a3b2-88ff-464d-8c51-ae2aea23b8d1: Navigation # Navigation
+    7eb60045-099b-4bfe-ac3a-d4d44ba037a1: 'Site Footer' # Site Footer
+    8fde69fc-adc8-470f-ace8-add4c0a4de74: Announcements # Announcements
     48eabee0-5886-430a-ac24-e708a30e425a: Filament-Boilerplate # Filament-Boilerplate
     72cc4092-dce2-4057-a061-5bf104dd7d96: Filament-Boilerplate # Filament-Boilerplate
     84a55bd5-c2f1-47b7-974d-9bdb02209679: Copy # Copy
@@ -20,6 +23,7 @@ meta:
     0372f3ed-21a0-4fba-b318-c137111d8d27: 'Pattern Spacer' # Pattern Spacer
     840e4b3e-cde9-4478-8400-f2e9f30c147c: 'Editorial Collage' # Editorial Collage
     3158c64d-4653-44d7-8ef9-18f805862e13: exampleModule # exampleModule
+    4446a9d7-df5f-441f-8d02-6cf3df460582: 'Navigation With Hero' # Navigation With Hero
     9655ee03-f1c7-4a52-b72b-f82b1e908aa7: 'Cinema Slider' # Cinema Slider
     aa15edf9-5fc0-40cc-8eb1-570557b0c72f: StandardPage # StandardPage
     ab2a1412-8d01-4b29-a57d-80a0f008efab: Pages # Pages
@@ -28,6 +32,7 @@ meta:
     b5253cdf-98b0-4938-9366-0b2d4914edb3: 'Billboard Split' # Billboard Split
     cac287ab-f575-4bdf-9836-b06446a54504: 'Grand Marquee' # Grand Marquee
     cf1c951a-5742-4fec-8a93-cac307d4f30b: 'Page Blocks' # Page Blocks
+    ea82e941-3e2c-4cd7-bcbb-70ce15e46ac7: 'Mini Marquee' # Mini Marquee
     f5d67f5c-dd8e-4565-a1bc-e0aed82e9f75: 'Medium Spacer' # Medium Spacer
 plugins:
   cp-css:

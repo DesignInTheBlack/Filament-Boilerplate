@@ -1,18 +1,18 @@
-color: purple
+color: null
 description: null
 fieldLayouts:
-  a2716d61-4dec-47e3-9cd1-f3c5b55aa979:
+  cf06fc67-001d-4d1e-b942-eff57fc13062:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         name: Content
-        uid: 27ba66a8-bdc1-4ffb-9ced-5f38d633813c
+        uid: 54909f67-afa9-47c9-a246-7e3abd2f53fd
         userCondition: null
-handle: examplemodule
+handle: footer
 hasTitleField: false
-icon: alien-8bit
-name: exampleModule
+icon: rectangle-wide
+name: 'Site Footer'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
