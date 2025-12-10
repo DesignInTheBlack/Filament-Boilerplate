@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  78c2167e-de80-49f0-b955-7418fc54e8c2:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: 0e40e10d-c5a7-4ab4-930d-015151d8fce3
+        userCondition: null
+handle: marquee
+hasTitleField: false
+icon: gallery-thumbnails
+name: Marquee
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  80c8657a-aa92-40f2-9c2d-0ef7bf94cf11:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: 60c5bc0a-f0be-4ae3-94d6-9d4179425fc0
+        userCondition: null
+handle: paragraph
+hasTitleField: false
+icon: align-left
+name: Paragraph
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   {{ craft.vite.script('src/js/app.js',false) }}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Poured Out Art</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <script src="https://kit.fontawesome.com/ac65d94ae4.js" crossorigin="anonymous"></script>
+  
+</head>
+
+<body class="relative">
+
+
+<canvas class = "absolute w:full h:full top:0 left:0 z:0.0 opacity:0.95"></canvas>
+
+    <div class = "relative z:1 events:none">
+
+
+        {% include '/_blocks/announcements.twig' %}
+
+        {% include '/_blocks/spaceSM.twig' %}
+
+        {% include '/_blocks/navigation.twig' %}
+
+        {% include '/_blocks/spaceMD.twig' %}
+
+        {% block content %}
+          {% for block in entry.blogBlocks.all() %}
+            {% include '_blogs/' ~ block.type.handle
+              with { block }
+            %}
+          {% endfor %}
+        {% endblock %}
+
+    </div>
+
+</body>
+</html>

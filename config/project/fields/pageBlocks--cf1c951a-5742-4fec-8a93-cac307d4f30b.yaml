@@ -151,6 +151,14 @@ settings:
         -
           - group
           - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 20208dd2-1f00-4c17-911c-5bf21613181f # Marquee
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null

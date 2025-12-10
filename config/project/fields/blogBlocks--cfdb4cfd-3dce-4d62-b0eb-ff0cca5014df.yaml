@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: blogBlocks
+instructions: null
+name: 'Blog Blocks'
+searchable: false
+settings:
+  createButtonLabel: 'Add Content'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 901cd1f4-fb95-4966-ace2-220aa081d9d8 # Paragraph
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: true
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,31 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 390f7f35-3009-4309-928e-7b56098ddcd3 # BlogPage
+handle: blogs
+maxAuthors: 1
+name: Blogs
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  48eabee0-5886-430a-ac24-e708a30e425a: # Filament-Boilerplate
+    enabledByDefault: true
+    hasUrls: true
+    template: blogpage.twig
+    uriFormat: 'blogs/{slug}'
+structure:
+  maxLevels: null
+  uid: f6450971-24ea-4318-8f8b-f836b2bb37fe
+type: structure

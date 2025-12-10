@@ -1,4 +1,4 @@
-dateModified: 1765243912
+dateModified: 1765327748
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -21,17 +21,22 @@ meta:
     84a55bd5-c2f1-47b7-974d-9bdb02209679: Copy # Copy
     161e35c5-199b-4d9c-b090-9dc1c61bc616: Default # Default
     0372f3ed-21a0-4fba-b318-c137111d8d27: 'Pattern Spacer' # Pattern Spacer
+    390f7f35-3009-4309-928e-7b56098ddcd3: BlogPage # BlogPage
     840e4b3e-cde9-4478-8400-f2e9f30c147c: 'Editorial Collage' # Editorial Collage
+    901cd1f4-fb95-4966-ace2-220aa081d9d8: Paragraph # Paragraph
     3158c64d-4653-44d7-8ef9-18f805862e13: exampleModule # exampleModule
     4446a9d7-df5f-441f-8d02-6cf3df460582: 'Navigation With Hero' # Navigation With Hero
     9655ee03-f1c7-4a52-b72b-f82b1e908aa7: 'Cinema Slider' # Cinema Slider
+    20208dd2-1f00-4c17-911c-5bf21613181f: Marquee # Marquee
     aa15edf9-5fc0-40cc-8eb1-570557b0c72f: StandardPage # StandardPage
     ab2a1412-8d01-4b29-a57d-80a0f008efab: Pages # Pages
     addc69ef-1366-47cc-b9aa-477cbdd76685: 'Large Hero' # Large Hero
+    b0514dd3-fb9c-4848-95ed-318cea87b2b5: Blogs # Blogs
     b49dcac4-4dca-4e71-9925-c677816d034c: 'Aside Paragraph' # Aside Paragraph
     b5253cdf-98b0-4938-9366-0b2d4914edb3: 'Billboard Split' # Billboard Split
     cac287ab-f575-4bdf-9836-b06446a54504: 'Grand Marquee' # Grand Marquee
     cf1c951a-5742-4fec-8a93-cac307d4f30b: 'Page Blocks' # Page Blocks
+    cfdb4cfd-3dce-4d62-b0eb-ff0cca5014df: 'Blog Blocks' # Blog Blocks
     ea82e941-3e2c-4cd7-bcbb-70ce15e46ac7: 'Mini Marquee' # Mini Marquee
     f5d67f5c-dd8e-4565-a1bc-e0aed82e9f75: 'Medium Spacer' # Medium Spacer
 plugins:
