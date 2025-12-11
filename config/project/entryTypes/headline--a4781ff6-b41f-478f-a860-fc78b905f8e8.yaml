@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  84ed6552-a34b-4332-a867-bb589af6d96b:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: 1d1f39a7-7bd3-4b83-b873-a5f98784f305
+        userCondition: null
+handle: headline
+hasTitleField: false
+icon: newspaper
+name: Headline
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

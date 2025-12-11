@@ -16,6 +16,46 @@ settings:
         -
           - group
           - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 52684aa2-3417-4e68-9206-d6371412031b # Quote
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - e04778ba-b214-41ff-89f1-d5be2d84be91 # Image
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - cdb1f79d-3f27-4e7f-a8ca-be2236133ea7 # Introduction
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - a4781ff6-b41f-478f-a860-fc78b905f8e8 # Headline
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 5e485214-bcce-49c6-8af4-0f5e89158d43 # Marquee
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null

@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  bfc7be06-5c8b-4617-8f1e-b815526ebebe:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: 9aed0b9f-0bc3-4c4c-b3e3-7c3ad2c15a06
+        userCondition: null
+handle: blogMarquee
+hasTitleField: false
+icon: rectangle-wide
+name: Marquee
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

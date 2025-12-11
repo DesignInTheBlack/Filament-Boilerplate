@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  693ac243-a07a-4127-94c1-bf60c26b9735:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: 8990b661-17c6-4255-9d19-68cde6a102e6
+        userCondition: null
+handle: image
+hasTitleField: false
+icon: image
+name: Image
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

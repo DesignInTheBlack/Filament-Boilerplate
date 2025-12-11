@@ -8,6 +8,7 @@ export const clientColors = {
     lightwhite:'#f3f3f3',
     gold: '#B1740F',
     gold95:'rgba(181, 141, 94, 0.95)',
-    gold50:'rgba(181, 141, 94, 0.50)'
+    gold50:'rgba(181, 141, 94, 0.50)',
+    gold25:'rgba(181, 141, 94, 0.25)'
 };
 

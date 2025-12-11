@@ -28,6 +28,7 @@
 
         {% include '/_blocks/spaceMD.twig' %}
 
+        <div class = "contain">
         {% block content %}
           {% for block in entry.blogBlocks.all() %}
             {% include '_blogs/' ~ block.type.handle
@@ -35,6 +36,7 @@
             %}
           {% endfor %}
         {% endblock %}
+        </div>
 
     </div>
 

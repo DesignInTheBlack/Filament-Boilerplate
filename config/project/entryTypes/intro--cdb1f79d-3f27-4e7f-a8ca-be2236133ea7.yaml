@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  b9afa303-580e-4488-8e51-4e1cade9dc79:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: aafca617-419f-4890-8088-83ed1b38c8eb
+        userCondition: null
+handle: intro
+hasTitleField: false
+icon: hand-wave
+name: Introduction
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

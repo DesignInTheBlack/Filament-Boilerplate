@@ -1,4 +1,4 @@
-dateModified: 1765327748
+dateModified: 1765493049
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -14,6 +14,7 @@ meta:
     1e0e84fb-9ba3-41ec-87d0-22472b8c1ae9: 'Small Spacer' # Small Spacer
     2db1f353-5cc8-40db-b2de-583a39d92a64: 'Public Schema' # Public Schema
     5bd0a3b2-88ff-464d-8c51-ae2aea23b8d1: Navigation # Navigation
+    5e485214-bcce-49c6-8af4-0f5e89158d43: Marquee # Marquee
     7eb60045-099b-4bfe-ac3a-d4d44ba037a1: 'Site Footer' # Site Footer
     8fde69fc-adc8-470f-ace8-add4c0a4de74: Announcements # Announcements
     48eabee0-5886-430a-ac24-e708a30e425a: Filament-Boilerplate # Filament-Boilerplate
@@ -28,6 +29,8 @@ meta:
     4446a9d7-df5f-441f-8d02-6cf3df460582: 'Navigation With Hero' # Navigation With Hero
     9655ee03-f1c7-4a52-b72b-f82b1e908aa7: 'Cinema Slider' # Cinema Slider
     20208dd2-1f00-4c17-911c-5bf21613181f: Marquee # Marquee
+    52684aa2-3417-4e68-9206-d6371412031b: Quote # Quote
+    a4781ff6-b41f-478f-a860-fc78b905f8e8: Headline # Headline
     aa15edf9-5fc0-40cc-8eb1-570557b0c72f: StandardPage # StandardPage
     ab2a1412-8d01-4b29-a57d-80a0f008efab: Pages # Pages
     addc69ef-1366-47cc-b9aa-477cbdd76685: 'Large Hero' # Large Hero
@@ -35,8 +38,10 @@ meta:
     b49dcac4-4dca-4e71-9925-c677816d034c: 'Aside Paragraph' # Aside Paragraph
     b5253cdf-98b0-4938-9366-0b2d4914edb3: 'Billboard Split' # Billboard Split
     cac287ab-f575-4bdf-9836-b06446a54504: 'Grand Marquee' # Grand Marquee
+    cdb1f79d-3f27-4e7f-a8ca-be2236133ea7: Introduction # Introduction
     cf1c951a-5742-4fec-8a93-cac307d4f30b: 'Page Blocks' # Page Blocks
     cfdb4cfd-3dce-4d62-b0eb-ff0cca5014df: 'Blog Blocks' # Blog Blocks
+    e04778ba-b214-41ff-89f1-d5be2d84be91: Image # Image
     ea82e941-3e2c-4cd7-bcbb-70ce15e46ac7: 'Mini Marquee' # Mini Marquee
     f5d67f5c-dd8e-4565-a1bc-e0aed82e9f75: 'Medium Spacer' # Medium Spacer
 plugins:
