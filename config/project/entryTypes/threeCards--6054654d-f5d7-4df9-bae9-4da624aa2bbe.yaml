@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  0b31d9c7-75c2-4eb7-afba-333341a0c6b4:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: 780df579-6340-44f0-818d-916dc0bfe096
+        userCondition: null
+handle: threeCards
+hasTitleField: false
+icon: cards-blank
+name: 'Three Cards'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -159,6 +159,14 @@ settings:
         -
           - group
           - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 6054654d-f5d7-4df9-bae9-4da624aa2bbe # Three Cards
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null

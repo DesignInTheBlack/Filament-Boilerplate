@@ -28,16 +28,31 @@
 
         {% include '/_blocks/spaceMD.twig' %}
 
+        {# Render only "blogMarquee" blocks outside the container #}
+        {% for block in entry.blogBlocks.type('blogMarquee').all() %}
         <div class = "contain">
-        {% block content %}
-          {% for block in entry.blogBlocks.all() %}
-            {% include '_blogs/' ~ block.type.handle
-              with { block }
-            %}
-          {% endfor %}
-        {% endblock %}
+          {% include '_blogs/blogMarquee' with { block } %}
+        </div>
+        {% endfor %}
+
+        {# Render all other blocks inside the original container structure #}
+        <div class="contain">
+          <div class = "text:essay font:regular:sans:h6">
+            {% block content %}
+              {% for block in entry.blogBlocks.all() %}
+                {% if block.type.handle != "blogMarquee" %}
+                  {% include '_blogs/' ~ block.type.handle with { block } %}
+                {% endif %}
+              {% endfor %}
+            {% endblock %}
+          </div>
         </div>
 
+
+
+     {% include '/_blocks/spaceLG.twig' %}
+     {% include '/_blocks/spacePattern.twig' %}
+     {% include '/_blocks/footer.twig' %}
     </div>
 
 </body>
