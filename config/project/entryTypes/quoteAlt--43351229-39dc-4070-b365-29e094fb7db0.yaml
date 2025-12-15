@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  21530c4a-ddaa-4f1c-8fbb-3b2d66aafafe:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: bc2acf89-1313-42ec-bd23-7b62b52ddc9f
+        userCondition: null
+handle: quoteAlt
+hasTitleField: false
+icon: quote-left
+name: Quote
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

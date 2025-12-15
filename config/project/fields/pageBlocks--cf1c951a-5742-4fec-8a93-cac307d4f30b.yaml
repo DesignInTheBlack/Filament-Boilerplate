@@ -4,7 +4,7 @@ instructions: null
 name: 'Page Blocks'
 searchable: false
 settings:
-  createButtonLabel: null
+  createButtonLabel: 'Add Elements'
   defaultIndexViewMode: cards
   enableVersioning: false
   entryTypes:
@@ -12,102 +12,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 3158c64d-4653-44d7-8ef9-18f805862e13 # exampleModule
-        -
-          - name
-          - 'Example Module'
-        -
-          - handle
-          - exampleModule
-        -
-          - description
-          - 'An example of how a module is built in Filament Boilerplate'
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
-          - 0b791488-8988-45c1-b86f-3bd2a9d0f36e # Large Spacer
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
-          - f5d67f5c-dd8e-4565-a1bc-e0aed82e9f75 # Medium Spacer
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
-          - 1e0e84fb-9ba3-41ec-87d0-22472b8c1ae9 # Small Spacer
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
-          - b49dcac4-4dca-4e71-9925-c677816d034c # Aside Paragraph
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
-          - 840e4b3e-cde9-4478-8400-f2e9f30c147c # Editorial Collage
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
-          - b5253cdf-98b0-4938-9366-0b2d4914edb3 # Billboard Split
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
-          - 0ca218cb-9082-405d-93a1-5f3fe4324099 # Editorial Columns
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
-          - 0372f3ed-21a0-4fba-b318-c137111d8d27 # Pattern Spacer
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
-          - 9655ee03-f1c7-4a52-b72b-f82b1e908aa7 # Cinema Slider
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
-          - addc69ef-1366-47cc-b9aa-477cbdd76685 # Large Hero
-        -
-          - name
-          - 'Grand Marquee'
-        -
-          - handle
-          - grandMarquee
+          - 8fde69fc-adc8-470f-ace8-add4c0a4de74 # Announcements
         -
           - group
           - General
@@ -123,23 +28,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 8fde69fc-adc8-470f-ace8-add4c0a4de74 # Announcements
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
           - 4446a9d7-df5f-441f-8d02-6cf3df460582 # Navigation With Hero
-        -
-          - group
-          - General
-    -
-      __assoc__:
-        -
-          - uid
-          - ea82e941-3e2c-4cd7-bcbb-70ce15e46ac7 # Mini Marquee
         -
           - group
           - General
@@ -155,6 +44,100 @@ settings:
       __assoc__:
         -
           - uid
+          - 0ca218cb-9082-405d-93a1-5f3fe4324099 # Editorial Columns
+        -
+          - name
+          - 'Editorial (Columns)'
+        -
+          - handle
+          - editorialColumns
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 840e4b3e-cde9-4478-8400-f2e9f30c147c # Editorial Collage
+        -
+          - name
+          - 'Editorial (Side By Side)'
+        -
+          - handle
+          - editorialSidebyside
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 0b791488-8988-45c1-b86f-3bd2a9d0f36e # Large Spacer
+        -
+          - name
+          - 'Spacer (Large)'
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - f5d67f5c-dd8e-4565-a1bc-e0aed82e9f75 # Medium Spacer
+        -
+          - name
+          - 'Spacer (Medium)'
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 1e0e84fb-9ba3-41ec-87d0-22472b8c1ae9 # Small Spacer
+        -
+          - name
+          - 'Spacer (Small)'
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 0372f3ed-21a0-4fba-b318-c137111d8d27 # Pattern Spacer
+        -
+          - name
+          - 'Spacer (Pattern)'
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 9655ee03-f1c7-4a52-b72b-f82b1e908aa7 # Cinema Slider
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - ea82e941-3e2c-4cd7-bcbb-70ce15e46ac7 # Mini Marquee
+        -
+          - name
+          - 'Marquee (Mini)'
+        -
+          - handle
+          - marqueeMini
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
           - 20208dd2-1f00-4c17-911c-5bf21613181f # Marquee
         -
           - group
@@ -163,7 +146,59 @@ settings:
       __assoc__:
         -
           - uid
+          - 7b88d50b-5f6f-4cf7-9f9d-4c8a40da91c9 # Marquee Wide
+        -
+          - name
+          - 'Marquee (Wide)'
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - addc69ef-1366-47cc-b9aa-477cbdd76685 # Large Hero
+        -
+          - name
+          - 'Marquee (Grand)'
+        -
+          - handle
+          - marqueeGrand
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 9cf0cdc6-4797-4922-937d-abaa90c55f4e # Paragraph
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 43351229-39dc-4070-b365-29e094fb7db0 # Quote
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
           - 6054654d-f5d7-4df9-bae9-4da624aa2bbe # Three Cards
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 869b188c-653d-449b-8c3d-cf1513293f4f # Column List
+        -
+          - handle
+          - blogsColumn
         -
           - group
           - General

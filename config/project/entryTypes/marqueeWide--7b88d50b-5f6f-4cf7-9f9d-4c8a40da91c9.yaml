@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  5c9df4ab-9cc8-4d4a-9581-9a5f205a31f2:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: 6ab4266b-aca8-4e94-bc2c-852898478f5a
+        userCondition: null
+handle: marqueeWide
+hasTitleField: false
+icon: display
+name: 'Marquee Wide'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

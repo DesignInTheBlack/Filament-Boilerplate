@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  0eaf631c-b9d6-4a05-a085-3d87e19d69ce:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: a4bbd8a0-812c-41e7-8e4b-327d0076aa33
+        userCondition: null
+handle: blogColumn
+hasTitleField: false
+icon: bars-staggered
+name: 'Column List'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

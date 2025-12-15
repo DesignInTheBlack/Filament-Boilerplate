@@ -4,7 +4,7 @@ instructions: null
 name: 'Blog Blocks'
 searchable: false
 settings:
-  createButtonLabel: 'Add Content'
+  createButtonLabel: 'Add Elements'
   defaultIndexViewMode: cards
   enableVersioning: false
   entryTypes:
