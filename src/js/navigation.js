@@ -1,17 +1,46 @@
 document.addEventListener("DOMContentLoaded", () => {
   const el = document.getElementById("openMenu");
-  console.log("navButton found?", el);
+  const links = document.getElementById("mobileLinks");
+  const button = document.getElementById('openButton')
+  const closeButton = document.getElementById('closeButton')
+
 
   if (!el) return;
+  let status = ""
 
-  el.addEventListener("click", () => {
-    // 1) capture current class list
-    const prevClassList = el.className; // string version (easy to store/restore)
 
-    // 2) replace it with a new class list (empty for now)
-    el.className = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 w:wScreen h:hScreen bg-color:black row:x-center:y-center pd-b:d2 pd-l:d3 /lg/ invisible ctx:end";
+  //Open State
+  button.addEventListener("click", () => {
 
-    // optional: verify
-    console.log({ prevClassList, newClassList: el.className });
+    if (status != "open") {
+      status = "open"
+      links.classList.remove('hidden')
+      button.classList.add('hidden')
+      console.log('opening!')
+      el.className = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 w:wScreen h:hScreen bg-color:black row:x-center:y-center /lg/ invisible ctx:end";
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+
+    }  
+
   });
+
+  //Close State
+  closeButton.addEventListener("click", () => {
+
+    if (status == "open") {
+      status = "close"
+      links.classList.add('hidden')
+      button.classList.remove('hidden')
+      console.log("closing!")
+      el.className = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 bd:roundbl-s6 w:c1 h:c1 bg-color:gold row:x-center:y-center pd-b:d2 pd-l:d3 /lg/ invisible ctx:end";
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    }
+
+  });
+
+
 });

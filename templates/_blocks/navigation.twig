@@ -21,7 +21,14 @@
 
 
     <div id = "openMenu" class = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 bd:roundbl-s6 w:c1 h:c1 bg-color:gold row:x-center:y-center pd-b:d2 pd-l:d3 /lg/ invisible ctx:end"> 
-    <i class="fa-solid fa-bars text:white"></i> 
+    <i id = "openButton" class="fa-solid fa-bars text:white"></i> 
+        <div id = "mobileLinks" class = "hidden w:full h:full bg-color:gold col:y-center:x-center gap:d8">
+            <i id = "closeButton" class="events:auto absolute z:10000 top:0 right:0 fa-solid fa-xmark text:white mg:d4"></i> 
+            <h2 class = "text:white font:sans:semibold">Shop</h2>
+            <h2 class = "text:white font:sans:semibold">About</h2>
+            <h2 class = "text:white font:sans:semibold">Gallery</h2> 
+            <h2 class = "text:white font:sans:semibold">Blog</h2>
+        </div>
     </div>
 
     {# <div class = "invisible h:hScreen w:wScreen bg-color:black"></div> #}
