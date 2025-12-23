@@ -9,6 +9,9 @@ import Glide from "@glidejs/glide";
 import "./paint.js";
 import "./paintflood.js";
 
+//Navigation Handling
+import "./navigation.js"
+
 // Elevate CSS
 import "../styles/elevate.css";
 import "../../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
