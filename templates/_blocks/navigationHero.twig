@@ -1,25 +1,44 @@
-<header class="ctx:navigationHero relative events:auto">
+<header class="ctx:navigationHero events:auto">
 
 
-    <div class = "contain z:1 absolute top:0 w:full">
-        <nav class = "w:full mg-t:c1 row:y-center:x-between bd-t:solid:width-d0:gold50 bd-b:solid:width-d0:gold50 pd-y:d7">   
 
+    <div class = "contain pd-t:c8 z:1 absolute top:0 w:full">
+
+
+        <nav class = "hidden w:full bd-t:solid:width-d0:gold50 bd-b:solid:width-d0:gold50 pd-y:d7 /lg/ row:y-center:x-between">   
             <div class = "row:y-center gap:c2">
                 <p class = "font:h4:fancy:bold text:white">Poured Out</p>
-                <p class = "text:lightgrey font:sans">The Art Of<br>Jessica Ellington</p> 
+                <p class = "text:lightgrey font:sans">The Art Of<br>Jessica Ellington</p>
             </div>
 
             <div class = "row:y-center gap:c2 text:white font:sans:semibold">
                 <p>Shop</p>
-                <p class = "text:gold50">|</p>
+                <p>|</p>
                 <p>About</p>
                 <p>Gallery</p>
                 <p>Blog</p> 
-                <p class = "text:white50 font:h5"><i class="fa-brands fa-square-facebook"></i></p>
-                <p class = "text:white50 font:h5"><i class="fa-brands fa-square-instagram"></i></p>
+                <p class = "text:gold50 font:h5"><i class="fa-brands fa-square-facebook"></i></p>
+                <p class = "text:gold50 font:h5"><i class="fa-brands fa-square-instagram ctx:end"></i></p>
             </div>
         </nav> 
-    </div>
+
+
+
+        <div id = "openMenu" class = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 bd:roundbl-s6 w:c1 h:c1 bg-color:gold row:x-center:y-center pd-b:d2 pd-l:d3 /lg/ invisible ctx:end"> 
+        <i id = "openButton" class="fa-solid fa-bars text:white"></i> 
+            <div id = "mobileLinks" class = "hidden w:full h:full bg-color:gold col:y-center:x-center gap:d8">
+                <i id = "closeButton" class="events:auto absolute z:10000 top:0 right:0 fa-solid fa-xmark text:white mg:d4"></i> 
+                <h2 class = "text:white font:sans:semibold">Shop</h2>
+                <h2 class = "text:white font:sans:semibold">About</h2>
+                <h2 class = "text:white font:sans:semibold">Gallery</h2> 
+                <h2 class = "text:white font:sans:semibold">Blog</h2>
+            </div>
+        </div>
+
+
+
+
+    </div>    
  
 
 
@@ -33,13 +52,13 @@
  
         <div class = "absolute z:5 w:full h:full row:x-center:y-center pd:c2">
             <div class = "w:full h:full col:x-center:y-center"> 
-                <h1 class="font:fancy:thin:h3 text:white:relaxed:center z:3">
+                <h1 class="font:fancy:thin:h5 text:white:relaxed:center z:3 /lg/ font:h3">
                     “I am still far from being what<br>
                     I want to be, but with God's<br>
                     help I shall succeed.” 
                 </h1>
 
-                 <h2 class="font:fancy:bold:h6 text:white:hug:center mg-t:d8 z:3 ctx:end">
+                 <h2 class="font:fancy:bold:base text:white:hug:center mg-t:d8 z:3 /lg/ font:h6">
                   Vincent Van Gogh
                 </h2>
                 

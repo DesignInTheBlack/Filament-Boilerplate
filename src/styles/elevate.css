@@ -459,305 +459,39 @@ flex-direction:row;
 justify-content: flex-end;
 }
 
-.ctx\:navigationHero.z\:3, .ctx\:navigationHero .z\:3 {
-z-index: 3;
-}
-
-.ctx\:navigationHero.mg-t\:d8, .ctx\:navigationHero .mg-t\:d8 {
-margin-top: 2rem;
-}
-
-.ctx\:navigationHero.text\:white\:hug\:center, .ctx\:navigationHero .text\:white\:hug\:center {
-color: #F7F7F7;
-line-height: 1.2;
-text-align: center;
-}
-
-.ctx\:navigationHero.font\:fancy\:bold\:h6, .ctx\:navigationHero .font\:fancy\:bold\:h6 {
+.font\:fancy\:bold\:base,  .font\:fancy\:bold\:base {
 font-family: Caviar, sans-serif;
 font-weight: 700;
-font-size: 1.125rem;
+font-size: 1rem;
 }
 
-.ctx\:navigationHero.text\:white\:relaxed\:center, .ctx\:navigationHero .text\:white\:relaxed\:center {
-color: #F7F7F7;
-line-height: 1.5;
-text-align: center;
-}
-
-.ctx\:navigationHero.font\:fancy\:thin\:h3, .ctx\:navigationHero .font\:fancy\:thin\:h3 {
+.font\:fancy\:thin\:h5,  .font\:fancy\:thin\:h5 {
 font-family: Caviar, sans-serif;
 font-weight: 100;
-font-size: 3rem;
+font-size: 1.5rem;
 }
 
-.ctx\:navigationHero.col\:x-center\:y-center, .ctx\:navigationHero .col\:x-center\:y-center {
-display:flex;
-flex-direction:column;
-align-items: center;
-justify-content: center;
-}
-
-.ctx\:navigationHero.h\:full, .ctx\:navigationHero .h\:full {
-height: 100%;
-}
-
-.ctx\:navigationHero.w\:full, .ctx\:navigationHero .w\:full {
-width: 100%;
-}
-
-.ctx\:navigationHero.pd\:c2, .ctx\:navigationHero .pd\:c2 {
-padding-top: 4.5rem;
-padding-left: 4.5rem;
-padding-right: 4.5rem;
-padding-bottom: 4.5rem;
-}
-
-.ctx\:navigationHero.row\:x-center\:y-center, .ctx\:navigationHero .row\:x-center\:y-center {
-display:flex;
-flex-direction:row;
-justify-content: center;
-align-items: center;
-}
-
-.ctx\:navigationHero.z\:5, .ctx\:navigationHero .z\:5 {
-z-index: 5;
-}
-
-.ctx\:navigationHero.absolute, .ctx\:navigationHero .absolute {
-position: absolute;
-}
-
-.ctx\:navigationHero.z\:2, .ctx\:navigationHero .z\:2 {
+.z\:2,  .z\:2 {
 z-index: 2;
 }
 
-.ctx\:navigationHero.top\:0, .ctx\:navigationHero .top\:0 {
-top: 0;
-}
-
-.ctx\:navigationHero.bg-attr\:no-repeat\:cover\:center, .ctx\:navigationHero .bg-attr\:no-repeat\:cover\:center {
+.bg-attr\:no-repeat\:cover\:center,  .bg-attr\:no-repeat\:cover\:center {
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 }
 
-.ctx\:navigationHero.h\:s5, .ctx\:navigationHero .h\:s5 {
+.h\:s5,  .h\:s5 {
 height: 40rem;
 }
 
-.ctx\:navigationHero.z\:0, .ctx\:navigationHero .z\:0 {
+.z\:0,  .z\:0 {
 z-index: 0;
-}
-
-.ctx\:navigationHero.relative, .ctx\:navigationHero .relative {
-position: relative;
-}
-
-.ctx\:navigationHero.font\:h5, .ctx\:navigationHero .font\:h5 {
-font-size: 1.5rem;
-}
-
-.ctx\:navigationHero.text\:white50, .ctx\:navigationHero .text\:white50 {
-color: #BABABA;
-}
-
-.ctx\:navigationHero.text\:gold50, .ctx\:navigationHero .text\:gold50 {
-color: rgba(181, 141, 94, 0.50);
-}
-
-.ctx\:navigationHero.font\:sans\:semibold, .ctx\:navigationHero .font\:sans\:semibold {
-font-family: Open Sans, sans-serif;
-font-weight: 600;
-}
-
-.ctx\:navigationHero.text\:white, .ctx\:navigationHero .text\:white {
-color: #F7F7F7;
-}
-
-.ctx\:navigationHero.gap\:c2, .ctx\:navigationHero .gap\:c2 {
-gap: 4.5rem;
-}
-
-.ctx\:navigationHero.row\:y-center, .ctx\:navigationHero .row\:y-center {
-display:flex;
-flex-direction:row;
-align-items: center;
-}
-
-.ctx\:navigationHero.font\:sans, .ctx\:navigationHero .font\:sans {
-font-family: Open Sans, sans-serif;
-}
-
-.ctx\:navigationHero.text\:lightgrey, .ctx\:navigationHero .text\:lightgrey {
-color: #BABABA;
-}
-
-.ctx\:navigationHero.font\:h4\:fancy\:bold, .ctx\:navigationHero .font\:h4\:fancy\:bold {
-font-size: 2.25rem;
-font-family: Caviar, sans-serif;
-font-weight: 700;
-}
-
-.ctx\:navigationHero.pd-y\:d7, .ctx\:navigationHero .pd-y\:d7 {
-padding-top: 1.75rem;
-padding-bottom: 1.75rem;
-}
-
-.ctx\:navigationHero.bd-b\:solid\:width-d0\:gold50, .ctx\:navigationHero .bd-b\:solid\:width-d0\:gold50 {
-border-bottom-style: solid;
-border-bottom-width: 0.125rem;
-border-bottom-color: rgba(181, 141, 94, 0.50);
-}
-
-.ctx\:navigationHero.bd-t\:solid\:width-d0\:gold50, .ctx\:navigationHero .bd-t\:solid\:width-d0\:gold50 {
-border-top-style: solid;
-border-top-width: 0.125rem;
-border-top-color: rgba(181, 141, 94, 0.50);
-}
-
-.ctx\:navigationHero.row\:y-center\:x-between, .ctx\:navigationHero .row\:y-center\:x-between {
-display:flex;
-flex-direction:row;
-align-items: center;
-justify-content: space-between;
-}
-
-.ctx\:navigationHero.mg-t\:c1, .ctx\:navigationHero .mg-t\:c1 {
-margin-top: 4rem;
-}
-
-.ctx\:navigationHero.z\:1, .ctx\:navigationHero .z\:1 {
-z-index: 1;
-}
-
-.ctx\:navigationHero.contain, .ctx\:navigationHero .contain {
-
-}
-
-.ctx\:navigationHero.events\:auto, .ctx\:navigationHero .events\:auto {
-pointer-events: auto;
-}
-
-.font\:h5,  .font\:h5 {
-font-size: 1.5rem;
-}
-
-.text\:gold50,  .text\:gold50 {
-color: rgba(181, 141, 94, 0.50);
-}
-
-.row\:y-center\:x-center,  .row\:y-center\:x-center {
-display:flex;
-flex-direction:row;
-align-items: center;
-justify-content: center;
 }
 
 .font\:sans\:semibold,  .font\:sans\:semibold {
 font-family: Open Sans, sans-serif;
 font-weight: 600;
-}
-
-.gap\:d8,  .gap\:d8 {
-gap: 2rem;
-}
-
-.col\:y-center\:x-center,  .col\:y-center\:x-center {
-display:flex;
-flex-direction:column;
-justify-content: center;
-align-items: center;
-}
-
-.font\:sans,  .font\:sans {
-font-family: Open Sans, sans-serif;
-}
-
-.text\:lightgrey,  .text\:lightgrey {
-color: #BABABA;
-}
-
-.font\:h4\:fancy\:bold,  .font\:h4\:fancy\:bold {
-font-size: 2.25rem;
-font-family: Caviar, sans-serif;
-font-weight: 700;
-}
-
-.gap\:c2,  .gap\:c2 {
-gap: 4.5rem;
-}
-
-.ctx\:navigationMobile.pd-y\:d7, .ctx\:navigationMobile .pd-y\:d7 {
-padding-top: 1.75rem;
-padding-bottom: 1.75rem;
-}
-
-.ctx\:navigationMobile.bd-b\:solid\:width-d0\:gold50, .ctx\:navigationMobile .bd-b\:solid\:width-d0\:gold50 {
-border-bottom-style: solid;
-border-bottom-width: 0.125rem;
-border-bottom-color: rgba(181, 141, 94, 0.50);
-}
-
-.ctx\:navigationMobile.bd-t\:solid\:width-d0\:gold50, .ctx\:navigationMobile .bd-t\:solid\:width-d0\:gold50 {
-border-top-style: solid;
-border-top-width: 0.125rem;
-border-top-color: rgba(181, 141, 94, 0.50);
-}
-
-.ctx\:navigationMobile.col\:y-center\:x-between, .ctx\:navigationMobile .col\:y-center\:x-between {
-display:flex;
-flex-direction:column;
-justify-content: center;
-align-items: space-between;
-}
-
-.ctx\:navigationMobile.bg-color\:gold, .ctx\:navigationMobile .bg-color\:gold {
-background-color: #B1740F;
-}
-
-.ctx\:navigationMobile.h\:full, .ctx\:navigationMobile .h\:full {
-height: 100%;
-}
-
-.ctx\:navigationMobile.w\:full, .ctx\:navigationMobile .w\:full {
-width: 100%;
-}
-
-.ctx\:navigationMobile.visible, .ctx\:navigationMobile .visible {
-visibility: visible;
-}
-
-.ctx\:navigationMobile.left\:0, .ctx\:navigationMobile .left\:0 {
-left: 0;
-}
-
-.ctx\:navigationMobile.top\:0, .ctx\:navigationMobile .top\:0 {
-top: 0;
-}
-
-.ctx\:navigationMobile.z\:100, .ctx\:navigationMobile .z\:100 {
-z-index: 100;
-}
-
-.ctx\:navigationMobile.fixed, .ctx\:navigationMobile .fixed {
-position: fixed;
-}
-
-.bg-color\:black,  .bg-color\:black {
-background-color: #1D1D1D;
-}
-
-.w\:wScreen,  .w\:wScreen {
-width: 100vw;
-}
-
-.h\:hScreen,  .h\:hScreen {
-height: 100vh;
-}
-
-.invisible,  .invisible {
-visibility: hidden;
 }
 
 .text\:white,  .text\:white {
@@ -781,6 +515,17 @@ z-index: 10000;
 
 .events\:auto,  .events\:auto {
 pointer-events: auto;
+}
+
+.gap\:d8,  .gap\:d8 {
+gap: 2rem;
+}
+
+.col\:y-center\:x-center,  .col\:y-center\:x-center {
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
 }
 
 .bg-color\:gold,  .bg-color\:gold {
@@ -846,10 +591,147 @@ visibility: visible;
 pointer-events: auto;
 }
 
-.row\:y-center,  .row\:y-center {
+.ctx\:navigationHero.font\:h5, .ctx\:navigationHero .font\:h5 {
+font-size: 1.5rem;
+}
+
+.ctx\:navigationHero.text\:gold50, .ctx\:navigationHero .text\:gold50 {
+color: rgba(181, 141, 94, 0.50);
+}
+
+.ctx\:navigationHero.font\:sans\:semibold, .ctx\:navigationHero .font\:sans\:semibold {
+font-family: Open Sans, sans-serif;
+font-weight: 600;
+}
+
+.ctx\:navigationHero.text\:white, .ctx\:navigationHero .text\:white {
+color: #F7F7F7;
+}
+
+.ctx\:navigationHero.gap\:c2, .ctx\:navigationHero .gap\:c2 {
+gap: 4.5rem;
+}
+
+.ctx\:navigationHero.row\:y-center, .ctx\:navigationHero .row\:y-center {
 display:flex;
 flex-direction:row;
 align-items: center;
+}
+
+.ctx\:navigationHero.font\:sans, .ctx\:navigationHero .font\:sans {
+font-family: Open Sans, sans-serif;
+}
+
+.ctx\:navigationHero.text\:lightgrey, .ctx\:navigationHero .text\:lightgrey {
+color: #BABABA;
+}
+
+.ctx\:navigationHero.font\:h4\:fancy\:bold, .ctx\:navigationHero .font\:h4\:fancy\:bold {
+font-size: 2.25rem;
+font-family: Caviar, sans-serif;
+font-weight: 700;
+}
+
+.ctx\:navigationHero.pd-y\:d7, .ctx\:navigationHero .pd-y\:d7 {
+padding-top: 1.75rem;
+padding-bottom: 1.75rem;
+}
+
+.ctx\:navigationHero.bd-b\:solid\:width-d0\:gold50, .ctx\:navigationHero .bd-b\:solid\:width-d0\:gold50 {
+border-bottom-style: solid;
+border-bottom-width: 0.125rem;
+border-bottom-color: rgba(181, 141, 94, 0.50);
+}
+
+.ctx\:navigationHero.bd-t\:solid\:width-d0\:gold50, .ctx\:navigationHero .bd-t\:solid\:width-d0\:gold50 {
+border-top-style: solid;
+border-top-width: 0.125rem;
+border-top-color: rgba(181, 141, 94, 0.50);
+}
+
+.ctx\:navigationHero.w\:full, .ctx\:navigationHero .w\:full {
+width: 100%;
+}
+
+.ctx\:navigationHero.hidden, .ctx\:navigationHero .hidden {
+display: none;
+}
+
+.ctx\:navigationHero.top\:0, .ctx\:navigationHero .top\:0 {
+top: 0;
+}
+
+.ctx\:navigationHero.absolute, .ctx\:navigationHero .absolute {
+position: absolute;
+}
+
+.ctx\:navigationHero.z\:1, .ctx\:navigationHero .z\:1 {
+z-index: 1;
+}
+
+.ctx\:navigationHero.pd-t\:c8, .ctx\:navigationHero .pd-t\:c8 {
+padding-top: 8rem;
+}
+
+.ctx\:navigationHero.contain, .ctx\:navigationHero .contain {
+
+}
+
+.ctx\:navigationHero.events\:auto, .ctx\:navigationHero .events\:auto {
+pointer-events: auto;
+}
+
+.ctx\:mobileButton.bg-color\:black, .ctx\:mobileButton .bg-color\:black {
+background-color: #1D1D1D;
+}
+
+.ctx\:mobileButton.h\:hScreen, .ctx\:mobileButton .h\:hScreen {
+height: 100vh;
+}
+
+.ctx\:mobileButton.w\:wScreen, .ctx\:mobileButton .w\:wScreen {
+width: 100vw;
+}
+
+.ctx\:navigationDesk.font\:h5, .ctx\:navigationDesk .font\:h5 {
+font-size: 1.5rem;
+}
+
+.ctx\:navigationDesk.text\:gold50, .ctx\:navigationDesk .text\:gold50 {
+color: rgba(181, 141, 94, 0.50);
+}
+
+.ctx\:navigationDesk.font\:sans\:semibold, .ctx\:navigationDesk .font\:sans\:semibold {
+font-family: Open Sans, sans-serif;
+font-weight: 600;
+}
+
+.ctx\:navigationDesk.text\:black, .ctx\:navigationDesk .text\:black {
+color: #1D1D1D;
+}
+
+.ctx\:navigationDesk.gap\:c2, .ctx\:navigationDesk .gap\:c2 {
+gap: 4.5rem;
+}
+
+.ctx\:navigationDesk.row\:y-center, .ctx\:navigationDesk .row\:y-center {
+display:flex;
+flex-direction:row;
+align-items: center;
+}
+
+.ctx\:navigationDesk.font\:sans, .ctx\:navigationDesk .font\:sans {
+font-family: Open Sans, sans-serif;
+}
+
+.ctx\:navigationDesk.text\:lightgrey, .ctx\:navigationDesk .text\:lightgrey {
+color: #BABABA;
+}
+
+.ctx\:navigationDesk.font\:h4\:fancy\:bold, .ctx\:navigationDesk .font\:h4\:fancy\:bold {
+font-size: 2.25rem;
+font-family: Caviar, sans-serif;
+font-weight: 700;
 }
 
 .ctx\:navigationDesk.pd-y\:d7, .ctx\:navigationDesk .pd-y\:d7 {
@@ -877,48 +759,102 @@ width: 100%;
 display: none;
 }
 
-.ctx\:grandMarquee.h\:full, .ctx\:grandMarquee .h\:full {
+.ctx\:marqueeWide.z\:3, .ctx\:marqueeWide .z\:3 {
+z-index: 3;
+}
+
+.ctx\:marqueeWide.mg-t\:d8, .ctx\:marqueeWide .mg-t\:d8 {
+margin-top: 2rem;
+}
+
+.ctx\:marqueeWide.text\:white\:hug\:center, .ctx\:marqueeWide .text\:white\:hug\:center {
+color: #F7F7F7;
+line-height: 1.2;
+text-align: center;
+}
+
+.ctx\:marqueeWide.font\:fancy\:bold\:base, .ctx\:marqueeWide .font\:fancy\:bold\:base {
+font-family: Caviar, sans-serif;
+font-weight: 700;
+font-size: 1rem;
+}
+
+.ctx\:marqueeWide.text\:white\:relaxed\:center, .ctx\:marqueeWide .text\:white\:relaxed\:center {
+color: #F7F7F7;
+line-height: 1.5;
+text-align: center;
+}
+
+.ctx\:marqueeWide.font\:fancy\:thin\:h5, .ctx\:marqueeWide .font\:fancy\:thin\:h5 {
+font-family: Caviar, sans-serif;
+font-weight: 100;
+font-size: 1.5rem;
+}
+
+.ctx\:marqueeWide.col\:x-center\:y-center, .ctx\:marqueeWide .col\:x-center\:y-center {
+display:flex;
+flex-direction:column;
+align-items: center;
+justify-content: center;
+}
+
+.ctx\:marqueeWide.h\:full, .ctx\:marqueeWide .h\:full {
 height: 100%;
 }
 
-.ctx\:grandMarquee.w\:full, .ctx\:grandMarquee .w\:full {
+.ctx\:marqueeWide.w\:full, .ctx\:marqueeWide .w\:full {
 width: 100%;
 }
 
-.ctx\:grandMarquee.z\:2, .ctx\:grandMarquee .z\:2 {
-z-index: 2;
+.ctx\:marqueeWide.pd\:c2, .ctx\:marqueeWide .pd\:c2 {
+padding-top: 4.5rem;
+padding-left: 4.5rem;
+padding-right: 4.5rem;
+padding-bottom: 4.5rem;
 }
 
-.ctx\:grandMarquee.top\:0, .ctx\:grandMarquee .top\:0 {
-top: 0;
-}
-
-.ctx\:grandMarquee.row\:x-center\:y-center, .ctx\:grandMarquee .row\:x-center\:y-center {
+.ctx\:marqueeWide.row\:x-center\:y-center, .ctx\:marqueeWide .row\:x-center\:y-center {
 display:flex;
 flex-direction:row;
 justify-content: center;
 align-items: center;
 }
 
-.ctx\:grandMarquee.bg-attr\:no-repeat\:cover\:center, .ctx\:grandMarquee .bg-attr\:no-repeat\:cover\:center {
+.ctx\:marqueeWide.z\:5, .ctx\:marqueeWide .z\:5 {
+z-index: 5;
+}
+
+.ctx\:marqueeWide.absolute, .ctx\:marqueeWide .absolute {
+position: absolute;
+}
+
+.ctx\:marqueeWide.z\:2, .ctx\:marqueeWide .z\:2 {
+z-index: 2;
+}
+
+.ctx\:marqueeWide.top\:0, .ctx\:marqueeWide .top\:0 {
+top: 0;
+}
+
+.ctx\:marqueeWide.bg-attr\:no-repeat\:cover\:center, .ctx\:marqueeWide .bg-attr\:no-repeat\:cover\:center {
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 }
 
-.ctx\:grandMarquee.h\:s5, .ctx\:grandMarquee .h\:s5 {
+.ctx\:marqueeWide.h\:s5, .ctx\:marqueeWide .h\:s5 {
 height: 40rem;
 }
 
-.ctx\:grandMarquee.z\:0, .ctx\:grandMarquee .z\:0 {
+.ctx\:marqueeWide.z\:0, .ctx\:marqueeWide .z\:0 {
 z-index: 0;
 }
 
-.ctx\:grandMarquee.relative, .ctx\:grandMarquee .relative {
+.ctx\:marqueeWide.relative, .ctx\:marqueeWide .relative {
 position: relative;
 }
 
-.ctx\:grandMarquee.events\:auto, .ctx\:grandMarquee .events\:auto {
+.ctx\:marqueeWide.events\:auto, .ctx\:marqueeWide .events\:auto {
 pointer-events: auto;
 }
 
@@ -959,22 +895,113 @@ position: relative;
 pointer-events: auto;
 }
 
-.ctx\:grandMarquee.h\:s3, .ctx\:grandMarquee .h\:s3 {
-height: 32rem;
+.ctx\:grandMarquee.h\:full, .ctx\:grandMarquee .h\:full {
+height: 100%;
 }
 
-.bg-attr\:no-repeat\:cover\:center,  .bg-attr\:no-repeat\:cover\:center {
+.ctx\:grandMarquee.w\:full, .ctx\:grandMarquee .w\:full {
+width: 100%;
+}
+
+.ctx\:grandMarquee.z\:2, .ctx\:grandMarquee .z\:2 {
+z-index: 2;
+}
+
+.ctx\:grandMarquee.top\:0, .ctx\:grandMarquee .top\:0 {
+top: 0;
+}
+
+.ctx\:grandMarquee.row\:x-center\:y-center, .ctx\:grandMarquee .row\:x-center\:y-center {
+display:flex;
+flex-direction:row;
+justify-content: center;
+align-items: center;
+}
+
+.ctx\:grandMarquee.bg-attr\:no-repeat\:cover\:center, .ctx\:grandMarquee .bg-attr\:no-repeat\:cover\:center {
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 }
 
-.h\:s4,  .h\:s4 {
-height: 36rem;
+.ctx\:grandMarquee.h\:s3, .ctx\:grandMarquee .h\:s3 {
+height: 32rem;
 }
 
-.z\:0,  .z\:0 {
+.ctx\:grandMarquee.z\:0, .ctx\:grandMarquee .z\:0 {
 z-index: 0;
+}
+
+.ctx\:grandMarquee.relative, .ctx\:grandMarquee .relative {
+position: relative;
+}
+
+.ctx\:grandMarquee.events\:auto, .ctx\:grandMarquee .events\:auto {
+pointer-events: auto;
+}
+
+.mg-t\:d6,  .mg-t\:d6 {
+margin-top: 1.5rem;
+}
+
+.pd\:d10,  .pd\:d10 {
+padding-top: 2.5rem;
+padding-left: 2.5rem;
+padding-right: 2.5rem;
+padding-bottom: 2.5rem;
+}
+
+.ctx\:marquee.h\:full, .ctx\:marquee .h\:full {
+height: 100%;
+}
+
+.ctx\:marquee.w\:full, .ctx\:marquee .w\:full {
+width: 100%;
+}
+
+.ctx\:marquee.z\:2, .ctx\:marquee .z\:2 {
+z-index: 2;
+}
+
+.ctx\:marquee.top\:0, .ctx\:marquee .top\:0 {
+top: 0;
+}
+
+.ctx\:marquee.row\:x-center\:y-center, .ctx\:marquee .row\:x-center\:y-center {
+display:flex;
+flex-direction:row;
+justify-content: center;
+align-items: center;
+}
+
+.ctx\:marquee.bg-attr\:no-repeat\:cover\:center, .ctx\:marquee .bg-attr\:no-repeat\:cover\:center {
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+.ctx\:marquee.h\:s3, .ctx\:marquee .h\:s3 {
+height: 32rem;
+}
+
+.ctx\:marquee.z\:0, .ctx\:marquee .z\:0 {
+z-index: 0;
+}
+
+.ctx\:marquee.relative, .ctx\:marquee .relative {
+position: relative;
+}
+
+.ctx\:marquee.events\:auto, .ctx\:marquee .events\:auto {
+pointer-events: auto;
+}
+
+.bg-color\:black,  .bg-color\:black {
+background-color: #1D1D1D;
+}
+
+.h\:s4,  .h\:s4 {
+height: 36rem;
 }
 
 .ctx\:editorialColumn3.font\:regular\:sans\:h6, .ctx\:editorialColumn3 .font\:regular\:sans\:h6 {
@@ -1116,10 +1143,6 @@ flex-wrap: FlexWrapRule;
 
 .ctx\:editorialThreeCol.contain, .ctx\:editorialThreeCol .contain {
 
-}
-
-.mg-t\:d6,  .mg-t\:d6 {
-margin-top: 1.5rem;
 }
 
 .bg-color\:grey,  .bg-color\:grey {
@@ -1267,22 +1290,48 @@ flex-direction:row;
 align-items: center;
 }
 
-.font\:fancy\:h3\:bold,  .font\:fancy\:h3\:bold {
+.ctx\:blogsColumn.text\:lightgrey, .ctx\:blogsColumn .text\:lightgrey {
+color: #BABABA;
+}
+
+.ctx\:blogsColumn.font\:fancy\:h3\:bold, .ctx\:blogsColumn .font\:fancy\:h3\:bold {
 font-family: Caviar, sans-serif;
 font-size: 3rem;
 font-weight: 700;
 }
 
-.text\:darkgrey\:relaxed,  .text\:darkgrey\:relaxed {
+.ctx\:blogsColumn.text\:darkgrey\:relaxed, .ctx\:blogsColumn .text\:darkgrey\:relaxed {
 color: #383838;
 line-height: 1.5;
 }
 
-.h\:auto,  .h\:auto {
+.ctx\:blogsColumn.h\:auto, .ctx\:blogsColumn .h\:auto {
 height: auto;
 }
 
-.row,  .row {
+.ctx\:blogsColumn.col, .ctx\:blogsColumn .col {
+display:flex;
+flex-direction:column;
+align-items: x;
+justify-content: y;
+flex-wrap: FlexWrapRule;
+}
+
+.ctx\:blogsColumn.contain, .ctx\:blogsColumn .contain {
+
+}
+
+.ctx\:blogsColumn.pd-y\:c10, .ctx\:blogsColumn .pd-y\:c10 {
+padding-top: 10rem;
+padding-bottom: 10rem;
+}
+
+.ctx\:blogsColumn.events\:auto, .ctx\:blogsColumn .events\:auto {
+pointer-events: auto;
+}
+
+@media only screen and (min-width:64rem) {
+.ctx\:blogsColumn.row, .ctx\:blogsColumn .row {
 display:flex;
 flex-direction:row;
 justify-content: x;
@@ -1290,12 +1339,6 @@ align-items: y;
 flex-wrap: FlexWrapRule;
 }
 
-.pd-y\:c10,  .pd-y\:c10 {
-padding-top: 10rem;
-padding-bottom: 10rem;
-}
-
-@media only screen and (min-width:64rem) {
 .ctx\:listing1.h\:auto, .ctx\:listing1 .h\:auto {
 height: auto;
 }
@@ -1466,8 +1509,20 @@ flex-wrap: FlexWrapRule;
 gap: 2rem;
 }
 
-.ctx\:Marquee.h\:s6, .ctx\:Marquee .h\:s6 {
+.ctx\:marquee.h\:s6, .ctx\:marquee .h\:s6 {
 height: 48rem;
+}
+
+.mg-t\:d10,  .mg-t\:d10 {
+margin-top: 2.5rem;
+}
+
+.font\:h3,  .font\:h3 {
+font-size: 3rem;
+}
+
+.font\:h6,  .font\:h6 {
+font-size: 1.125rem;
 }
 
 .ctx\:grandMarquee.h\:s8, .ctx\:grandMarquee .h\:s8 {
@@ -1476,6 +1531,18 @@ height: 60rem;
 
 .ctx\:miniMarquee.h\:s4, .ctx\:miniMarquee .h\:s4 {
 height: 36rem;
+}
+
+.ctx\:marqueeWide.h\:s8, .ctx\:marqueeWide .h\:s8 {
+height: 60rem;
+}
+
+.ctx\:marqueeWide.font\:h3, .ctx\:marqueeWide .font\:h3 {
+font-size: 3rem;
+}
+
+.ctx\:marqueeWide.font\:h6, .ctx\:marqueeWide .font\:h6 {
+font-size: 1.125rem;
 }
 
 .ctx\:navigationDesk.row\:y-center\:x-between, .ctx\:navigationDesk .row\:y-center\:x-between {
@@ -1489,12 +1556,19 @@ justify-content: space-between;
 visibility: hidden;
 }
 
-.ctx\:navigationMobile.invisible, .ctx\:navigationMobile .invisible {
-visibility: hidden;
+.ctx\:navigationHero.row\:y-center\:x-between, .ctx\:navigationHero .row\:y-center\:x-between {
+display:flex;
+flex-direction:row;
+align-items: center;
+justify-content: space-between;
 }
 
-.ctx\:navigationHero.h\:s8, .ctx\:navigationHero .h\:s8 {
+.h\:s8,  .h\:s8 {
 height: 60rem;
+}
+
+.ctx\:Marquee.h\:s6, .ctx\:Marquee .h\:s6 {
+height: 48rem;
 }
 
 }
