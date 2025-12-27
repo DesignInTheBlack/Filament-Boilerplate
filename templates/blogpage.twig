@@ -12,7 +12,7 @@
   
 </head>
 
-<body class="relative">
+<body class="ctx:blogPage relative">
 
 
 <canvas class = "absolute w:full h:full top:0 left:0 z:0.0 opacity:0.95"></canvas>
@@ -36,7 +36,7 @@
         {% endfor %}
 
         {# Render all other blocks inside the original container structure #}
-        <div class="contain">
+        <div class="contain row:x-center">
           <div class = "text:essay font:regular:sans:h6">
             {% block content %}
               {% for block in entry.blogBlocks.all() %}
@@ -46,6 +46,22 @@
               {% endfor %}
             {% endblock %}
           </div>
+          
+
+
+
+          <div class = "hidden /lg/ block h:0 w:full sticky top:d8">
+
+              <div class = "row:x-center">
+                  <div class = "w:full text:full font:h6 aspect:landscape ctx:end" style = "background-image:url('https://placehold.co/600x400?text=Sticky');background-size:cover;background-position:center">
+
+                  </div>
+              </div>
+
+          </div> 
+
+
+
         </div>
 
 

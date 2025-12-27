@@ -188,18 +188,115 @@ width: 100%;
 position: absolute;
 }
 
+.ctx\:blogPage.aspect\:landscape, .ctx\:blogPage .aspect\:landscape {
+aspect-ratio: 16/10;
+}
+
+.ctx\:blogPage.font\:h6, .ctx\:blogPage .font\:h6 {
+font-size: 1.125rem;
+}
+
+.ctx\:blogPage.text\:full, .ctx\:blogPage .text\:full {
+max-width: 80ch;
+}
+
+.ctx\:blogPage.w\:full, .ctx\:blogPage .w\:full {
+width: 100%;
+}
+
+.ctx\:blogPage.row\:x-center, .ctx\:blogPage .row\:x-center {
+display:flex;
+flex-direction:row;
+justify-content: center;
+}
+
+.ctx\:blogPage.hidden, .ctx\:blogPage .hidden {
+display: none;
+}
+
+.ctx\:blogPage.font\:regular\:sans\:h6, .ctx\:blogPage .font\:regular\:sans\:h6 {
+font-weight: 400;
+font-family: Open Sans, sans-serif;
+font-size: 1.125rem;
+}
+
+.ctx\:blogPage.text\:essay, .ctx\:blogPage .text\:essay {
+max-width: 75ch;
+}
+
+.ctx\:blogPage.contain, .ctx\:blogPage .contain {
+
+}
+
+.ctx\:blogPage.events\:none, .ctx\:blogPage .events\:none {
+pointer-events: none;
+}
+
+.ctx\:blogPage.z\:1, .ctx\:blogPage .z\:1 {
+z-index: 1;
+}
+
+.ctx\:blogPage.relative, .ctx\:blogPage .relative {
+position: relative;
+}
+
+.ctx\:blogPage.opacity\:0\.95, .ctx\:blogPage .opacity\:0\.95 {
+opacity: 0.95;
+}
+
+.ctx\:blogPage.z\:0\.0, .ctx\:blogPage .z\:0\.0 {
+z-index: 0;
+}
+
+.ctx\:blogPage.left\:0, .ctx\:blogPage .left\:0 {
+left: 0;
+}
+
+.ctx\:blogPage.top\:0, .ctx\:blogPage .top\:0 {
+top: 0;
+}
+
+.ctx\:blogPage.h\:full, .ctx\:blogPage .h\:full {
+height: 100%;
+}
+
+.ctx\:blogPage.absolute, .ctx\:blogPage .absolute {
+position: absolute;
+}
+
+.h\:auto,  .h\:auto {
+height: auto;
+}
+
+.w\:d12,  .w\:d12 {
+width: 3rem;
+}
+
 .font\:regular\:sans\:h6,  .font\:regular\:sans\:h6 {
 font-weight: 400;
 font-family: Open Sans, sans-serif;
 font-size: 1.125rem;
 }
 
-.text\:essay,  .text\:essay {
-max-width: 75ch;
+.text\:left\:spacious\:grey,  .text\:left\:spacious\:grey {
+text-align: left;
+line-height: 1.7;
+color: #8D8D8D;
 }
 
-.contain,  .contain {
+.pd-b\:d8,  .pd-b\:d8 {
+padding-bottom: 2rem;
+}
 
+.pd-t\:d6,  .pd-t\:d6 {
+padding-top: 1.5rem;
+}
+
+.col\:x-start\:y-center,  .col\:x-start\:y-center {
+display:flex;
+flex-direction:column;
+align-items: flex-start;
+justify-content: center;
 }
 
 .text\:grey,  .text\:grey {
@@ -255,12 +352,6 @@ padding-top: 4.5rem;
 padding-bottom: 4.5rem;
 }
 
-.text\:left\:spacious\:grey,  .text\:left\:spacious\:grey {
-text-align: left;
-line-height: 1.7;
-color: #8D8D8D;
-}
-
 .pd-y\:d4,  .pd-y\:d4 {
 padding-top: 1rem;
 padding-bottom: 1rem;
@@ -311,10 +402,6 @@ line-height: 1.6;
 color: #1D1D1D;
 }
 
-.pd-b\:d8,  .pd-b\:d8 {
-padding-bottom: 2rem;
-}
-
 .pd-t\:c2,  .pd-t\:c2 {
 padding-top: 4.5rem;
 }
@@ -333,10 +420,10 @@ line-height: 1.2;
 text-align: center;
 }
 
-.font\:fancy\:bold\:h6,  .font\:fancy\:bold\:h6 {
+.font\:fancy\:bold\:base,  .font\:fancy\:bold\:base {
 font-family: Caviar, sans-serif;
 font-weight: 700;
-font-size: 1.125rem;
+font-size: 1rem;
 }
 
 .text\:white\:relaxed\:center,  .text\:white\:relaxed\:center {
@@ -345,10 +432,10 @@ line-height: 1.5;
 text-align: center;
 }
 
-.font\:fancy\:thin\:h3,  .font\:fancy\:thin\:h3 {
+.font\:fancy\:thin\:h5,  .font\:fancy\:thin\:h5 {
 font-family: Caviar, sans-serif;
 font-weight: 100;
-font-size: 3rem;
+font-size: 1.5rem;
 }
 
 .col\:x-center\:y-center,  .col\:x-center\:y-center {
@@ -364,11 +451,11 @@ border-width: 0.125rem;
 border-color: rgba(181, 141, 94, 0.95);
 }
 
-.pd\:c2,  .pd\:c2 {
-padding-top: 4.5rem;
-padding-left: 4.5rem;
-padding-right: 4.5rem;
-padding-bottom: 4.5rem;
+.pd\:d10,  .pd\:d10 {
+padding-top: 2.5rem;
+padding-left: 2.5rem;
+padding-right: 2.5rem;
+padding-bottom: 2.5rem;
 }
 
 .row\:x-center\:y-center,  .row\:x-center\:y-center {
@@ -453,22 +540,32 @@ padding-bottom: 2.25rem;
 height: 9rem;
 }
 
+.text\:essay,  .text\:essay {
+max-width: 75ch;
+}
+
 .row\:x-end,  .row\:x-end {
 display:flex;
 flex-direction:row;
 justify-content: flex-end;
 }
 
-.font\:fancy\:bold\:base,  .font\:fancy\:bold\:base {
-font-family: Caviar, sans-serif;
-font-weight: 700;
-font-size: 1rem;
+.contain,  .contain {
+
 }
 
-.font\:fancy\:thin\:h5,  .font\:fancy\:thin\:h5 {
-font-family: Caviar, sans-serif;
-font-weight: 100;
-font-size: 1.5rem;
+.text\:white\:relaxed\:center\:blob,  .text\:white\:relaxed\:center\:blob {
+color: #F7F7F7;
+line-height: 1.5;
+text-align: center;
+max-width: 35ch;
+}
+
+.pd\:c2,  .pd\:c2 {
+padding-top: 4.5rem;
+padding-left: 4.5rem;
+padding-right: 4.5rem;
+padding-bottom: 4.5rem;
 }
 
 .z\:2,  .z\:2 {
@@ -895,6 +992,18 @@ position: relative;
 pointer-events: auto;
 }
 
+.font\:fancy\:bold\:h6,  .font\:fancy\:bold\:h6 {
+font-family: Caviar, sans-serif;
+font-weight: 700;
+font-size: 1.125rem;
+}
+
+.font\:fancy\:thin\:h3,  .font\:fancy\:thin\:h3 {
+font-family: Caviar, sans-serif;
+font-weight: 100;
+font-size: 3rem;
+}
+
 .ctx\:grandMarquee.h\:full, .ctx\:grandMarquee .h\:full {
 height: 100%;
 }
@@ -942,13 +1051,6 @@ pointer-events: auto;
 
 .mg-t\:d6,  .mg-t\:d6 {
 margin-top: 1.5rem;
-}
-
-.pd\:d10,  .pd\:d10 {
-padding-top: 2.5rem;
-padding-left: 2.5rem;
-padding-right: 2.5rem;
-padding-bottom: 2.5rem;
 }
 
 .ctx\:marquee.h\:full, .ctx\:marquee .h\:full {
@@ -1569,6 +1671,26 @@ height: 60rem;
 
 .ctx\:Marquee.h\:s6, .ctx\:Marquee .h\:s6 {
 height: 48rem;
+}
+
+.ctx\:blogPage.block, .ctx\:blogPage .block {
+display: block;
+}
+
+.ctx\:blogPage.h\:0, .ctx\:blogPage .h\:0 {
+height: 0;
+}
+
+.ctx\:blogPage.w\:full, .ctx\:blogPage .w\:full {
+width: 100%;
+}
+
+.ctx\:blogPage.sticky, .ctx\:blogPage .sticky {
+position: sticky;
+}
+
+.ctx\:blogPage.top\:d8, .ctx\:blogPage .top\:d8 {
+top: 2rem;
 }
 
 }

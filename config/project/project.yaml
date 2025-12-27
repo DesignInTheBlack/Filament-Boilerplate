@@ -1,4 +1,4 @@
-dateModified: 1765757777
+dateModified: 1766796301
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -12,15 +12,22 @@ meta:
     0b791488-8988-45c1-b86f-3bd2a9d0f36e: 'Large Spacer' # Large Spacer
     0ca218cb-9082-405d-93a1-5f3fe4324099: 'Editorial Columns' # Editorial Columns
     1e0e84fb-9ba3-41ec-87d0-22472b8c1ae9: 'Small Spacer' # Small Spacer
+    02bb2a8f-74c7-4c41-9cff-783b9f3eba9d: Author # Author
     2db1f353-5cc8-40db-b2de-583a39d92a64: 'Public Schema' # Public Schema
+    3a4d3adf-4ddc-4282-ac31-343b314828c4: 'Third Paragraph' # Third Paragraph
+    3e34b7dc-42a3-4865-9e9c-001b4eb654af: "Author's Title" # Author's Title
     5bd0a3b2-88ff-464d-8c51-ae2aea23b8d1: Navigation # Navigation
     5e485214-bcce-49c6-8af4-0f5e89158d43: Marquee # Marquee
     7b88d50b-5f6f-4cf7-9f9d-4c8a40da91c9: 'Marquee Wide' # Marquee Wide
     7eb60045-099b-4bfe-ac3a-d4d44ba037a1: 'Site Footer' # Site Footer
+    8aee16ba-55f9-4669-9657-c5cfe6a5d3d3: 'Follow Image' # Follow Image
     8fde69fc-adc8-470f-ace8-add4c0a4de74: Announcements # Announcements
+    9c674c15-6e9e-481d-bfbe-8945a1804194: 'First Paragraph' # First Paragraph
     9cf0cdc6-4797-4922-937d-abaa90c55f4e: Paragraph # Paragraph
+    14d9aa12-2674-4406-bb17-8474714159c7: Subheading # Subheading
     48eabee0-5886-430a-ac24-e708a30e425a: Filament-Boilerplate # Filament-Boilerplate
     72cc4092-dce2-4057-a061-5bf104dd7d96: Filament-Boilerplate # Filament-Boilerplate
+    77eca617-e8ed-4e88-b7fb-12bb67300759: 'Second Paragraph' # Second Paragraph
     84a55bd5-c2f1-47b7-974d-9bdb02209679: Copy # Copy
     161e35c5-199b-4d9c-b090-9dc1c61bc616: Default # Default
     0372f3ed-21a0-4fba-b318-c137111d8d27: 'Pattern Spacer' # Pattern Spacer
@@ -33,23 +40,34 @@ meta:
     9655ee03-f1c7-4a52-b72b-f82b1e908aa7: 'Cinema Slider' # Cinema Slider
     20208dd2-1f00-4c17-911c-5bf21613181f: Marquee # Marquee
     52684aa2-3417-4e68-9206-d6371412031b: Quote # Quote
+    271526fc-7b30-4ed4-8641-c83754a371c7: Closing # Closing
     6054654d-f5d7-4df9-bae9-4da624aa2bbe: 'Three Cards' # Three Cards
+    8643638c-be2b-4c9a-8fc0-0091e360deb7: 'Paragraph Text' # Paragraph Text
     43351229-39dc-4070-b365-29e094fb7db0: Quote # Quote
+    a06cf119-1a9b-45ce-b0fd-86eeb6b1ee57: Heading # Heading
     a4781ff6-b41f-478f-a860-fc78b905f8e8: Headline # Headline
     aa15edf9-5fc0-40cc-8eb1-570557b0c72f: StandardPage # StandardPage
     ab2a1412-8d01-4b29-a57d-80a0f008efab: Pages # Pages
     addc69ef-1366-47cc-b9aa-477cbdd76685: 'Large Hero' # Large Hero
+    b0425f19-189b-432e-a981-4fccc8ecd8f9: Quote # Quote
     b0514dd3-fb9c-4848-95ed-318cea87b2b5: Blogs # Blogs
     b49dcac4-4dca-4e71-9925-c677816d034c: 'Aside Paragraph' # Aside Paragraph
     b5253cdf-98b0-4938-9366-0b2d4914edb3: 'Billboard Split' # Billboard Split
+    bffade2e-a26c-4f6d-b1f3-ba11be0c25c6: Simple # Simple
+    c3b1d63c-af69-45ad-ae0c-9b47a6c0c027: Headline # Headline
     cac287ab-f575-4bdf-9836-b06446a54504: 'Grand Marquee' # Grand Marquee
     cdb1f79d-3f27-4e7f-a8ca-be2236133ea7: Introduction # Introduction
     cf1c951a-5742-4fec-8a93-cac307d4f30b: 'Page Blocks' # Page Blocks
     cfdb4cfd-3dce-4d62-b0eb-ff0cca5014df: 'Blog Blocks' # Blog Blocks
     e04778ba-b214-41ff-89f1-d5be2d84be91: Image # Image
     ea82e941-3e2c-4cd7-bcbb-70ce15e46ac7: 'Mini Marquee' # Mini Marquee
+    ec5addeb-6b15-4f51-8053-6cb8a33a63a7: Signature # Signature
     f5d67f5c-dd8e-4565-a1bc-e0aed82e9f75: 'Medium Spacer' # Medium Spacer
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
   cp-css:
     edition: standard
     enabled: true

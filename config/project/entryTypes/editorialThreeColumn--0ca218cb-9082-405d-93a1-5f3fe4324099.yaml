@@ -6,6 +6,75 @@ fieldLayouts:
     tabs:
       -
         elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-12-26T16:25:58+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a06cf119-1a9b-45ce-b0fd-86eeb6b1ee57 # Heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 053a0331-7f87-4be4-ae65-b2b34ac383f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-26T16:29:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 9c674c15-6e9e-481d-bfbe-8945a1804194 # First Paragraph
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'First Paragraph'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 819b629a-9afc-4d8f-83e3-58db38257789
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-26T16:29:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 77eca617-e8ed-4e88-b7fb-12bb67300759 # Second Paragraph
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 30689957-b8de-4450-a69d-008fcdfadef9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-26T16:29:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 3a4d3adf-4ddc-4282-ac31-343b314828c4 # Third Paragraph
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8905bcde-7116-46b4-b9b5-98a19de7039b
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 126465ae-b60f-47b0-b5b0-87a7a56414b7
         userCondition: null

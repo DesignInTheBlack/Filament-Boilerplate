@@ -6,6 +6,41 @@ fieldLayouts:
     tabs:
       -
         elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-12-26T16:40:01+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a06cf119-1a9b-45ce-b0fd-86eeb6b1ee57 # Heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2ff1051f-25bb-42f0-af3e-54c78ae4ac0f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-26T16:40:01+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 14d9aa12-2674-4406-bb17-8474714159c7 # Subheading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8765af05-1926-4fa6-a377-8ec9b8652a2f
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 9aed0b9f-0bc3-4c4c-b3e3-7c3ad2c15a06
         userCondition: null

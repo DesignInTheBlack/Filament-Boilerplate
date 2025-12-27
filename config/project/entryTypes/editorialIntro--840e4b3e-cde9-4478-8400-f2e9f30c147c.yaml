@@ -6,6 +6,58 @@ fieldLayouts:
     tabs:
       -
         elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-12-26T16:30:29+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a06cf119-1a9b-45ce-b0fd-86eeb6b1ee57 # Heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a2291d67-b187-49cf-9210-5c26daf6ef25
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-26T16:30:29+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 9c674c15-6e9e-481d-bfbe-8945a1804194 # First Paragraph
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a9a22ffe-97bf-4e0f-a710-2b47349960af
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-26T16:30:29+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 77eca617-e8ed-4e88-b7fb-12bb67300759 # Second Paragraph
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ddbbe41b-0f35-4b67-ac17-686f18c53fea
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: bcd46de9-a5a2-4211-842d-9156a7c72b92
         userCondition: null

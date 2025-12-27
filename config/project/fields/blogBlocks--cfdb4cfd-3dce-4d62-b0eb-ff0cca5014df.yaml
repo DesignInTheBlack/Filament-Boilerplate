@@ -56,6 +56,22 @@ settings:
         -
           - group
           - General
+    -
+      __assoc__:
+        -
+          - uid
+          - ec5addeb-6b15-4f51-8053-6cb8a33a63a7 # Signature
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 8aee16ba-55f9-4669-9657-c5cfe6a5d3d3 # Follow Image
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null

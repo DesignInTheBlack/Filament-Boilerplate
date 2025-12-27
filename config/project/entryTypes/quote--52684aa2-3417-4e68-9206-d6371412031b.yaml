@@ -6,6 +6,58 @@ fieldLayouts:
     tabs:
       -
         elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-12-26T16:50:56+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b0425f19-189b-432e-a981-4fccc8ecd8f9 # Quote
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bb87ffb5-da03-4f44-9d13-7fa7e30f1dc6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-26T16:50:56+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 02bb2a8f-74c7-4c41-9cff-783b9f3eba9d # Author
+            handle: authorName
+            includeInCards: false
+            instructions: null
+            label: "Author's Name"
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e65cc7d7-96f7-4fe8-bcd7-f4b714fed7f5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-26T17:02:11+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 3e34b7dc-42a3-4865-9e9c-001b4eb654af # Author's Title
+            handle: authorTitle
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8610c82b-af82-472c-b4af-cfcdcd5e74cf
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 8f876af5-2a6f-45a2-b2f7-7e91a8a6ebdf
         userCondition: null

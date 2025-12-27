@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  17999d23-5d6d-4ffb-b77f-7fdefacfa9e7:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: 069d2d49-fbaf-479d-98b8-6a52cb246f02
+        userCondition: null
+handle: followImage
+hasTitleField: false
+icon: image
+name: 'Follow Image'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
