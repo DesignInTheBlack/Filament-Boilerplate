@@ -1,4 +1,4 @@
-dateModified: 1766796301
+dateModified: 1766947225
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -7,6 +7,21 @@ email:
   transportSettings:
     command: '/usr/local/bin/mailpit sendmail -t --smtp-addr 127.0.0.1:1025'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  pouredOutAssets:
+    hasUrls: true
+    name: 'Poured Out Assets'
+    settings:
+      cdnUrlPattern: ''
+      customSubfolder: ''
+      makeUploadsPublic: true
+      optimisePrefix: ''
+      optimiseUrlPattern: ''
+      projectSlug: ''
+      securityKey: ''
+      subfolder: local/
+    type: servd\AssetStorage\AssetsPlatform\Fs
+    url: 'https://keen-barbet.files.svdcdn.com'
 meta:
   __names__:
     0b791488-8988-45c1-b86f-3bd2a9d0f36e: 'Large Spacer' # Large Spacer
@@ -18,14 +33,18 @@ meta:
     3e34b7dc-42a3-4865-9e9c-001b4eb654af: "Author's Title" # Author's Title
     5bd0a3b2-88ff-464d-8c51-ae2aea23b8d1: Navigation # Navigation
     5e485214-bcce-49c6-8af4-0f5e89158d43: Marquee # Marquee
+    7a3cf3e9-179e-4cbe-bc17-1857335d6fa5: '2nd Image' # 2nd Image
     7b88d50b-5f6f-4cf7-9f9d-4c8a40da91c9: 'Marquee Wide' # Marquee Wide
     7eb60045-099b-4bfe-ac3a-d4d44ba037a1: 'Site Footer' # Site Footer
-    8aee16ba-55f9-4669-9657-c5cfe6a5d3d3: 'Follow Image' # Follow Image
     8fde69fc-adc8-470f-ace8-add4c0a4de74: Announcements # Announcements
     9c674c15-6e9e-481d-bfbe-8945a1804194: 'First Paragraph' # First Paragraph
     9cf0cdc6-4797-4922-937d-abaa90c55f4e: Paragraph # Paragraph
     14d9aa12-2674-4406-bb17-8474714159c7: Subheading # Subheading
+    15ae5794-eb4a-4a75-b271-9d44b8612a74: '5th Image' # 5th Image
+    31fe2c30-be09-4ce5-af27-39cdfec7f12d: 'Scrolling Image' # Scrolling Image
+    42a50e3b-7d07-410d-a585-dec58552a102: 'Preview Image' # Preview Image
     48eabee0-5886-430a-ac24-e708a30e425a: Filament-Boilerplate # Filament-Boilerplate
+    51d4c03c-2317-443b-860f-1fbd1232e534: Description # Description
     72cc4092-dce2-4057-a061-5bf104dd7d96: Filament-Boilerplate # Filament-Boilerplate
     77eca617-e8ed-4e88-b7fb-12bb67300759: 'Second Paragraph' # Second Paragraph
     84a55bd5-c2f1-47b7-974d-9bdb02209679: Copy # Copy
@@ -35,12 +54,13 @@ meta:
     840e4b3e-cde9-4478-8400-f2e9f30c147c: 'Editorial Collage' # Editorial Collage
     869b188c-653d-449b-8c3d-cf1513293f4f: 'Column List' # Column List
     901cd1f4-fb95-4966-ace2-220aa081d9d8: Paragraph # Paragraph
-    3158c64d-4653-44d7-8ef9-18f805862e13: exampleModule # exampleModule
+    975b8327-89b8-42ca-b5aa-e291d9f9677c: '3rd Image' # 3rd Image
     4446a9d7-df5f-441f-8d02-6cf3df460582: 'Navigation With Hero' # Navigation With Hero
     9655ee03-f1c7-4a52-b72b-f82b1e908aa7: 'Cinema Slider' # Cinema Slider
     20208dd2-1f00-4c17-911c-5bf21613181f: Marquee # Marquee
     52684aa2-3417-4e68-9206-d6371412031b: Quote # Quote
     271526fc-7b30-4ed4-8641-c83754a371c7: Closing # Closing
+    289828ba-e105-446f-8deb-d5509101d02b: Image # Image
     6054654d-f5d7-4df9-bae9-4da624aa2bbe: 'Three Cards' # Three Cards
     8643638c-be2b-4c9a-8fc0-0091e360deb7: 'Paragraph Text' # Paragraph Text
     43351229-39dc-4070-b365-29e094fb7db0: Quote # Quote
@@ -55,13 +75,16 @@ meta:
     b5253cdf-98b0-4938-9366-0b2d4914edb3: 'Billboard Split' # Billboard Split
     bffade2e-a26c-4f6d-b1f3-ba11be0c25c6: Simple # Simple
     c3b1d63c-af69-45ad-ae0c-9b47a6c0c027: Headline # Headline
+    ca591ad2-56c3-4369-aa63-797cddbea65e: Assets # Assets
     cac287ab-f575-4bdf-9836-b06446a54504: 'Grand Marquee' # Grand Marquee
     cdb1f79d-3f27-4e7f-a8ca-be2236133ea7: Introduction # Introduction
     cf1c951a-5742-4fec-8a93-cac307d4f30b: 'Page Blocks' # Page Blocks
     cfdb4cfd-3dce-4d62-b0eb-ff0cca5014df: 'Blog Blocks' # Blog Blocks
+    daaf0a23-3781-475b-9c1d-145b15108605: '4th Image' # 4th Image
     e04778ba-b214-41ff-89f1-d5be2d84be91: Image # Image
     ea82e941-3e2c-4cd7-bcbb-70ce15e46ac7: 'Mini Marquee' # Mini Marquee
     ec5addeb-6b15-4f51-8053-6cb8a33a63a7: Signature # Signature
+    ed8ea969-93fd-40e4-a6eb-0823c41e2c93: '1st Image' # 1st Image
     f5d67f5c-dd8e-4565-a1bc-e0aed82e9f75: 'Medium Spacer' # Medium Spacer
 plugins:
   ckeditor:
@@ -88,6 +111,23 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0
+    settings:
+      adjustFeedmeLogs: ''
+      assetsEnvironment: ''
+      assetsEnvironmentOverwrite: ''
+      cacheClearMode: full
+      clearCachesOnSave: always
+      clearCdnCacheWhenAssetChanges: '1'
+      disableDynamic: ''
+      disableTransforms: ''
+      fsMapsEnabled: ''
+      imageAutoConversion: webp
+      injectCors: ''
+      projectSlug: keen-barbet
+      securityKey: EuOQgdNu53BVqShYJ7Esq5rpDR13Ajes
+      suppressWarnings: ''
+      transformSvgs: 'no'
+      useLocalVolumes: false
   vite:
     edition: standard
     enabled: true

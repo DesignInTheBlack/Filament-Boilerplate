@@ -6,6 +6,24 @@ fieldLayouts:
     tabs:
       -
         elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-12-28T18:40:25+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ed8ea969-93fd-40e4-a6eb-0823c41e2c93 # 1st Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Marquee Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0b16d7d8-6bce-4b04-83bb-8b4d6d5ae935
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: b15aa583-1277-4de8-bf06-8ebf18c6494d
         userCondition: null

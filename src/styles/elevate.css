@@ -406,6 +406,18 @@ color: #1D1D1D;
 padding-top: 4.5rem;
 }
 
+.sticky,  .sticky {
+position: sticky;
+}
+
+.bg-color\:gold,  .bg-color\:gold {
+background-color: #B1740F;
+}
+
+.h\:d1,  .h\:d1 {
+height: 0.25rem;
+}
+
 .z\:3,  .z\:3 {
 z-index: 3;
 }
@@ -623,10 +635,6 @@ display:flex;
 flex-direction:column;
 justify-content: center;
 align-items: center;
-}
-
-.bg-color\:gold,  .bg-color\:gold {
-background-color: #B1740F;
 }
 
 .hidden,  .hidden {
@@ -1245,10 +1253,6 @@ flex-wrap: FlexWrapRule;
 
 .ctx\:editorialThreeCol.contain, .ctx\:editorialThreeCol .contain {
 
-}
-
-.bg-color\:grey,  .bg-color\:grey {
-background-color: #8D8D8D;
 }
 
 .h\:c12,  .h\:c12 {

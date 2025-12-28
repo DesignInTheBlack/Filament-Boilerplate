@@ -1,0 +1,16 @@
+currLabel: Assets
+customIcon: null
+enabled: true
+handle: assets
+icon: image
+layout: 161e35c5-199b-4d9c-b090-9dc1c61bc616 # Default
+level: 1
+newWindow: false
+parent: null
+prevLabel: Assets
+prevLevel: 1
+prevParent: null
+prevUrl: assets
+sortOrder: 12
+type: craft
+url: assets

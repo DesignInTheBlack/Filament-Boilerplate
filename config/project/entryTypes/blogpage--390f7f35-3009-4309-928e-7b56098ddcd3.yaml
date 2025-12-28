@@ -38,6 +38,57 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-12-28T18:09:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 51d4c03c-2317-443b-860f-1fbd1232e534 # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 980c8587-f0cc-4b88-b880-f2efbecd2b46
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-28T17:38:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 42a50e3b-7d07-410d-a585-dec58552a102 # Preview Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 87785f2f-b7b5-4600-8905-9b432716269c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-28T17:38:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 31fe2c30-be09-4ce5-af27-39cdfec7f12d # Scrolling Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f93775a9-a9d9-45a7-94ac-f4effb799c17
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-12-10T00:45:43+00:00'
             editCondition: null
             elementCondition: null
@@ -59,7 +110,7 @@ fieldLayouts:
         userCondition: null
 handle: blogpage
 hasTitleField: true
-icon: null
+icon: memo
 name: BlogPage
 showSlugField: true
 showStatusField: true
