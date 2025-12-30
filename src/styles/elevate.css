@@ -539,13 +539,8 @@ padding-top: 2rem;
 padding-bottom: 2rem;
 }
 
-.bg-attr\:cover,  .bg-attr\:cover {
-background-size: cover;
-}
-
-.pd-y\:d9,  .pd-y\:d9 {
-padding-top: 2.25rem;
-padding-bottom: 2.25rem;
+.h\:c6,  .h\:c6 {
+height: 7rem;
 }
 
 .h\:c9,  .h\:c9 {
@@ -645,19 +640,11 @@ display: none;
 padding-left: 0.75rem;
 }
 
-.ctx\:mobileButton.pd-b\:d2, .ctx\:mobileButton .pd-b\:d2 {
-padding-bottom: 0.5rem;
-}
-
 .ctx\:mobileButton.row\:x-center\:y-center, .ctx\:mobileButton .row\:x-center\:y-center {
 display:flex;
 flex-direction:row;
 justify-content: center;
 align-items: center;
-}
-
-.ctx\:mobileButton.bg-color\:gold, .ctx\:mobileButton .bg-color\:gold {
-background-color: #B1740F;
 }
 
 .ctx\:mobileButton.h\:c1, .ctx\:mobileButton .h\:c1 {
@@ -1276,10 +1263,6 @@ padding-bottom: 1.5rem;
 width: 7rem;
 }
 
-.h\:c6,  .h\:c6 {
-height: 7rem;
-}
-
 .bg-color\:lightwhite,  .bg-color\:lightwhite {
 background-color: #f7f7f7;
 }
@@ -1334,6 +1317,18 @@ color: #383838;
 
 .aspect\:square,  .aspect\:square {
 aspect-ratio: 1/1;
+}
+
+.ctx\:editorialColumn3.mg-b\:d12, .ctx\:editorialColumn3 .mg-b\:d12 {
+margin-bottom: 3rem;
+}
+
+.ctx\:editorialColumn2.mg-b\:d12, .ctx\:editorialColumn2 .mg-b\:d12 {
+margin-bottom: 3rem;
+}
+
+.ctx\:editorialColumn1.mg-b\:d12, .ctx\:editorialColumn1 .mg-b\:d12 {
+margin-bottom: 3rem;
 }
 
 .pd-y\:c3,  .pd-y\:c3 {
@@ -1436,12 +1431,61 @@ padding-bottom: 10rem;
 pointer-events: auto;
 }
 
-.font\:sans\:regular,  .font\:sans\:regular {
+.font\:h6\:fancy\:bold,  .font\:h6\:fancy\:bold {
+font-size: 1.125rem;
+font-family: Caviar, sans-serif;
+font-weight: 700;
+}
+
+.pd-b\:d4,  .pd-b\:d4 {
+padding-bottom: 1rem;
+}
+
+.pd-t\:d5,  .pd-t\:d5 {
+padding-top: 1.25rem;
+}
+
+.row\:y-center\:x-start,  .row\:y-center\:x-start {
+display:flex;
+flex-direction:row;
+align-items: center;
+justify-content: flex-start;
+}
+
+.ctx\:announce.hidden, .ctx\:announce .hidden {
+display: none;
+}
+
+@media only screen and (min-width:64rem) {
+.ctx\:announce.pd-y\:d8, .ctx\:announce .pd-y\:d8 {
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+
+.ctx\:announce.row\:x-center\:y-center, .ctx\:announce .row\:x-center\:y-center {
+display:flex;
+flex-direction:row;
+justify-content: center;
+align-items: center;
+}
+
+.ctx\:announce.bg-color\:black, .ctx\:announce .bg-color\:black {
+background-color: #1D1D1D;
+}
+
+.ctx\:announce.text\:white, .ctx\:announce .text\:white {
+color: #F7F7F7;
+}
+
+.ctx\:announce.font\:sans\:regular, .ctx\:announce .font\:sans\:regular {
 font-family: Open Sans, sans-serif;
 font-weight: 400;
 }
 
-@media only screen and (min-width:64rem) {
+.hidden,  .hidden {
+display: none;
+}
+
 .ctx\:blogsColumn.row, .ctx\:blogsColumn .row {
 display:flex;
 flex-direction:row;
