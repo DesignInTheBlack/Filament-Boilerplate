@@ -14,6 +14,9 @@ settings:
           - uid
           - 901cd1f4-fb95-4966-ace2-220aa081d9d8 # Paragraph
         -
+          - description
+          - 'A standard editorial style paragraph. Recommended character length of approximately 500 characters per paragraph. '
+        -
           - group
           - General
     -
@@ -30,6 +33,9 @@ settings:
           - uid
           - e04778ba-b214-41ff-89f1-d5be2d84be91 # Image
         -
+          - description
+          - 'An image that will appear within the body of your blog article. '
+        -
           - group
           - General
     -
@@ -37,6 +43,9 @@ settings:
         -
           - uid
           - cdb1f79d-3f27-4e7f-a8ca-be2236133ea7 # Introduction
+        -
+          - description
+          - 'An introduction that explains what your blog entry is about'
         -
           - group
           - General
@@ -46,6 +55,9 @@ settings:
           - uid
           - a4781ff6-b41f-478f-a860-fc78b905f8e8 # Headline
         -
+          - description
+          - 'The title of your blog entry'
+        -
           - group
           - General
     -
@@ -53,6 +65,9 @@ settings:
         -
           - uid
           - 5e485214-bcce-49c6-8af4-0f5e89158d43 # Marquee
+        -
+          - description
+          - 'The "color splash" marquee for your blog entry. Please note that you should add the "color palette" block and select colors if you wish to customize them. '
         -
           - group
           - General
@@ -62,13 +77,16 @@ settings:
           - uid
           - ec5addeb-6b15-4f51-8053-6cb8a33a63a7 # Signature
         -
+          - description
+          - "Jessica's Signature"
+        -
           - group
           - General
     -
       __assoc__:
         -
           - uid
-          - 8aee16ba-55f9-4669-9657-c5cfe6a5d3d3
+          - f2351a3c-f486-456e-9833-72f1f821b2c6 # Color Palette
         -
           - group
           - General

@@ -1,5 +1,5 @@
 color: null
-description: null
+description: 'A standard editorial style paragraph. Recommended character length of approximately 500 characters per paragraph. '
 fieldLayouts:
   6b552744-62cd-462d-ac95-3375713ae83c:
     cardThumbAlignment: end

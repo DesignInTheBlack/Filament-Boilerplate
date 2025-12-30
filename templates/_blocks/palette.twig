@@ -1,0 +1,9 @@
+<div id="paletteDefine" style="display:none;">
+  {% for c in block.colors.all() %}
+    {% set hex = (c.colorSelection ?? '')|trim %}
+    {% if hex and hex[0] != '#' %}
+      {% set hex = '#' ~ hex %}
+    {% endif %}
+    {{ hex }}
+  {% endfor %}
+</div>

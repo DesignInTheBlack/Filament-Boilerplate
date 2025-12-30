@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: colors
+instructions: null
+name: Colors
+searchable: false
+settings:
+  createButtonLabel: 'Add Color'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - cdf8dc00-7c81-40b8-a30f-d30c796267b8 # color
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

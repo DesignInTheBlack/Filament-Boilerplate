@@ -14,7 +14,7 @@ fieldLayouts:
             fieldUid: 289828ba-e105-446f-8deb-d5509101d02b # Image
             handle: null
             includeInCards: false
-            instructions: null
+            instructions: 'An image that will appear within the body of your blog entry.'
             label: null
             providesThumbs: false
             required: false

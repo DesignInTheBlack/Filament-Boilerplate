@@ -1,1 +1,7 @@
-<p class="pd-y:d8 bg-color:black"></p> 
+{% set globalContent = craft.app.globals.getSetByHandle('globalContent') %}
+
+{% if globalContent %}
+  <p class="hidden /lg/pd-y:d8 row:x-center:y-center bg-color:black text:white font:sans:regular">
+    {{ globalContent.announcementCopy }}
+  </p>
+{% endif %}

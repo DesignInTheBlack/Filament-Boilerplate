@@ -14,7 +14,7 @@ fieldLayouts:
             fieldUid: 271526fc-7b30-4ed4-8641-c83754a371c7 # Closing
             handle: null
             includeInCards: false
-            instructions: null
+            instructions: 'A sign off statement such as "truly yours" or "sincerely" to close your blog entry. Please note that your signature will automatically appear below this. '
             label: Closing
             providesThumbs: false
             required: false

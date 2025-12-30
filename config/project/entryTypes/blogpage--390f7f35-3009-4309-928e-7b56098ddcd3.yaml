@@ -44,7 +44,7 @@ fieldLayouts:
             fieldUid: 51d4c03c-2317-443b-860f-1fbd1232e534 # Description
             handle: null
             includeInCards: false
-            instructions: null
+            instructions: 'The introductory description for your blog post that will appear on the cards linking to the blog entry itself. '
             label: null
             providesThumbs: false
             required: false
@@ -61,7 +61,7 @@ fieldLayouts:
             fieldUid: 42a50e3b-7d07-410d-a585-dec58552a102 # Preview Image
             handle: null
             includeInCards: false
-            instructions: null
+            instructions: 'The preview image for your blog post that will appear on the cards linking to the blog entry itself.'
             label: null
             providesThumbs: false
             required: false
@@ -78,7 +78,7 @@ fieldLayouts:
             fieldUid: 31fe2c30-be09-4ce5-af27-39cdfec7f12d # Scrolling Image
             handle: null
             includeInCards: false
-            instructions: null
+            instructions: 'If you wish for an image to follow readers as they scroll through your blog entry on desktop, please select one below'
             label: null
             providesThumbs: false
             required: false

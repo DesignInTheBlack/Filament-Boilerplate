@@ -88,21 +88,51 @@ function createFluidSimulation(canvas) {
   };
   
   
-  const palette = [
-    [0.494, 0.290, 0.675], // #7E4AAC violet
-    [0.188, 0.051, 0.369], // #300D5E deep indigo
-    [0.141, 0.075, 0.176],  // #24132D plum black
-    [0.243, 0.082, 0.494], // #3E157E royal purple
-    [0.827, 0.729, 0.486], // #D3BA7C soft gold
-    [0.494, 0.290, 0.675], // #7E4AAC violet
-    [0.188, 0.051, 0.369], // #300D5E deep indigo
-    [0.141, 0.075, 0.176],  // #24132D plum black
-    [0.494, 0.290, 0.675], // #7E4AAC violet
-    [0.188, 0.051, 0.369], // #300D5E deep indigo
-    [0.141, 0.075, 0.176],  // #24132D plum black
-    [0.243, 0.082, 0.494], // #3E157E royal purple
-  ];
-  
+'use strict';
+
+const DEFAULT_PALETTE_HEX = [
+  '#0B0B0D', // canvas black (slightly warm)
+  '#C9A227', // rich gold (paint-like, not neon)
+  '#4B1D7A'  // deep royal purple (ink/paint vibe)
+];
+
+function hexToRgb01(hex) {
+  let h = String(hex).trim().replace(/^#/, '');
+  if (h.length === 3) h = h.split('').map(ch => ch + ch).join('');
+  if (!/^[0-9a-fA-F]{6}$/.test(h)) return null;
+
+  const n = parseInt(h, 16);
+  return [((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255];
+}
+
+function buildPaletteFromDiv(divId = 'paletteDefine', fallbackHex = DEFAULT_PALETTE_HEX) {
+  const el = document.getElementById(divId);
+
+  const text = (el?.textContent || '').trim();
+  const tokens = text
+    ? (text.match(/#?[0-9a-fA-F]{3}\b|#?[0-9a-fA-F]{6}\b/g) || [])
+    : [];
+
+  const palette = [];
+  for (const t of tokens) {
+    const rgb = hexToRgb01(t);
+    if (rgb) palette.push(rgb);
+  }
+
+  // Fallback if div missing/empty/invalid
+  if (palette.length === 0) {
+    for (const hex of fallbackHex) {
+      const rgb = hexToRgb01(hex);
+      if (rgb) palette.push(rgb);
+    }
+  }
+
+  return palette;
+}
+
+// --- set palette once ---
+let palette = buildPaletteFromDiv('paletteDefine');
+
   
   
   let pointers = [];

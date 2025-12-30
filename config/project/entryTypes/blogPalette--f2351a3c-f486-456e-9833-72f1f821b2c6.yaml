@@ -1,36 +1,36 @@
 color: null
-description: 'A standard editorial style paragraph. Recommended character length of approximately 500 characters per paragraph or less. '
+description: null
 fieldLayouts:
-  80c8657a-aa92-40f2-9c2d-0ef7bf94cf11:
+  4408414b-7657-4e2f-ba40-1990907fc9aa:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-12-26T16:48:19+00:00'
+            dateAdded: '2025-12-30T00:43:19+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 8643638c-be2b-4c9a-8fc0-0091e360deb7 # Paragraph Text
+            fieldUid: a95a6756-5f44-4880-9bf7-17b12bf0b1e7 # Colors
             handle: null
             includeInCards: false
-            instructions: 'A standard editorial style paragraph. Recommended character length of approximately 500 characters per paragraph. '
+            instructions: null
             label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: aa701d0c-810f-4537-b5ec-0fb08761812c
+            uid: 5857534a-2d68-4a69-b06c-92d5330f8584
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 60c5bc0a-f0be-4ae3-94d6-9d4179425fc0
+        uid: 07acb303-92ce-4b80-8944-dc29b8474fdb
         userCondition: null
-handle: paragraph
+handle: blogPalette
 hasTitleField: false
-icon: align-left
-name: Paragraph
+icon: palette
+name: 'Color Palette'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

@@ -1436,6 +1436,11 @@ padding-bottom: 10rem;
 pointer-events: auto;
 }
 
+.font\:sans\:regular,  .font\:sans\:regular {
+font-family: Open Sans, sans-serif;
+font-weight: 400;
+}
+
 @media only screen and (min-width:64rem) {
 .ctx\:blogsColumn.row, .ctx\:blogsColumn .row {
 display:flex;

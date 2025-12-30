@@ -1,4 +1,4 @@
-dateModified: 1766947225
+dateModified: 1767057801
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -27,6 +27,7 @@ meta:
     0b791488-8988-45c1-b86f-3bd2a9d0f36e: 'Large Spacer' # Large Spacer
     0ca218cb-9082-405d-93a1-5f3fe4324099: 'Editorial Columns' # Editorial Columns
     1e0e84fb-9ba3-41ec-87d0-22472b8c1ae9: 'Small Spacer' # Small Spacer
+    1fd40fbd-1d28-4736-b094-9cbfd1fd7b8c: 'Announcement Text' # Announcement Text
     02bb2a8f-74c7-4c41-9cff-783b9f3eba9d: Author # Author
     2db1f353-5cc8-40db-b2de-583a39d92a64: 'Public Schema' # Public Schema
     3a4d3adf-4ddc-4282-ac31-343b314828c4: 'Third Paragraph' # Third Paragraph
@@ -47,7 +48,7 @@ meta:
     51d4c03c-2317-443b-860f-1fbd1232e534: Description # Description
     72cc4092-dce2-4057-a061-5bf104dd7d96: Filament-Boilerplate # Filament-Boilerplate
     77eca617-e8ed-4e88-b7fb-12bb67300759: 'Second Paragraph' # Second Paragraph
-    84a55bd5-c2f1-47b7-974d-9bdb02209679: Copy # Copy
+    79a04cd8-507b-46a3-ae00-a598890ab36b: 'Color Palette' # Color Palette
     161e35c5-199b-4d9c-b090-9dc1c61bc616: Default # Default
     0372f3ed-21a0-4fba-b318-c137111d8d27: 'Pattern Spacer' # Pattern Spacer
     390f7f35-3009-4309-928e-7b56098ddcd3: BlogPage # BlogPage
@@ -55,16 +56,20 @@ meta:
     869b188c-653d-449b-8c3d-cf1513293f4f: 'Column List' # Column List
     901cd1f4-fb95-4966-ace2-220aa081d9d8: Paragraph # Paragraph
     975b8327-89b8-42ca-b5aa-e291d9f9677c: '3rd Image' # 3rd Image
+    04303a81-f680-4edf-81d3-bd9d119c7390: 'Color Selection' # Color Selection
     4446a9d7-df5f-441f-8d02-6cf3df460582: 'Navigation With Hero' # Navigation With Hero
+    7391a08d-de21-4203-95e1-632a98a99d23: 'Global Content' # Global Content
     9655ee03-f1c7-4a52-b72b-f82b1e908aa7: 'Cinema Slider' # Cinema Slider
     20208dd2-1f00-4c17-911c-5bf21613181f: Marquee # Marquee
     52684aa2-3417-4e68-9206-d6371412031b: Quote # Quote
+    144593fe-da30-41d5-8ec8-b757273bb41b: Announcement # Announcement
     271526fc-7b30-4ed4-8641-c83754a371c7: Closing # Closing
     289828ba-e105-446f-8deb-d5509101d02b: Image # Image
     6054654d-f5d7-4df9-bae9-4da624aa2bbe: 'Three Cards' # Three Cards
     8643638c-be2b-4c9a-8fc0-0091e360deb7: 'Paragraph Text' # Paragraph Text
     43351229-39dc-4070-b365-29e094fb7db0: Quote # Quote
     a06cf119-1a9b-45ce-b0fd-86eeb6b1ee57: Heading # Heading
+    a95a6756-5f44-4880-9bf7-17b12bf0b1e7: Colors # Colors
     a4781ff6-b41f-478f-a860-fc78b905f8e8: Headline # Headline
     aa15edf9-5fc0-40cc-8eb1-570557b0c72f: StandardPage # StandardPage
     ab2a1412-8d01-4b29-a57d-80a0f008efab: Pages # Pages
@@ -78,6 +83,7 @@ meta:
     ca591ad2-56c3-4369-aa63-797cddbea65e: Assets # Assets
     cac287ab-f575-4bdf-9836-b06446a54504: 'Grand Marquee' # Grand Marquee
     cdb1f79d-3f27-4e7f-a8ca-be2236133ea7: Introduction # Introduction
+    cdf8dc00-7c81-40b8-a30f-d30c796267b8: color # color
     cf1c951a-5742-4fec-8a93-cac307d4f30b: 'Page Blocks' # Page Blocks
     cfdb4cfd-3dce-4d62-b0eb-ff0cca5014df: 'Blog Blocks' # Blog Blocks
     daaf0a23-3781-475b-9c1d-145b15108605: '4th Image' # 4th Image
@@ -86,6 +92,7 @@ meta:
     ec5addeb-6b15-4f51-8053-6cb8a33a63a7: Signature # Signature
     ed8ea969-93fd-40e4-a6eb-0823c41e2c93: '1st Image' # 1st Image
     f5d67f5c-dd8e-4565-a1bc-e0aed82e9f75: 'Medium Spacer' # Medium Spacer
+    f2351a3c-f486-456e-9833-72f1f821b2c6: 'Color Palette' # Color Palette
 plugins:
   ckeditor:
     edition: standard
@@ -120,12 +127,17 @@ plugins:
       clearCdnCacheWhenAssetChanges: '1'
       disableDynamic: ''
       disableTransforms: ''
+      fsMaps:
+        __assoc__:
+          -
+            - pouredOutAssets
+            - none
       fsMapsEnabled: ''
       imageAutoConversion: webp
       injectCors: ''
       projectSlug: keen-barbet
       securityKey: EuOQgdNu53BVqShYJ7Esq5rpDR13Ajes
-      suppressWarnings: ''
+      suppressWarnings: '1'
       transformSvgs: 'no'
       useLocalVolumes: false
   vite:

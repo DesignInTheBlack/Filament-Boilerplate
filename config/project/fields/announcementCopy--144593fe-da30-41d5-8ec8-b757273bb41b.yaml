@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: copy
-instructions: null
-name: Copy
+handle: announcementCopy
+instructions: 'This copy will appear at the top of all pages sitewide. '
+name: Announcement
 searchable: false
 settings:
   byteLimit: null
