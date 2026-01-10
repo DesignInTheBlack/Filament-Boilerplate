@@ -1,18 +1,22 @@
-<div class = "contain">
+{% set globalContent = craft.app.globals.getSetByHandle('globalContent') %}
+
+
+
+<div class = "contain events:auto">
 
 
     <nav class = "ctx:navigationDesk hidden w:full bd-t:solid:width-d0:gold50 bd-b:solid:width-d0:gold50 pd-y:d7 /lg/ row:y-center:x-between">   
         <div class = "row:y-center gap:c2">
-            <p class = "font:h4:fancy:bold text:black">Poured Out</p>
+            <a href = "/" class = "font:h4:fancy:bold text:black">Poured Out</a>
             <p class = "text:lightgrey font:sans">The Art Of<br>Jessica Ellington</p>
         </div>
 
         <div class = "row:y-center gap:c2 text:black font:sans:semibold">
-            <p>Shop</p>
+            <a href = "{{globalContent.shop}}">Shop</a>
             <p>|</p>
-            <p>About</p>
-            <p>Gallery</p>
-            <p>Blog</p> 
+            <a href = "{{globalContent.about}}">About</a>
+            <a href = "{{globalContent.gallery}}">Gallery</a>
+            <a href = "{{globalContent.blogs}}">Blog</a> 
             <p class = "text:gold50 font:h5"><i class="fa-brands fa-square-facebook"></i></p>
             <p class = "text:gold50 font:h5"><i class="fa-brands fa-square-instagram ctx:end"></i></p>
         </div>
@@ -20,18 +24,32 @@
 
 
  
-    <div id = "openMenu" class = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 bd:roundbl-s6 w:c1 h:c1 row:x-center:y-center pd-l:d3 /lg/ invisible ctx:end"> 
-    <i id = "openButton" class="fa-solid fa-bars text:white"></i> 
-        <div id = "mobileLinks" class = "hidden w:full h:full bg-color:gold col:y-center:x-center gap:d8">
-            <i id = "closeButton" class="events:auto absolute z:10000 top:0 right:0 fa-solid fa-xmark text:white mg:d4"></i> 
-            <h2 class = "text:white font:sans:semibold">Shop</h2>
-            <h2 class = "text:white font:sans:semibold">About</h2>
-            <h2 class = "text:white font:sans:semibold">Gallery</h2> 
-            <h2 class = "text:white font:sans:semibold">Blog</h2>
+    <div id = "openMenu" class = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 bd:roundbl-s6 w:c1 h:c3 row:x-center:y-center pd-l:d3 /lg/ invisible ctx:end"> 
+        <i id = "openButton" class="fa-solid fa-bars text:white"></i> 
+
+
+
+        <div id = "menuSplash" class = "w:full h:full"> 
+
+
+            <div id = "mobileLinks" class = "hidden w:full h:full col:y-center:x-center">
+                <canvas class = "-fluid top:0 z:1 w:full h:full absolute">
+                </canvas>
+                <div class = "z:10000 relative w:full h:full col:y-center:x-center gap:d8">
+                    <i id = "closeButton" class="events:auto absolute top:0 right:0 fa-solid fa-xmark text:white mg:d4"></i> 
+                    <a href = "/" class = "text:white font:sans:semibold">Home</a>
+                    <a href = "{{globalContent.shop}}" class = "text:white font:sans:semibold">Shop</a>
+                    <a href = "{{globalContent.about}}" class = "text:white font:sans:semibold">About</a>
+                    <a href = "{{globalContent.gallery}}" class = "text:white font:sans:semibold">Gallery</a> 
+                    <a href = "{{globalContent.blogs}}" class = "text:white font:sans:semibold">Blog</a>
+        
+                </div>
+            </div>
         </div>
+
     </div>
 
-{# <div class = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 w:wScreen h:hScreen bg-color:black row:x-center:y-center /lg/ invisible ctx:end"></div> #}
+{# <div class = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 w:wScreen h:hScreen bg-color:white row:x-center:y-center /lg/ invisible ctx:end"></div> #}
 
 
 

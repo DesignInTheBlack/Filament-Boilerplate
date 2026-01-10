@@ -264,39 +264,43 @@ height: 100%;
 position: absolute;
 }
 
-.h\:auto,  .h\:auto {
+.ctx\:signature.h\:auto, .ctx\:signature .h\:auto {
 height: auto;
 }
 
-.w\:d12,  .w\:d12 {
+.ctx\:signature.w\:d12, .ctx\:signature .w\:d12 {
 width: 3rem;
 }
 
-.font\:regular\:sans\:h6,  .font\:regular\:sans\:h6 {
+.ctx\:signature.font\:regular\:sans\:h6, .ctx\:signature .font\:regular\:sans\:h6 {
 font-weight: 400;
 font-family: Open Sans, sans-serif;
 font-size: 1.125rem;
 }
 
-.text\:left\:spacious\:grey,  .text\:left\:spacious\:grey {
+.ctx\:signature.text\:left\:spacious\:grey, .ctx\:signature .text\:left\:spacious\:grey {
 text-align: left;
 line-height: 1.7;
 color: #8D8D8D;
 }
 
-.pd-b\:d8,  .pd-b\:d8 {
-padding-bottom: 2rem;
+.ctx\:signature.pd-b\:d10, .ctx\:signature .pd-b\:d10 {
+padding-bottom: 2.5rem;
 }
 
-.pd-t\:d6,  .pd-t\:d6 {
+.ctx\:signature.pd-t\:d6, .ctx\:signature .pd-t\:d6 {
 padding-top: 1.5rem;
 }
 
-.col\:x-start\:y-center,  .col\:x-start\:y-center {
+.ctx\:signature.col\:x-start\:y-center, .ctx\:signature .col\:x-start\:y-center {
 display:flex;
 flex-direction:column;
 align-items: flex-start;
 justify-content: center;
+}
+
+.ctx\:signature.w\:full, .ctx\:signature .w\:full {
+width: 100%;
 }
 
 .text\:grey,  .text\:grey {
@@ -352,6 +356,18 @@ padding-top: 4.5rem;
 padding-bottom: 4.5rem;
 }
 
+.font\:regular\:sans\:h6,  .font\:regular\:sans\:h6 {
+font-weight: 400;
+font-family: Open Sans, sans-serif;
+font-size: 1.125rem;
+}
+
+.text\:left\:spacious\:grey,  .text\:left\:spacious\:grey {
+text-align: left;
+line-height: 1.7;
+color: #8D8D8D;
+}
+
 .pd-y\:d4,  .pd-y\:d4 {
 padding-top: 1rem;
 padding-bottom: 1rem;
@@ -400,6 +416,10 @@ font-size: 2.25rem;
 text-align: left;
 line-height: 1.6;
 color: #1D1D1D;
+}
+
+.pd-b\:d8,  .pd-b\:d8 {
+padding-bottom: 2rem;
 }
 
 .pd-t\:c2,  .pd-t\:c2 {
@@ -613,10 +633,6 @@ margin-bottom: 1rem;
 right: 0;
 }
 
-.z\:10000,  .z\:10000 {
-z-index: 10000;
-}
-
 .events\:auto,  .events\:auto {
 pointer-events: auto;
 }
@@ -630,6 +646,10 @@ display:flex;
 flex-direction:column;
 justify-content: center;
 align-items: center;
+}
+
+.z\:10000,  .z\:10000 {
+z-index: 10000;
 }
 
 .hidden,  .hidden {
@@ -647,8 +667,8 @@ justify-content: center;
 align-items: center;
 }
 
-.ctx\:mobileButton.h\:c1, .ctx\:mobileButton .h\:c1 {
-height: 4rem;
+.ctx\:mobileButton.h\:c3, .ctx\:mobileButton .h\:c3 {
+height: 5rem;
 }
 
 .ctx\:mobileButton.w\:c1, .ctx\:mobileButton .w\:c1 {
@@ -773,8 +793,8 @@ padding-top: 8rem;
 pointer-events: auto;
 }
 
-.ctx\:mobileButton.bg-color\:black, .ctx\:mobileButton .bg-color\:black {
-background-color: #1D1D1D;
+.ctx\:mobileButton.bg-color\:white, .ctx\:mobileButton .bg-color\:white {
+background-color: #F7F7F7;
 }
 
 .ctx\:mobileButton.h\:hScreen, .ctx\:mobileButton .h\:hScreen {
@@ -1091,6 +1111,19 @@ position: relative;
 
 .ctx\:marquee.events\:auto, .ctx\:marquee .events\:auto {
 pointer-events: auto;
+}
+
+.pd-t\:d8,  .pd-t\:d8 {
+padding-top: 2rem;
+}
+
+.font\:fancy\:h2,  .font\:fancy\:h2 {
+font-family: Caviar, sans-serif;
+font-size: 5.062rem;
+}
+
+.h\:hScreen,  .h\:hScreen {
+height: 100vh;
 }
 
 .bg-color\:black,  .bg-color\:black {
@@ -1437,12 +1470,12 @@ font-family: Caviar, sans-serif;
 font-weight: 700;
 }
 
-.pd-b\:d4,  .pd-b\:d4 {
-padding-bottom: 1rem;
+.pd-b\:d6,  .pd-b\:d6 {
+padding-bottom: 1.5rem;
 }
 
-.pd-t\:d5,  .pd-t\:d5 {
-padding-top: 1.25rem;
+.pd-t\:d7,  .pd-t\:d7 {
+padding-top: 1.75rem;
 }
 
 .row\:y-center\:x-start,  .row\:y-center\:x-start {
@@ -1855,3 +1888,24 @@ bottom:43%;
 border-radius:100%;
 }
 
+
+/* Fade in over 7s, stay 3s, then fade out */
+.fade-in-hold-out {
+  opacity: 0;
+  animation: fadeInHoldOut 17s ease-in-out forwards; /* 7 + 3 + 7 = 17 */
+}
+
+@keyframes fadeInHoldOut {
+  0%      { opacity: 0; }
+  41.176% { opacity: 1; } /* 7 / 17 */
+  58.824% { opacity: 1; } /* (7 + 3) / 17 */
+  100%    { opacity: 0; }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-hold-out {
+    opacity: 1;
+    animation: none;
+  }
+}

@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function autoSplatFromCenter(canvas, options = {}) {
   const {
     wave1Start = 50,
-    wave1End = 200,
-    wave2Start = 350,
-    wave2End = 425,
+    wave1End = 500,
+    wave2Start = 750,
+    wave2End = 975,
     splatsPerFrame = 2
   } = options;
 
@@ -81,10 +81,10 @@ function createFluidSimulation(canvas) {
   let config = {
     TEXTURE_DOWNSAMPLE: 1,
     DENSITY_DISSIPATION: 1, // Keep this for stability
-    VELOCITY_DISSIPATION: 0.999,
+    VELOCITY_DISSIPATION: 0.997,
     PRESSURE_DISSIPATION: 0.8,
     PRESSURE_ITERATIONS: 8,
-    CURL: 5,                 // ⬆️ Increased from 6 to add much more detail
+    CURL: 6,                 // ⬆️ Increased from 6 to add much more detail
   };
   
   
@@ -849,8 +849,8 @@ let palette = buildPaletteFromDiv('paletteDefine');
   
   canvas.addEventListener('mousemove', e => {
     pointers[0].moved = pointers[0].down;
-    pointers[0].dx = (e.offsetX - pointers[0].x) * 12.0;
-    pointers[0].dy = (e.offsetY - pointers[0].y) * 12.0;
+    pointers[0].dx = (e.offsetX - pointers[0].x) * 88.0;
+    pointers[0].dy = (e.offsetY - pointers[0].y) * 44.0;
     pointers[0].x = e.offsetX;
     pointers[0].y = e.offsetY;
   });

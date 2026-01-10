@@ -1,4 +1,4 @@
-dateModified: 1767057801
+dateModified: 1768069854
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -32,6 +32,7 @@ meta:
     2db1f353-5cc8-40db-b2de-583a39d92a64: 'Public Schema' # Public Schema
     3a4d3adf-4ddc-4282-ac31-343b314828c4: 'Third Paragraph' # Third Paragraph
     3e34b7dc-42a3-4865-9e9c-001b4eb654af: "Author's Title" # Author's Title
+    4b62f1ab-cb3e-490e-ad54-2a72dc774c37: Blogs # Blogs
     5bd0a3b2-88ff-464d-8c51-ae2aea23b8d1: Navigation # Navigation
     5e485214-bcce-49c6-8af4-0f5e89158d43: Marquee # Marquee
     7a3cf3e9-179e-4cbe-bc17-1857335d6fa5: '2nd Image' # 2nd Image
@@ -52,6 +53,8 @@ meta:
     161e35c5-199b-4d9c-b090-9dc1c61bc616: Default # Default
     0372f3ed-21a0-4fba-b318-c137111d8d27: 'Pattern Spacer' # Pattern Spacer
     390f7f35-3009-4309-928e-7b56098ddcd3: BlogPage # BlogPage
+    450c53ab-10ae-471a-9a25-403cb7b992ff: 'Color Background' # Color Background
+    768f6b29-6796-4341-baed-ce919fde46a6: Shop # Shop
     840e4b3e-cde9-4478-8400-f2e9f30c147c: 'Editorial Collage' # Editorial Collage
     869b188c-653d-449b-8c3d-cf1513293f4f: 'Column List' # Column List
     901cd1f4-fb95-4966-ace2-220aa081d9d8: Paragraph # Paragraph
@@ -74,6 +77,7 @@ meta:
     aa15edf9-5fc0-40cc-8eb1-570557b0c72f: StandardPage # StandardPage
     ab2a1412-8d01-4b29-a57d-80a0f008efab: Pages # Pages
     addc69ef-1366-47cc-b9aa-477cbdd76685: 'Large Hero' # Large Hero
+    affe6a11-2e34-40ec-a742-3766960fdfd3: Gallery # Gallery
     b0425f19-189b-432e-a981-4fccc8ecd8f9: Quote # Quote
     b0514dd3-fb9c-4848-95ed-318cea87b2b5: Blogs # Blogs
     b49dcac4-4dca-4e71-9925-c677816d034c: 'Aside Paragraph' # Aside Paragraph
@@ -93,6 +97,7 @@ meta:
     ed8ea969-93fd-40e4-a6eb-0823c41e2c93: '1st Image' # 1st Image
     f5d67f5c-dd8e-4565-a1bc-e0aed82e9f75: 'Medium Spacer' # Medium Spacer
     f2351a3c-f486-456e-9833-72f1f821b2c6: 'Color Palette' # Color Palette
+    ffa62b38-7996-4d0e-9542-8dfcce600f43: About # About
 plugins:
   ckeditor:
     edition: standard

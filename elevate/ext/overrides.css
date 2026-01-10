@@ -6,3 +6,24 @@ bottom:43%;
 border-radius:100%;
 }
 
+
+/* Fade in over 7s, stay 3s, then fade out */
+.fade-in-hold-out {
+  opacity: 0;
+  animation: fadeInHoldOut 17s ease-in-out forwards; /* 7 + 3 + 7 = 17 */
+}
+
+@keyframes fadeInHoldOut {
+  0%      { opacity: 0; }
+  41.176% { opacity: 1; } /* 7 / 17 */
+  58.824% { opacity: 1; } /* (7 + 3) / 17 */
+  100%    { opacity: 0; }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-hold-out {
+    opacity: 1;
+    animation: none;
+  }
+}

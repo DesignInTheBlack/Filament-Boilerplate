@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       links.classList.remove('hidden')
       button.classList.add('hidden')
       console.log('opening!')
-      el.className = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 w:wScreen h:hScreen bg-color:black row:x-center:y-center /lg/ invisible ctx:end";
+      el.className = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 w:wScreen h:hScreen bg-color:white row:x-center:y-center /lg/ invisible ctx:end";
       document.body.style.overflow = 'hidden';
       document.body.style.position = 'fixed';
       document.body.style.width = '100%';
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       links.classList.add('hidden')
       button.classList.remove('hidden')
       console.log("closing!")
-      el.className = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 bd:roundbl-s6 w:c1 h:c1 row:x-center:y-center pd-l:d3 /lg/ invisible ctx:end";
+      el.className = "ctx:mobileButton events:auto visible z:1000 absolute top:0 right:0 bd:roundbl-s6 w:c1 h:c3 row:x-center:y-center pd-l:d3 /lg/ invisible ctx:end";
       document.body.style.overflow = '';
       document.body.style.position = '';
       document.body.style.width = '';

@@ -1,0 +1,22 @@
+color: null
+description: null
+fieldLayouts:
+  e82c793f-44e5-4d08-b8c3-e654c2f0ca45:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: da1e27dd-066e-4331-9150-0b031b3a8290
+        userCondition: null
+handle: fullscreenColor
+hasTitleField: false
+icon: person-burst
+name: 'Color Background'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

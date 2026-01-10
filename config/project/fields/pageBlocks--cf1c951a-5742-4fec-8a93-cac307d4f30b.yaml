@@ -210,6 +210,14 @@ settings:
         -
           - group
           - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 450c53ab-10ae-471a-9a25-403cb7b992ff # Color Background
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null
