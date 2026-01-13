@@ -8,6 +8,7 @@ import Glide from "@glidejs/glide";
 // Paint Effects
 import "./paint.js";
 import "./paintflood.js";
+import "./drift.js";
 
 //Navigation Handling
 import "./navigation.js"

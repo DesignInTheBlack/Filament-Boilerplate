@@ -3,6 +3,7 @@ export const clientColors = {
     white50: '#BABABA',
     darkgrey: '#383838',
     black:'#1D1D1D',
+    jetblack:'#0A0A0A',
     grey: '#8D8D8D',
     lightgrey:'#BABABA',
     lightwhite:'#f7f7f7',
