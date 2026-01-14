@@ -19,7 +19,7 @@
 
     <div class = "relative z:1 events:none">
 
-        {% set img = entry.previewImage.one() %}
+        {% set img = entry.scrollingImage.one() %}
 
         {% include '/_blocks/announcements.twig' %}
 
@@ -54,7 +54,7 @@
           <div class = "hidden /lg/ block h:0 w:full sticky top:d8">
 
               <div class = "row:x-center">
-                  <div class = "w:full text:full font:h6 aspect:landscape -shadowimg ctx:end" style = "background-image:url('{{ img.url }}');background-size:cover;background-position:center">
+                  <div class = "w:full text:full font:h6 aspect:square -shadowimg ctx:end" style = "background-image:url('{{ img.url }}');background-size:cover;background-position:center">
 
                   </div>
               </div>

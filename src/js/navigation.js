@@ -1,3 +1,5 @@
+import { triggerNavFlood } from "./navflood.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const el = document.getElementById("openMenu");
   const links = document.getElementById("mobileLinks");
@@ -21,6 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.style.overflow = 'hidden';
       document.body.style.position = 'fixed';
       document.body.style.width = '100%';
+      requestAnimationFrame(() => {
+        triggerNavFlood();
+      });
 
     }  
 
