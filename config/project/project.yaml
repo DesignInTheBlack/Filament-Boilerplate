@@ -1,4 +1,4 @@
-dateModified: 1768069854
+dateModified: 1768439502
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -39,11 +39,13 @@ meta:
     7b88d50b-5f6f-4cf7-9f9d-4c8a40da91c9: 'Marquee Wide' # Marquee Wide
     7eb60045-099b-4bfe-ac3a-d4d44ba037a1: 'Site Footer' # Site Footer
     8fde69fc-adc8-470f-ace8-add4c0a4de74: Announcements # Announcements
+    8ffacfc9-b77c-4ffb-bb3e-e31f8b956799: Images # Images
     9c674c15-6e9e-481d-bfbe-8945a1804194: 'First Paragraph' # First Paragraph
     9cf0cdc6-4797-4922-937d-abaa90c55f4e: Paragraph # Paragraph
     14d9aa12-2674-4406-bb17-8474714159c7: Subheading # Subheading
     15ae5794-eb4a-4a75-b271-9d44b8612a74: '5th Image' # 5th Image
     31fe2c30-be09-4ce5-af27-39cdfec7f12d: 'Scrolling Image' # Scrolling Image
+    39cf4a9d-2ccb-42bd-a569-80dc50265ff3: Gallery # Gallery
     42a50e3b-7d07-410d-a585-dec58552a102: 'Preview Image' # Preview Image
     48eabee0-5886-430a-ac24-e708a30e425a: Filament-Boilerplate # Filament-Boilerplate
     51d4c03c-2317-443b-860f-1fbd1232e534: Description # Description

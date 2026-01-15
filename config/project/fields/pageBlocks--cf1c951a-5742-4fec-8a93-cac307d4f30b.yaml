@@ -218,6 +218,14 @@ settings:
         -
           - group
           - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 39cf4a9d-2ccb-42bd-a569-80dc50265ff3 # Gallery
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null

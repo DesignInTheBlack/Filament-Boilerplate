@@ -4,6 +4,8 @@ if (import.meta.hot) {
 }
 
 import Glide from "@glidejs/glide";
+import Masonry from "masonry-layout";
+import imagesLoaded from "imagesloaded";
 
 // Paint Effects
 import "./paint.js";
@@ -11,7 +13,7 @@ import "./paintflood.js";
 import "./drift.js";
 
 //Navigation Handling
-import "./navigation.js"
+import "./navigation.js";
 
 // Elevate CSS
 import "../styles/elevate.css";
@@ -20,6 +22,9 @@ import "../../node_modules/@glidejs/glide/dist/css/glide.theme.min.css";
 
 const slideGap = 30;
 let glideInstance = null;
+
+// Masonry instances for HMR cleanup
+const masonryInstances = [];
 
 function initGlide() {
   const root = document.querySelector(".glide");
@@ -65,11 +70,79 @@ function initGlide() {
   glideInstance.mount();
 }
 
+
+
+
+
+function initMasonry() {
+  document.querySelectorAll("[data-masonry]").forEach((grid) => {
+    // prevent double init (HMR safe)
+    if (grid.dataset.masonryInit === "1") return;
+    grid.dataset.masonryInit = "1";
+
+    const minCol = 260; // <-- choose what "requires it" means
+    const getGap = () =>
+      parseFloat(getComputedStyle(grid).getPropertyValue("--gap")) || 16;
+
+    const msnry = new Masonry(grid, {
+      itemSelector: ".masonry-item",
+      columnWidth: ".masonry-sizer",
+      percentPosition: true,
+      gutter: getGap(),
+      transitionDuration: 0, // remove if you want animation
+    });
+
+    // Decide 3 -> 2 -> 1 purely from available width
+    const setCols = () => {
+      const gap = getGap();
+      const w = grid.clientWidth;
+
+      // How many min-width columns fit, capped to 3
+      const cols = Math.max(1, Math.min(3, Math.floor((w + gap) / (minCol + gap))));
+
+      grid.style.setProperty("--cols", cols);
+
+      // keep gutter in sync with CSS var
+      msnry.options.gutter = gap;
+
+      msnry.reloadItems();
+      msnry.layout();
+    };
+
+    // Debounced relayout for resize changes
+    let raf = 0;
+    const requestSetCols = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(setCols);
+    };
+
+    // Recompute when container size changes (better than window resize)
+    const ro = new ResizeObserver(requestSetCols);
+    ro.observe(grid);
+
+    // Layout as images load (lazy loading, slow connections)
+    const il = imagesLoaded(grid);
+    il.on("progress", () => msnry.layout());
+    il.on("always", () => msnry.layout());
+
+    // Initial pass
+    setCols();
+  });
+}
+
+
+
+
+
 // Handle both normal load and Vite / HMR reloads
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initGlide);
+  document.addEventListener("DOMContentLoaded", () => {
+    initGlide();
+    initMasonry();
+  });
 } else {
   initGlide();
+  initMasonry();
 }
 
 // Optional: keep peek in sync on resize for more fluid layouts
@@ -87,3 +160,15 @@ window.addEventListener("resize", () => {
     },
   });
 });
+
+// Masonry HMR cleanup only (does not touch Glide)
+if (import.meta.hot) {
+  import.meta.hot.dispose(() => {
+    masonryInstances.forEach((m) => m.destroy());
+    masonryInstances.length = 0;
+
+    document.querySelectorAll("[data-masonry]").forEach((grid) => {
+      delete grid.dataset.masonryInit;
+    });
+  });
+}

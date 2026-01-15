@@ -1,0 +1,30 @@
+<div class = "contain">
+
+
+  {% set images = block.images.all() %}
+
+  {% if images|length %}
+    <div class="masonry" data-masonry>
+      <div class="masonry-sizer"></div>
+
+      {% for image in images %}
+        <figure class="masonry-item">
+          <img
+            class="masonry-img"
+            src="{{ image.getUrl({ width: 900 }) }}"
+            width="{{ image.width }}"
+            height="{{ image.height }}"
+            alt="{{ image.title|e }}"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+
+
+
+</div>
+  
