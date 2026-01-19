@@ -1,25 +1,25 @@
 <section class = "ctx:editorialThreeCol">
     <div class = "contain col gap:d4 /lg/ grid:gap-d8:rows-2:cols-3-fr h:s6 ctx:end">
 
-        <div class = "ctx:editorialColumns1 h:s1 /lg/ h:auto col-spans:from-1:to-2 row-spans:from-1:to-3 col gap:d8">
-            <p class = "font:fancy:h3:bold text:darkgrey:hug">{{block.heading}}</p>
+        <div class = "ctx:editorialColumns1 /lg/ h:auto col-spans:from-1:to-2 row-spans:from-1:to-3 col gap:d8">
+            <p class = "font:fancy:h3:bold text:darkgrey">{{block.heading}}</p>
             <p class = "text:left:spacious:grey font:regular:sans:h6 mg-t:d4">{{block.firstParagraph}}</p>
-           <div class="-shadowimg -bg-drift bg-color:grey child:grow ctx:end" style = "background-image:url('{{block.firstImage.one().url}}');background-size:cover;background-position:center"></div>
+           <div class="-shadowimg min-h:s1 bg-color:grey child:grow bd:round-d2 ctx:end" style = "background-image:url('{{block.firstImage.one().url}}');background-size:cover;background-position:center"></div>
         </div>
 
 
 
-        <div class = "ctx:editorialColumns2 h:s4 /lg/ h:auto col-spans:from-2:to-3 row-spans:from-1:to-3 col gap:d8">
-            <div class="-shadowimg -bg-drift bg-color:grey child:grow ctx:end" style = "background-image:url('{{block.secondImage.one().url}}');background-size:cover;background-position:center"></div>
+        <div class = "ctx:editorialColumns2 /lg/ h:auto col-spans:from-2:to-3 row-spans:from-1:to-3 col gap:d8">
+            <div class="-shadowimg min-h:s3 bg-color:grey child:grow bd:round-d2 ctx:end" style = "background-image:url('{{block.secondImage.one().url}}');background-size:cover;background-position:center"></div>
         </div>
 
 
 
-        <div class = "ctx:editorialColumns3 h:s4 /lg/ h:auto col-spans:from-3:to-4 row-spans:from-1:to-3 col gap:d8"> 
-            <div class="-shadowimg -bg-drift bg-color:grey child:grow" style = "background-image:url('{{block.thirdImage.one().url}}');background-size:cover;background-position:center"></div>
+        <div class = "ctx:editorialColumns3 /lg/ h:auto col-spans:from-3:to-4 row-spans:from-1:to-3 col gap:d8"> 
+            <div class="-shadowimg min-h:s1 bg-color:grey child:grow bd:round-d2" style = "background-image:url('{{block.thirdImage.one().url}}');background-size:cover;background-position:center"></div>
             <p class = "text:left:spacious:grey font:regular:sans:h6 mg-b:d4">{{block.secondParagraph}}</p>
             <p class = "text:left:spacious:grey font:regular:sans:h6 ctx:end">{{block.thirdParagraph}}</p>
         </div>
 
-    </div>
+    </div> 
 </section> 

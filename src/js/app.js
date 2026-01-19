@@ -6,11 +6,11 @@ if (import.meta.hot) {
 import Glide from "@glidejs/glide";
 import Masonry from "masonry-layout";
 import imagesLoaded from "imagesloaded";
+import Lenis from "lenis";
 
 // Paint Effects
 import "./paint.js";
 import "./paintflood.js";
-import "./drift.js";
 
 //Navigation Handling
 import "./navigation.js";
@@ -70,7 +70,23 @@ function initGlide() {
   glideInstance.mount();
 }
 
+function initLenis() {
+  const lenis = new Lenis({
+    smoothWheel: true,
+    smoothTouch: false,
+    lerp: 0.08,
+    wheelMultiplier: 0.9,
+    touchMultiplier: 1.2,
+    easing: (t) => 1 - Math.pow(1 - t, 3),
+  });
 
+  const raf = (time) => {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  };
+
+  requestAnimationFrame(raf);
+}
 
 
 
@@ -130,6 +146,41 @@ function initMasonry() {
   });
 }
 
+function initGalleryDrawers() {
+  document.querySelectorAll(".gallery-drawer").forEach((drawer) => {
+    if (drawer.dataset.drawerAnimInit === "1") return;
+    drawer.dataset.drawerAnimInit = "1";
+
+    const content = drawer.querySelector(":scope > div");
+    if (!content) return;
+
+    if (drawer.open) {
+      content.style.height = "auto";
+    } else {
+      content.style.height = "0px";
+    }
+
+    drawer.addEventListener("toggle", () => {
+      const isOpen = drawer.open;
+      const startHeight = content.getBoundingClientRect().height;
+      const endHeight = isOpen ? content.scrollHeight : 0;
+
+      content.style.height = `${startHeight}px`;
+      content.getBoundingClientRect();
+      content.style.height = `${endHeight}px`;
+
+      const onEnd = (event) => {
+        if (event.propertyName !== "height") return;
+        content.removeEventListener("transitionend", onEnd);
+        if (isOpen) {
+          content.style.height = "auto";
+        }
+      };
+
+      content.addEventListener("transitionend", onEnd);
+    });
+  });
+}
 
 
 
@@ -138,11 +189,15 @@ function initMasonry() {
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
     initGlide();
+    initLenis();
     initMasonry();
+    initGalleryDrawers();
   });
 } else {
   initGlide();
+  initLenis();
   initMasonry();
+  initGalleryDrawers();
 }
 
 // Optional: keep peek in sync on resize for more fluid layouts

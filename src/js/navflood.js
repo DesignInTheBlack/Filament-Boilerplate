@@ -20,10 +20,10 @@ export function triggerNavFlood({
 function autoSplatFromCenter(canvas, options = {}) {
   const {
     wave1Start = 50,
-    wave1End = 500,
-    wave2Start = 750,
-    wave2End = 975,
-    splatsPerFrame = 2
+    wave1End = 100,
+    wave2Start = 175,
+    wave2End = 275,
+    splatsPerFrame = 1
   } = options;
 
   let currentFrame = 0;

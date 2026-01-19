@@ -1,30 +1,68 @@
-<div class = "contain">
+
+   
+   <section class = "events:auto pd-y:d8">
+   <div class = "contain col gap:d4 mg-b:d8 /lg/ grid:gap-d8:rows-1:cols-2-fr h:auto">
+
+        <div class = "ctx:galleryColumns1 /lg/ h:auto col-spans:from-1:to-2">
+            <p class = "font:fancy:h4:bold text:darkgrey /lg/ font:h3 ctx:end">
+            {{block.heading}}
+            </p>
+        </div>
 
 
-  {% set images = block.images.all() %}
 
-  {% if images|length %}
-    <div class="masonry" data-masonry>
-      <div class="masonry-sizer"></div>
+        <div class = "ctx:galleryColumns2 /lg/ h:auto col-spans:from-2:to-3 col">
+            <div class = "text:left:spacious:grey font:regular:sans:h6 ctx:end">
+            {{ block.firstParagraph }}
+            </div>
+        </div> 
 
-      {% for image in images %}
-        <figure class="masonry-item">
-          <img
-            class="masonry-img"
-            src="{{ image.getUrl({ width: 900 }) }}"
-            width="{{ image.width }}"
-            height="{{ image.height }}"
-            alt="{{ image.title|e }}"
-            loading="lazy"
-            decoding="async"
-          >
-        </figure>
-      {% endfor %}
     </div>
-  {% endif %}
 
 
 
 
-</div>
+
+  <details  class="gallery-drawer events:auto contain">
+  <summary class="text:left:spacious:grey font:regular:sans:h6 bd-b:solid:width-d0:gold50 pd-b:d6 cursor:pointer"> 
+    Explore Gallery
+  </summary>
+ 
+  <div> 
+
+
+    {% set images = block.images.all() %}
+
+    {% if images|length %}
+      <div class="masonry relative mg-t:d6" data-masonry>
+        <div class="masonry-sizer"></div>
+
+        {% for image in images %}
+          <figure class="masonry-item">
+            <img
+              class="masonry-img bd:round-d2"
+              src="{{ image.getUrl({ width: 900 }) }}"
+              width="{{ image.width }}"
+              height="{{ image.height }}"
+              alt="{{ image.title|e }}"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+   
+
+
+  </div>
+</details>
+
+
+
+  </section>
+ 
+
   
+ 

@@ -4,7 +4,7 @@
 
 
        <div>
-        <h2 class = "font:fancy:h3:bold text:darkgrey:relaxed"><span class = "font:fancy:h3:bold text:lightgrey ctx:end">My Journal</span><br>The Latest From Poured Out Art</h2>
+        <h2 class = "sticky top:d6 font:fancy:h3:bold text:darkgrey:relaxed"><span class = "font:fancy:h3:bold text:lightgrey ctx:end">My Journal</span><br>The Latest From Poured Out Art</h2>
        </div>
 
         <div class = "col w:full">
@@ -17,23 +17,23 @@
               as pageInfo, pageEntries %}
 
             {% for post in pageEntries %}
-                <div class = "ctx:listing row:y-center pd-y:d10 /lg/ h:auto ctx:end">
+                <div class = "ctx:listing col-r:y-center pd-y:d10 /lg/ row:y-center h:auto ctx:end">
 
 
                     <div>
                         <h2 class = "text:left:spacious:darkgrey:brief font:fancy:h5:bold mg-b:d4 mg-t:d8">{{ post.title }}</h2>
 
-                        <p class = "text:left:spacious:grey:blog  font:regular:sans:h6">
+                        <p class = "text:left:spacious:grey:brief  font:regular:sans:h6">
                         {{ post.description }}
                         </p>
                     </div>
 
                     {% set preview = post.previewImage.one() %}
                     {% if preview %}
-                        <div class = "-shadowimg child:grow aspect:landscape mg-l:d12" style = "background-image:url('{{ preview.url }}');background-size:cover;background-position:center">
+                        <div class = "-shadowimg child:grow aspect:landscape bd:round-d2 /lg/ mg-l:d12" style = "background-image:url('{{ preview.url }}');background-size:cover;background-position:center">
                         </div>
                     {% else %}
-                        <div class = "-shadowimg child:grow aspect:landscape mg-l:d12">
+                        <div class = "-shadowimg child:grow aspect:landscape bd:round-d2 /lg/ mg-l:d12">
                         </div>
                     {% endif %}
 
