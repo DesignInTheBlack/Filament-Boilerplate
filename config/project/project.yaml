@@ -1,4 +1,4 @@
-dateModified: 1768682596
+dateModified: 1769046738
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -35,6 +35,7 @@ meta:
     4b62f1ab-cb3e-490e-ad54-2a72dc774c37: Blogs # Blogs
     5bd0a3b2-88ff-464d-8c51-ae2aea23b8d1: Navigation # Navigation
     5e485214-bcce-49c6-8af4-0f5e89158d43: Marquee # Marquee
+    6c095355-9e0e-475d-aaf6-87d60039e126: 'Marquee (Image)' # Marquee (Image)
     7a3cf3e9-179e-4cbe-bc17-1857335d6fa5: '2nd Image' # 2nd Image
     7b88d50b-5f6f-4cf7-9f9d-4c8a40da91c9: 'Marquee Wide' # Marquee Wide
     7eb60045-099b-4bfe-ac3a-d4d44ba037a1: 'Site Footer' # Site Footer
@@ -86,6 +87,7 @@ meta:
     b5253cdf-98b0-4938-9366-0b2d4914edb3: 'Billboard Split' # Billboard Split
     bffade2e-a26c-4f6d-b1f3-ba11be0c25c6: Simple # Simple
     c3b1d63c-af69-45ad-ae0c-9b47a6c0c027: Headline # Headline
+    c815f331-a25c-4bd6-8393-2dcac79cd71e: "Author's Name" # Author's Name
     ca591ad2-56c3-4369-aa63-797cddbea65e: Assets # Assets
     cac287ab-f575-4bdf-9836-b06446a54504: 'Grand Marquee' # Grand Marquee
     cdb1f79d-3f27-4e7f-a8ca-be2236133ea7: Introduction # Introduction

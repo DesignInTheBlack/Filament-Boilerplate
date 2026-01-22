@@ -1,0 +1,33 @@
+{% set img = block.firstImage.one() %}
+
+<header class="contain ctx:marquee events:auto bd:round-d2">
+
+
+
+    <div class="-shadowimg relative z:0 w:full h:s3 bg-attr:no-repeat:cover:center row:x-center:y-center bd:round-d2 /lg/ h:s6"> 
+      
+        
+        <div class="top:0 z:2 w:full h:full ctx:end bd:round-d2"  style = "background-image:url('{{img.url}}');background-size:cover;background-position:center">
+        </div>
+ 
+        <div class = "absolute z:5 w:full h:full row:x-center:y-center pd:d8">
+            <div class = "w:full h:full bd:solid:width-d0:gold95 col:x-center:y-center"> 
+                <div class = "mg-t:d6 /lg/ mg-t:d10">
+                    <h1 class="font:fancy:thin:h5 text:white:relaxed:center -shadowtext z:3 /lg/ font:h3">
+                       {{block.heading}}
+                    </h1>
+
+                    <h2 class="font:fancy:bold:h6 text:white:hug:center -shadowtext mg-t:d8 z:3 ctx:end">
+                    {{block.subheading}}
+                    </h2>
+                </div>
+                
+            </div>  
+        </div>
+        
+    </div>
+
+ 
+
+
+</header>

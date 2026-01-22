@@ -146,6 +146,14 @@ settings:
       __assoc__:
         -
           - uid
+          - 6c095355-9e0e-475d-aaf6-87d60039e126 # Marquee (Image)
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
           - 7b88d50b-5f6f-4cf7-9f9d-4c8a40da91c9 # Marquee Wide
         -
           - name
@@ -223,6 +231,14 @@ settings:
         -
           - uid
           - 39cf4a9d-2ccb-42bd-a569-80dc50265ff3 # Gallery
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - e04778ba-b214-41ff-89f1-d5be2d84be91 # Image
         -
           - group
           - General

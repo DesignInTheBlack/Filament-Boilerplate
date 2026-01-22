@@ -1125,57 +1125,6 @@ font-weight: 700;
 font-size: 1.125rem;
 }
 
-.font\:fancy\:thin\:h3,  .font\:fancy\:thin\:h3 {
-font-family: Caviar, sans-serif;
-font-weight: 100;
-font-size: 3rem;
-}
-
-.ctx\:grandMarquee.h\:full, .ctx\:grandMarquee .h\:full {
-height: 100%;
-}
-
-.ctx\:grandMarquee.w\:full, .ctx\:grandMarquee .w\:full {
-width: 100%;
-}
-
-.ctx\:grandMarquee.z\:2, .ctx\:grandMarquee .z\:2 {
-z-index: 2;
-}
-
-.ctx\:grandMarquee.top\:0, .ctx\:grandMarquee .top\:0 {
-top: 0;
-}
-
-.ctx\:grandMarquee.row\:x-center\:y-center, .ctx\:grandMarquee .row\:x-center\:y-center {
-display:flex;
-flex-direction:row;
-justify-content: center;
-align-items: center;
-}
-
-.ctx\:grandMarquee.bg-attr\:no-repeat\:cover\:center, .ctx\:grandMarquee .bg-attr\:no-repeat\:cover\:center {
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
-}
-
-.ctx\:grandMarquee.h\:s3, .ctx\:grandMarquee .h\:s3 {
-height: 32rem;
-}
-
-.ctx\:grandMarquee.z\:0, .ctx\:grandMarquee .z\:0 {
-z-index: 0;
-}
-
-.ctx\:grandMarquee.relative, .ctx\:grandMarquee .relative {
-position: relative;
-}
-
-.ctx\:grandMarquee.events\:auto, .ctx\:grandMarquee .events\:auto {
-pointer-events: auto;
-}
-
 .mg-t\:d6,  .mg-t\:d6 {
 margin-top: 1.5rem;
 }
@@ -1234,6 +1183,92 @@ position: relative;
 
 .ctx\:marquee.events\:auto, .ctx\:marquee .events\:auto {
 pointer-events: auto;
+}
+
+.font\:fancy\:thin\:h3,  .font\:fancy\:thin\:h3 {
+font-family: Caviar, sans-serif;
+font-weight: 100;
+font-size: 3rem;
+}
+
+.ctx\:grandMarquee.h\:full, .ctx\:grandMarquee .h\:full {
+height: 100%;
+}
+
+.ctx\:grandMarquee.w\:full, .ctx\:grandMarquee .w\:full {
+width: 100%;
+}
+
+.ctx\:grandMarquee.z\:2, .ctx\:grandMarquee .z\:2 {
+z-index: 2;
+}
+
+.ctx\:grandMarquee.top\:0, .ctx\:grandMarquee .top\:0 {
+top: 0;
+}
+
+.ctx\:grandMarquee.row\:x-center\:y-center, .ctx\:grandMarquee .row\:x-center\:y-center {
+display:flex;
+flex-direction:row;
+justify-content: center;
+align-items: center;
+}
+
+.ctx\:grandMarquee.bg-attr\:no-repeat\:cover\:center, .ctx\:grandMarquee .bg-attr\:no-repeat\:cover\:center {
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+.ctx\:grandMarquee.h\:s3, .ctx\:grandMarquee .h\:s3 {
+height: 32rem;
+}
+
+.ctx\:grandMarquee.z\:0, .ctx\:grandMarquee .z\:0 {
+z-index: 0;
+}
+
+.ctx\:grandMarquee.relative, .ctx\:grandMarquee .relative {
+position: relative;
+}
+
+.ctx\:grandMarquee.events\:auto, .ctx\:grandMarquee .events\:auto {
+pointer-events: auto;
+}
+
+.ctx\:altImage.bd\:round-d2, .ctx\:altImage .bd\:round-d2 {
+border-radius: 0.5rem;
+}
+
+.ctx\:altImage.h\:s2, .ctx\:altImage .h\:s2 {
+height: 28rem;
+}
+
+.ctx\:altImage.font\:h6, .ctx\:altImage .font\:h6 {
+font-size: 1.125rem;
+}
+
+.ctx\:altImage.w\:full, .ctx\:altImage .w\:full {
+width: 100%;
+}
+
+.ctx\:altImage.text\:essay, .ctx\:altImage .text\:essay {
+max-width: 75ch;
+}
+
+.ctx\:altImage.pd-y\:d6, .ctx\:altImage .pd-y\:d6 {
+padding-top: 1.5rem;
+padding-bottom: 1.5rem;
+}
+
+.ctx\:altImage.row\:x-end, .ctx\:altImage .row\:x-end {
+display:flex;
+flex-direction:row;
+justify-content: flex-end;
+}
+
+.ctx\:altImage.contain, .ctx\:altImage .contain {
+
 }
 
 .cursor\:pointer,  .cursor\:pointer {
