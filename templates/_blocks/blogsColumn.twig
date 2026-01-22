@@ -4,10 +4,10 @@
 
 
        <div>
-        <h2 class = "sticky top:d6 font:fancy:h3:bold text:darkgrey:relaxed"><span class = "font:fancy:h3:bold text:lightgrey ctx:end">My Journal</span><br>The Latest From Poured Out Art</h2>
+        <h2 class = "sticky top:d6 font:fancy:h3:bold text:darkgrey:relaxed"><span class = "font:fancy:h3:bold text:lightgrey">My Journal</span><br>The Latest From Poured Out Art</h2>
        </div>
 
-        <div class = "col w:full">
+        <div class = "col w:full /lg/ pd-l:c1 bd-l:solid:width-d0:ultrawhite"> 
 
             {% paginate craft.entries()
               .section('blogs')
@@ -17,15 +17,18 @@
               as pageInfo, pageEntries %}
 
             {% for post in pageEntries %}
-                <div class = "ctx:listing col-r:y-center pd-y:d10 /lg/ row:y-center h:auto ctx:end">
+                <div class = "col-r:y-center pd-y:d10 /lg/ row:y-center h:auto">
 
-
+ 
                     <div>
                         <h2 class = "text:left:spacious:darkgrey:brief font:fancy:h5:bold mg-b:d4 mg-t:d8">{{ post.title }}</h2>
 
-                        <p class = "text:left:spacious:grey:brief  font:regular:sans:h6">
+                        <p class = "text:left:spacious:grey:brief font:regular:sans:h6">
                         {{ post.description }}
                         </p>
+                        <div class = "mg-t:d10">
+                        <a href = "{{ post.url }}" class = "w:full row:y-center transition:ease text:left:spacious:gold:brief font:semibold:sans:h6 @hover:[text:darkgrey_pd-l:d3]">Read More <i class="fa-solid fa-arrow-right-long mg-l:d4"></i></a>
+                        </div>
                     </div>
 
                     {% set preview = post.previewImage.one() %}
@@ -37,11 +40,11 @@
                         </div>
                     {% endif %}
 
-                </div>
+                </div> 
             {% endfor %}
 
             {% if pageInfo.totalPages > 1 %}
-                <div class = "row:x-center gap:c2 mg-t:d8">
+                <div class = "row:x-center gap:c2 mg-t:d8 ctx:end">
                     {% for pageNum in 1..pageInfo.totalPages %}
                         {% if pageNum == pageInfo.currentPage %}
                             <span>{{ pageNum }}</span>

@@ -7,7 +7,7 @@ settings:
   availableTransforms: ''
   availableVolumes: '*'
   characterLimit: null
-  ckeConfig: null
+  ckeConfig: bffade2e-a26c-4f6d-b1f3-ba11be0c25c6 # Simple
   createButtonLabel: null
   defaultTransform: null
   expandEntryButtons: false

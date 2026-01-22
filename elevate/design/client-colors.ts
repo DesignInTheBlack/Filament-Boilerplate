@@ -1,6 +1,7 @@
 export const clientColors = {
     white: '#F7F7F7',
     white50: '#BABABA',
+    ultrawhite: '#eeeeee',
     darkgrey: '#383838',
     black:'#1D1D1D',
     jetblack:'#0A0A0A',
