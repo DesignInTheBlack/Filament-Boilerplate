@@ -6,6 +6,24 @@ fieldLayouts:
     tabs:
       -
         elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-23T03:38:50+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d26b5ae7-14f1-4158-a982-94713d28f1c1 # Collapse Mobile
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 36a8818c-2fcf-4328-ad50-efe08dfba925
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: ea7c6992-e058-4287-ab25-e267b27a9b4c
         userCondition: null

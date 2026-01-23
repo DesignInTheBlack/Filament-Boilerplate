@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: collapseMobile
+instructions: null
+name: 'Collapse Mobile'
+searchable: false
+settings:
+  default: false
+  offLabel: 'Mobile Visible'
+  onLabel: 'Not Mobile Visible'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

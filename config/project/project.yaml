@@ -1,4 +1,4 @@
-dateModified: 1769051236
+dateModified: 1769139634
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -94,6 +94,7 @@ meta:
     cdf8dc00-7c81-40b8-a30f-d30c796267b8: color # color
     cf1c951a-5742-4fec-8a93-cac307d4f30b: 'Page Blocks' # Page Blocks
     cfdb4cfd-3dce-4d62-b0eb-ff0cca5014df: 'Blog Blocks' # Blog Blocks
+    d26b5ae7-14f1-4158-a982-94713d28f1c1: 'Collapse Mobile' # Collapse Mobile
     daaf0a23-3781-475b-9c1d-145b15108605: '4th Image' # 4th Image
     e04778ba-b214-41ff-89f1-d5be2d84be91: Image # Image
     ea82e941-3e2c-4cd7-bcbb-70ce15e46ac7: 'Mini Marquee' # Mini Marquee

@@ -204,12 +204,8 @@ aspect-ratio: 1/1;
 font-size: 1.125rem;
 }
 
-.ctx\:blogPage.text\:full, .ctx\:blogPage .text\:full {
-max-width: 80ch;
-}
-
-.ctx\:blogPage.w\:full, .ctx\:blogPage .w\:full {
-width: 100%;
+.ctx\:blogPage.w\:s5, .ctx\:blogPage .w\:s5 {
+width: 40rem;
 }
 
 .ctx\:blogPage.row\:x-center, .ctx\:blogPage .row\:x-center {
@@ -266,6 +262,10 @@ top: 0;
 
 .ctx\:blogPage.h\:full, .ctx\:blogPage .h\:full {
 height: 100%;
+}
+
+.ctx\:blogPage.w\:full, .ctx\:blogPage .w\:full {
+width: 100%;
 }
 
 .ctx\:blogPage.absolute, .ctx\:blogPage .absolute {
@@ -574,9 +574,14 @@ margin-bottom: 7rem;
 pointer-events: auto;
 }
 
-.pd-y\:d8,  .pd-y\:d8 {
+.ctx\:smallSpaceNo.pd-y\:d8, .ctx\:smallSpaceNo .pd-y\:d8 {
 padding-top: 2rem;
 padding-bottom: 2rem;
+}
+
+.ctx\:smallSpaceCollapse.pd-y\:d0, .ctx\:smallSpaceCollapse .pd-y\:d0 {
+padding-top: 0.125rem;
+padding-bottom: 0.125rem;
 }
 
 .bd-b\:solid\:width-d0\:gold,  .bd-b\:solid\:width-d0\:gold {
@@ -589,13 +594,28 @@ border-bottom-color: #B1740F;
 height: 4.5rem;
 }
 
-.h\:auto,  .h\:auto {
+.ctx\:mediumSpaceNo.pd-y\:d8, .ctx\:mediumSpaceNo .pd-y\:d8 {
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+
+.ctx\:mediumSpaceCollapse.pd-y\:d0, .ctx\:mediumSpaceCollapse .pd-y\:d0 {
+padding-top: 0.125rem;
+padding-bottom: 0.125rem;
+}
+
+.ctx\:largeSpaceNo.h\:auto, .ctx\:largeSpaceNo .h\:auto {
 height: auto;
 }
 
-.pd-y\:c2,  .pd-y\:c2 {
+.ctx\:largeSpaceNo.pd-y\:c2, .ctx\:largeSpaceNo .pd-y\:c2 {
 padding-top: 4.5rem;
 padding-bottom: 4.5rem;
+}
+
+.ctx\:largeSpaceCollapse.pd-y\:d0, .ctx\:largeSpaceCollapse .pd-y\:d0 {
+padding-top: 0.125rem;
+padding-bottom: 0.125rem;
 }
 
 .ctx\:quoteAlt.text\:grey, .ctx\:quoteAlt .text\:grey {
@@ -1453,8 +1473,8 @@ pointer-events: auto;
 border-radius: 0.5rem;
 }
 
-.ctx\:altImage.h\:s3, .ctx\:altImage .h\:s3 {
-height: 32rem;
+.ctx\:altImage.h\:s4, .ctx\:altImage .h\:s4 {
+height: 36rem;
 }
 
 .ctx\:altImage.font\:h6, .ctx\:altImage .font\:h6 {
@@ -1465,9 +1485,9 @@ font-size: 1.125rem;
 width: 48rem;
 }
 
-.ctx\:altImage.pd-y\:d6, .ctx\:altImage .pd-y\:d6 {
-padding-top: 1.5rem;
-padding-bottom: 1.5rem;
+.ctx\:altImage.pd-y\:d8, .ctx\:altImage .pd-y\:d8 {
+padding-top: 2rem;
+padding-bottom: 2rem;
 }
 
 .ctx\:altImage.row\:x-end, .ctx\:altImage .row\:x-end {
@@ -1542,6 +1562,11 @@ flex-direction:column;
 align-items: x;
 justify-content: y;
 flex-wrap: FlexWrapRule;
+}
+
+.pd-y\:d8,  .pd-y\:d8 {
+padding-top: 2rem;
+padding-bottom: 2rem;
 }
 
 .pd-t\:d8,  .pd-t\:d8 {
@@ -1877,6 +1902,15 @@ min-width: 2rem;
 min-height: 2rem;
 }
 
+.bg-color\:ultrawhite,  .bg-color\:ultrawhite {
+background-color: #eeeeee;
+}
+
+.pd-y\:c3,  .pd-y\:c3 {
+padding-top: 5rem;
+padding-bottom: 5rem;
+}
+
 .mg-b\:d4,  .mg-b\:d4 {
 margin-bottom: 1rem;
 }
@@ -1905,9 +1939,12 @@ margin-bottom: 3rem;
 margin-bottom: 3rem;
 }
 
-.pd-y\:c3,  .pd-y\:c3 {
-padding-top: 5rem;
-padding-bottom: 5rem;
+.pd-b\:d10,  .pd-b\:d10 {
+padding-bottom: 2.5rem;
+}
+
+.pd-t\:c4,  .pd-t\:c4 {
+padding-top: 5.5rem;
 }
 
 .ctx\:blogsColumn.mg-t\:d8, .ctx\:blogsColumn .mg-t\:d8 {
@@ -2482,18 +2519,37 @@ padding-top: 4.5rem;
 padding-bottom: 4.5rem;
 }
 
-.pd-y\:0,  .pd-y\:0 {
+.ctx\:largeSpaceCollapse.pd-y\:0, .ctx\:largeSpaceCollapse .pd-y\:0 {
 padding-top: 0;
 padding-bottom: 0;
 }
 
-.h\:c9,  .h\:c9 {
+.ctx\:largeSpaceCollapse.h\:c9, .ctx\:largeSpaceCollapse .h\:c9 {
 height: 9rem;
 }
 
-.pd-y\:c2,  .pd-y\:c2 {
+.ctx\:largeSpaceNo.pd-y\:0, .ctx\:largeSpaceNo .pd-y\:0 {
+padding-top: 0;
+padding-bottom: 0;
+}
+
+.ctx\:largeSpaceNo.h\:c9, .ctx\:largeSpaceNo .h\:c9 {
+height: 9rem;
+}
+
+.ctx\:mediumSpaceCollapse.pd-y\:c2, .ctx\:mediumSpaceCollapse .pd-y\:c2 {
 padding-top: 4.5rem;
 padding-bottom: 4.5rem;
+}
+
+.ctx\:mediumSpaceNo.pd-y\:c2, .ctx\:mediumSpaceNo .pd-y\:c2 {
+padding-top: 4.5rem;
+padding-bottom: 4.5rem;
+}
+
+.ctx\:smallSpaceCollapse.pd-y\:d8, .ctx\:smallSpaceCollapse .pd-y\:d8 {
+padding-top: 2rem;
+padding-bottom: 2rem;
 }
 
 .ctx\:Marquee.h\:s6, .ctx\:Marquee .h\:s6 {
@@ -2714,3 +2770,15 @@ border-radius:100%;
   height: 0;
 }
 
+
+.glide__slides {
+  overflow:visible !important;
+  overflow-y: visible !important;
+  overflow-x: hidden !important;
+}
+
+.glide__track {
+  overflow:visible !important;
+  overflow-y: visible !important;
+  overflow-x: hidden !important;
+}

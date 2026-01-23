@@ -86,3 +86,15 @@ border-radius:100%;
   height: 0;
 }
 
+
+.glide__slides {
+  overflow:visible !important;
+  overflow-y: visible !important;
+  overflow-x: hidden !important;
+}
+
+.glide__track {
+  overflow:visible !important;
+  overflow-y: visible !important;
+  overflow-x: hidden !important;
+}

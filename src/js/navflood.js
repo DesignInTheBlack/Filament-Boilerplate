@@ -21,8 +21,8 @@ function autoSplatFromCenter(canvas, options = {}) {
   const {
     wave1Start = 50,
     wave1End = 100,
-    wave2Start = 175,
-    wave2End = 275,
+    wave2Start = 100,
+    wave2End = 101,
     splatsPerFrame = 1
   } = options;
 
