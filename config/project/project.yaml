@@ -1,4 +1,4 @@
-dateModified: 1769139634
+dateModified: 1769279227
 email:
   fromEmail: creative@raraavis.design
   fromName: Filament-Boilerplate
@@ -79,11 +79,13 @@ meta:
     a4781ff6-b41f-478f-a860-fc78b905f8e8: Headline # Headline
     aa15edf9-5fc0-40cc-8eb1-570557b0c72f: StandardPage # StandardPage
     ab2a1412-8d01-4b29-a57d-80a0f008efab: Pages # Pages
+    ad5cdce3-fa36-4921-bd62-e683266578bc: Facebook # Facebook
     addc69ef-1366-47cc-b9aa-477cbdd76685: 'Large Hero' # Large Hero
     affe6a11-2e34-40ec-a742-3766960fdfd3: Gallery # Gallery
     b0425f19-189b-432e-a981-4fccc8ecd8f9: Quote # Quote
     b0514dd3-fb9c-4848-95ed-318cea87b2b5: Blogs # Blogs
     b49dcac4-4dca-4e71-9925-c677816d034c: 'Aside Paragraph' # Aside Paragraph
+    b704b163-8691-4188-8137-e13a150de06f: Instagram # Instagram
     b5253cdf-98b0-4938-9366-0b2d4914edb3: 'Billboard Split' # Billboard Split
     bffade2e-a26c-4f6d-b1f3-ba11be0c25c6: Simple # Simple
     c3b1d63c-af69-45ad-ae0c-9b47a6c0c027: Headline # Headline

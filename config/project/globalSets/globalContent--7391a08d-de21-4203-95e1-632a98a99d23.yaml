@@ -90,6 +90,40 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2026-01-24T18:27:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b704b163-8691-4188-8137-e13a150de06f # Instagram
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba737dcb-567b-4e33-abee-fe47888df645
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-24T18:27:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ad5cdce3-fa36-4921-bd62-e683266578bc # Facebook
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca68a803-7efb-4d60-8d38-bfa40f4f8d60
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 12f3f275-f50a-4824-b1a0-e5bea658a954
         userCondition: null

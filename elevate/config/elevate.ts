@@ -12,7 +12,7 @@ const options = {
       /\bclassName\s*=\s*{\s*"([^"]*)"\s*}/g,   // className={"..."}
       /\bclassName\s*=\s*{\s*'([^']*)'\s*}/g,   // className={'...'}
       ],
-    SafeList:['glide__slides','glide__slide','glide__track','glide','fa-brands','fa-square-facebook','fa-square-instagram','fa-solid', 'fa-bars','fa-xmark','fade-in-hold-out','masonry','masonry-sizer','masonry-item','masonry-img','gallery-drawer','gallery-drawer__content','fa-arrow-right-long'  ]
+    SafeList:['glide__slides','glide__slide','glide__track','glide','fa-brands','fa-square-facebook','fa-square-instagram','fa-solid', 'fa-bars','fa-xmark','fade-in-hold-out','masonry','masonry-sizer','masonry-item','masonry-img','gallery-drawer','gallery-drawer__content','fa-arrow-right-long','fa-minus'  ]
 }
 
 export const config = options

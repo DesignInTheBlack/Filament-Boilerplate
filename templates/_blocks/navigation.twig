@@ -16,9 +16,9 @@
             <p>|</p>
             <a href = "{{globalContent.about}}">About</a>
             <a href = "{{globalContent.gallery}}">Gallery</a>
-            <a href = "{{globalContent.blogs}}">Blog</a> 
-            <p class = "text:gold50 font:h5"><i class="fa-brands fa-square-facebook"></i></p>
-            <p class = "text:gold50 font:h5"><i class="fa-brands fa-square-instagram ctx:end"></i></p>
+            <a href = "{{globalContent.blogs}}">Journals</a> 
+            <a href = "{{globalContent.facebook}}" class = "text:gold50 font:h5"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href = "{{globalContent.instagram}}" class = "text:gold50 font:h5"><i class="fa-brands fa-square-instagram ctx:end"></i></a>
         </div>
     </nav> 
 
@@ -35,15 +35,56 @@
             <div id = "mobileLinks" class = "hidden w:full h:full col:y-center:x-center">
                 <canvas class = "-navfluid top:0 z:1 w:full h:full absolute">
                 </canvas>
-                <div class = "z:10000 relative w:full h:full col:y-center:x-center gap:d8">
-                    <i id = "closeButton" class="events:auto absolute top:0 right:0 fa-solid fa-xmark text:white mg:d4 -shadowtext"></i> 
-                    <a href = "/" class = "text:white font:sans:semibold:h5 -shadowtext">Home</a>
-                    <a href = "{{globalContent.shop}}" class = "text:white font:sans:semibold:h5 -shadowtext">Shop</a>
-                    <a href = "{{globalContent.about}}" class = "text:white font:sans:semibold:h5 -shadowtext">About</a>
-                    <a href = "{{globalContent.gallery}}" class = "text:white font:sans:semibold:h5 -shadowtext">Gallery</a> 
-                    <a href = "{{globalContent.blogs}}" class = "text:white font:sans:semibold:h5 -shadowtext">Blog</a>
-        
-                </div>
+                <div class = "contain z:10000 relative w:full h:full col:y-center:x-center">
+                    <i id = "closeButton" class="events:auto absolute top:0 right:0 fa-solid fa-xmark text:white mg:d4"></i> 
+
+                    <div class = "col:x-start w:full mg-b:d8">
+                        <a href = "/" class = "font:h3:fancy:bold text:white mg-b:d4">Poured Out</a>
+                        <p class = "text:white75OP font:sans:h6">The Art Of Jessica Ellington</p>
+                    </div>
+
+
+                     {% set current = craft.app.request.pathInfo|trim('/') %}
+
+                     <a href="/"
+                    style="{{ current == '' ? 'color:white !important' : '' }}" class = "text:white75OP font:sans:medium:h6 pd-y:d8 w:full bd-b:solid:width-d0:white50OP">
+                    
+                    Homepage
+                    {% if current == '' %}<i class="fa-solid fa-minus"></i>{% endif %}
+                    </a>
+                    
+                    
+                    <a href = "{{globalContent.shop}}" class = "text:white75OP font:sans:medium:h6 pd-y:d8 w:full bd-b:solid:width-d0:white50OP">
+                    
+                    The Shop
+                    
+                    </a>
+                    
+                    <a href="{{ globalContent.about }}"
+                    style="{{ current == 'about' ? 'color:white !important' : '' }}" class = "text:white75OP font:sans:medium:h6 pd-y:d8 w:full bd-b:solid:width-d0:white50OP">
+                    
+                    About Me
+                    {% if current == 'about' %}<i class="fa-solid fa-minus"></i>{% endif %}
+                    </a>
+                    
+                    <a href="{{ globalContent.gallery }}"
+                    style="{{ current == 'the-gallery' ? 'color:white !important' : '' }}" class = "text:white75OP font:sans:medium:h6 pd-y:d8 w:full bd-b:solid:width-d0:white50OP">
+                    
+                    The Gallery
+                    {% if current == 'the-gallery' %}<i class="fa-solid fa-minus"></i>{% endif %}
+                    </a>
+                    
+                    <a href="{{ globalContent.blogs }}"
+                    style="{{ current == 'blogs' ? 'color:white !important' : '' }}" class = "text:white75OP font:sans:medium:h6 pd-y:d8 w:full">
+                    
+                    My Journal 
+                    {% if current == 'blogs' %}<i class="fa-solid fa-minus"></i>{% endif %}
+                    </a>
+
+                
+
+
+                    </div>
             </div>
         </div>
 

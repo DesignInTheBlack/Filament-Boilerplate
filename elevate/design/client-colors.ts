@@ -1,9 +1,11 @@
 export const clientColors = {
     white: '#F7F7F7',
     white50: '#BABABA',
+    white50OP: 'rgba(255, 255, 255, 0.045)',
+    white75OP: 'rgba(255, 255, 255, 0.75)',
     ultrawhite: '#eeeeee',
     darkgrey: '#383838',
-    black:'#1D1D1D',
+    black:'#0b0b0b',
     jetblack:'#0A0A0A',
     grey: '#8D8D8D',
     lightgrey:'#BABABA',
