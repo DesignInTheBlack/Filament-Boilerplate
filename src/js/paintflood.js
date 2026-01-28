@@ -1,18 +1,30 @@
-document.addEventListener('DOMContentLoaded', () => {
+function startWhenCanvasReady(canvas, start) {
+  const tick = () => {
+    if (canvas.clientWidth > 0 && canvas.clientHeight > 0) {
+      start();
+      return;
+    }
+    requestAnimationFrame(tick);
+  };
+
+  tick();
+}
+
+window.addEventListener('load', () => {
   // Select all canvas elements you want to apply the effect to
   const canvases = document.querySelectorAll('canvas.-fluid'); // <--- CHANGE THIS SELECTOR
                                                                     //     to match your HTML
 
-  canvases.forEach(canvas => {
-    createFluidSimulation(canvas); // Initialize a simulation for each canvas
+  canvases.forEach((canvas) => {
+    startWhenCanvasReady(canvas, () => {
+      createFluidSimulation(canvas); // Initialize a simulation for each canvas
 
-    autoSplatFromCenter(canvas, {
-      startFrame: 50,
-      endFrame: 250,
-      splatsPerFrame: 2
+      autoSplatFromCenter(canvas, {
+        startFrame: 50,
+        endFrame: 250,
+        splatsPerFrame: 2
+      });
     });
-
-
   });
 });
 
