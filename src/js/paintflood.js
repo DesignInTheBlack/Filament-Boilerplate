@@ -655,7 +655,6 @@ let palette = buildPaletteFromDiv('paletteDefine');
   })();
   
   let lastTime = Date.now();
-  multipleSplats(parseInt(Math.random() * 20) + 5);
   update();
   
   function update() {
@@ -863,12 +862,22 @@ let palette = buildPaletteFromDiv('paletteDefine');
     }
   }
   
-  canvas.addEventListener('mousemove', e => {
+  const getCanvasOffset = (event) => {
+    if (Number.isFinite(event.offsetX) && Number.isFinite(event.offsetY)) {
+      return { x: event.offsetX, y: event.offsetY };
+    }
+
+    const rect = canvas.getBoundingClientRect();
+    return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+  };
+
+  canvas.addEventListener('mousemove', (e) => {
+    const { x, y } = getCanvasOffset(e);
     pointers[0].moved = pointers[0].down;
-    pointers[0].dx = (e.offsetX - pointers[0].x) * 88.0;
-    pointers[0].dy = (e.offsetY - pointers[0].y) * 44.0;
-    pointers[0].x = e.offsetX;
-    pointers[0].y = e.offsetY;
+    pointers[0].dx = (x - pointers[0].x) * 88.0;
+    pointers[0].dy = (y - pointers[0].y) * 44.0;
+    pointers[0].x = x;
+    pointers[0].y = y;
   });
   
   canvas.addEventListener('touchmove', e => {
