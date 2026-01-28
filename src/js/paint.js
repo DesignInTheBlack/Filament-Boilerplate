@@ -5,6 +5,12 @@
 const canvas = document.getElementsByTagName('canvas')[0];
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
+canvas.style.pointerEvents = 'none';
+console.log('[paint] init', {
+  canvasFound: !!canvas,
+  width: canvas.clientWidth,
+  height: canvas.clientHeight
+});
 
 let config = {
   TEXTURE_DOWNSAMPLE: 2,
@@ -71,8 +77,14 @@ let palette = buildPaletteFromDiv('paletteDefine');
 
 let pointers = [];
 let splatStack = [];
+let debugEventCount = 0;
+let debugSplatCount = 0;
 
 const { gl, ext } = getWebGLContext(canvas);
+console.log('[paint] webgl', {
+  hasGL: !!gl,
+  supportLinearFiltering: !!ext?.supportLinearFiltering
+});
 
 function getWebGLContext(canvas) {
   const params = { alpha: true, depth: false, stencil: false, antialias: false };
@@ -601,6 +613,7 @@ const blit = (() => {
 let lastTime = Date.now();
 multipleSplats(parseInt(Math.random() * 20) + 5);
 update();
+console.log('[paint] update loop started');
 
 function update() {
   resizeCanvas();
@@ -631,6 +644,15 @@ function update() {
   for (let i = 0; i < pointers.length; i++) {
     const pointer = pointers[i];
     if (pointer.moved) {
+      debugSplatCount += 1;
+      if (debugSplatCount <= 5 || debugSplatCount % 50 === 0) {
+        console.log('[paint] splat', debugSplatCount, {
+          x: pointer.x,
+          y: pointer.y,
+          dx: pointer.dx,
+          dy: pointer.dy
+        });
+      }
       splat(pointer.x, pointer.y, pointer.dx, pointer.dy, pointer.color); // main blob
       // splatterRing(pointer);                                              // satellite dots
       pointer.moved = false;
@@ -804,55 +826,99 @@ function resizeCanvas() {
   }
 }
 
-canvas.addEventListener('mousemove', e => {
-  pointers[0].moved = pointers[0].down;
-  pointers[0].dx = (e.offsetX - pointers[0].x) * 18.0;
-  pointers[0].dy = (e.offsetY - pointers[0].y) * 9.0;
-  pointers[0].x = e.offsetX;
-  pointers[0].y = e.offsetY;
-});
+let hasActiveTouch = false;
 
-canvas.addEventListener('touchmove', e => {
-  e.preventDefault();
-  const touches = e.targetTouches;
-  for (let i = 0; i < touches.length; i++) {
-    let pointer = pointers[i];
-    pointer.moved = pointer.down;
-    pointer.dx = (touches[i].pageX - pointer.x) * 10.0;
-    pointer.dy = (touches[i].pageY - pointer.y) * 10.0;
-    pointer.x = touches[i].pageX;
-    pointer.y = touches[i].pageY;
+const getCanvasPoint = (clientX, clientY) => {
+  const rect = canvas.getBoundingClientRect();
+  if (!rect.width || !rect.height) return null;
+
+  const x = clientX - rect.left;
+  const y = clientY - rect.top;
+
+  return {
+    x,
+    y,
+    inside: x >= 0 && y >= 0 && x <= rect.width && y <= rect.height
+  };
+};
+
+const updatePointer = (pointer, point, dxScale, dyScale) => {
+  if (!point || !point.inside) {
+    pointer.down = false;
+    pointer.moved = false;
+    return;
   }
-}, false);
 
-canvas.addEventListener('mousemove', () => {
-  pointers[0].down = true;
-  pointers[0].color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
-});
-
-canvas.addEventListener('touchstart', e => {
-  e.preventDefault();
-  const touches = e.targetTouches;
-  for (let i = 0; i < touches.length; i++) {
-    if (i >= pointers.length)
-    pointers.push(new pointerPrototype());
-
-    pointers[i].id = touches[i].identifier;
-    pointers[i].down = true;
-    pointers[i].x = touches[i].pageX;
-    pointers[i].y = touches[i].pageY;
-    pointers[i].color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
+  if (!pointer.down) {
+    pointer.dx = 0;
+    pointer.dy = 0;
+  } else {
+    pointer.dx = (point.x - pointer.x) * dxScale;
+    pointer.dy = (point.y - pointer.y) * dyScale;
   }
-});
+
+  pointer.down = true;
+  pointer.moved = true;
+  pointer.x = point.x;
+  pointer.y = point.y;
+  pointer.color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
+
+  debugEventCount += 1;
+  if (debugEventCount <= 10 || debugEventCount % 100 === 0) {
+    console.log('[paint] pointer', debugEventCount, {
+      x: pointer.x,
+      y: pointer.y,
+      dx: pointer.dx,
+      dy: pointer.dy
+    });
+  }
+};
+
+const handleMouseMove = e => {
+  if (hasActiveTouch) return;
+  const point = getCanvasPoint(e.clientX, e.clientY);
+  updatePointer(pointers[0], point, 18.0, 9.0);
+};
+
+const handleTouchMove = e => {
+  const touch = e.touches[0];
+  if (!touch) {
+    hasActiveTouch = false;
+    pointers[0].down = false;
+    pointers[0].moved = false;
+    return;
+  }
+
+  hasActiveTouch = true;
+  pointers[0].id = touch.identifier;
+  const point = getCanvasPoint(touch.clientX, touch.clientY);
+  updatePointer(pointers[0], point, 10.0, 10.0);
+};
+
+const handleTouchStart = e => {
+  const touch = e.touches[0];
+  if (!touch) return;
+  hasActiveTouch = true;
+  pointers[0].id = touch.identifier;
+  const point = getCanvasPoint(touch.clientX, touch.clientY);
+  updatePointer(pointers[0], point, 10.0, 10.0);
+};
+
+window.addEventListener('mousemove', handleMouseMove, { passive: true, capture: true });
+window.addEventListener('touchmove', handleTouchMove, { passive: true, capture: true });
+window.addEventListener('touchstart', handleTouchStart, { passive: true, capture: true });
 
 window.addEventListener('mouseleave', () => {
   pointers[0].down = false;
 });
 
-window.addEventListener('touchend', e => {
-  const touches = e.changedTouches;
-  for (let i = 0; i < touches.length; i++)
-  for (let j = 0; j < pointers.length; j++)
-  if (touches[i].identifier == pointers[j].id)
-  pointers[j].down = false;
-});
+const handleTouchEnd = e => {
+  if (e.touches.length === 0) {
+    hasActiveTouch = false;
+    pointers[0].down = false;
+    pointers[0].moved = false;
+  }
+};
+
+window.addEventListener('touchend', handleTouchEnd, { passive: true, capture: true });
+window.addEventListener('touchcancel', handleTouchEnd, { passive: true, capture: true });

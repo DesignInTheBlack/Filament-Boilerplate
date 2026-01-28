@@ -21,7 +21,7 @@
 
    
 
-    <div class = "relative bg-color:white z:1 events:none">
+    <div class = "relative z:1 events:none">
       {% block content %}
         {% for block in entry.pageBlocks.all() %}
           {% include '_blocks/' ~ block.type.handle
