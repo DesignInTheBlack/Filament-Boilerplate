@@ -80,22 +80,22 @@ textarea:not([rows]) {
 @media only screen and (min-width:20rem) {
 .contain {
     margin:auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     }
 }
 @media only screen and (min-width:30rem) {
 .contain {
     margin:auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     }
 }
 @media only screen and (min-width:40rem) {
 .contain {
     margin:auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     }
 }
 @media only screen and (min-width:48rem) {
@@ -154,10 +154,6 @@ pointer-events: none;
 
 .z\:1,  .z\:1 {
 z-index: 1;
-}
-
-.bg-color\:white,  .bg-color\:white {
-background-color: #F7F7F7;
 }
 
 .relative,  .relative {
@@ -345,8 +341,8 @@ font-weight: 400;
 font-size: 1.5rem;
 }
 
-.ctx\:quote.pd-l\:c1, .ctx\:quote .pd-l\:c1 {
-padding-left: 4rem;
+.ctx\:quote.pd-l\:d10, .ctx\:quote .pd-l\:d10 {
+padding-left: 2.5rem;
 }
 
 .ctx\:quote.bd-l\:solid\:width-d1\:gold, .ctx\:quote .bd-l\:solid\:width-d1\:gold {
@@ -521,6 +517,10 @@ align-items: center;
 z-index: 5;
 }
 
+.events\:auto,  .events\:auto {
+pointer-events: auto;
+}
+
 .ctx\:Marquee.h\:full, .ctx\:Marquee .h\:full {
 height: 100%;
 }
@@ -554,8 +554,8 @@ background-size: cover;
 background-position: center center;
 }
 
-.ctx\:Marquee.h\:s3, .ctx\:Marquee .h\:s3 {
-height: 32rem;
+.ctx\:Marquee.h\:s2, .ctx\:Marquee .h\:s2 {
+height: 28rem;
 }
 
 .ctx\:Marquee.z\:0, .ctx\:Marquee .z\:0 {
@@ -652,8 +652,8 @@ font-weight: 400;
 font-size: 1.5rem;
 }
 
-.ctx\:quoteAlt.pd-l\:c1, .ctx\:quoteAlt .pd-l\:c1 {
-padding-left: 4rem;
+.ctx\:quoteAlt.pd-l\:d10, .ctx\:quoteAlt .pd-l\:d10 {
+padding-left: 2.5rem;
 }
 
 .ctx\:quoteAlt.bd-l\:solid\:width-d1\:gold, .ctx\:quoteAlt .bd-l\:solid\:width-d1\:gold {
@@ -754,6 +754,10 @@ height: 40rem;
 z-index: 0;
 }
 
+.pd-l\:d6,  .pd-l\:d6 {
+padding-left: 1.5rem;
+}
+
 .pd-y\:d8,  .pd-y\:d8 {
 padding-top: 2rem;
 padding-bottom: 2rem;
@@ -812,10 +816,6 @@ margin-bottom: 1rem;
 
 .right\:0,  .right\:0 {
 right: 0;
-}
-
-.events\:auto,  .events\:auto {
-pointer-events: auto;
 }
 
 .col\:y-center\:x-center,  .col\:y-center\:x-center {
@@ -1130,6 +1130,10 @@ height: 100%;
 width: 100%;
 }
 
+.ctx\:marqueeWide.events\:none, .ctx\:marqueeWide .events\:none {
+pointer-events: none;
+}
+
 .ctx\:marqueeWide.pd\:c2, .ctx\:marqueeWide .pd\:c2 {
 padding-top: 4.5rem;
 padding-left: 4.5rem;
@@ -1150,6 +1154,10 @@ z-index: 5;
 
 .ctx\:marqueeWide.absolute, .ctx\:marqueeWide .absolute {
 position: absolute;
+}
+
+.ctx\:marqueeWide.events\:auto, .ctx\:marqueeWide .events\:auto {
+pointer-events: auto;
 }
 
 .ctx\:marqueeWide.z\:2, .ctx\:marqueeWide .z\:2 {
@@ -1188,10 +1196,6 @@ border-top-color: #B1740F;
 border-bottom-style: solid;
 border-bottom-width: 0.125rem;
 border-bottom-color: #B1740F;
-}
-
-.ctx\:marqueeWide.events\:auto, .ctx\:marqueeWide .events\:auto {
-pointer-events: auto;
 }
 
 .ctx\:miniMarquee.row\:x-center\:y-center, .ctx\:miniMarquee .row\:x-center\:y-center {
@@ -1409,6 +1413,10 @@ height: 100%;
 width: 100%;
 }
 
+.ctx\:grandMarquee.events\:none, .ctx\:grandMarquee .events\:none {
+pointer-events: none;
+}
+
 .ctx\:grandMarquee.pd\:c2, .ctx\:grandMarquee .pd\:c2 {
 padding-top: 4.5rem;
 padding-left: 4.5rem;
@@ -1429,6 +1437,10 @@ z-index: 5;
 
 .ctx\:grandMarquee.absolute, .ctx\:grandMarquee .absolute {
 position: absolute;
+}
+
+.ctx\:grandMarquee.events\:auto, .ctx\:grandMarquee .events\:auto {
+pointer-events: auto;
 }
 
 .ctx\:grandMarquee.z\:2, .ctx\:grandMarquee .z\:2 {
@@ -1455,10 +1467,6 @@ z-index: 0;
 
 .ctx\:grandMarquee.relative, .ctx\:grandMarquee .relative {
 position: relative;
-}
-
-.ctx\:grandMarquee.events\:auto, .ctx\:grandMarquee .events\:auto {
-pointer-events: auto;
 }
 
 .font\:fancy\:bold\:h6,  .font\:fancy\:bold\:h6 {
@@ -1515,8 +1523,8 @@ background-size: cover;
 background-position: center center;
 }
 
-.ctx\:marquee.h\:s3, .ctx\:marquee .h\:s3 {
-height: 32rem;
+.ctx\:marquee.h\:s2, .ctx\:marquee .h\:s2 {
+height: 28rem;
 }
 
 .ctx\:marquee.z\:0, .ctx\:marquee .z\:0 {

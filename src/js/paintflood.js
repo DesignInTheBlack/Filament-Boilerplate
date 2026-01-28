@@ -56,8 +56,8 @@ function autoSplatFromCenter(canvas, options = {}) {
       for (let i = 0; i < splatsPerFrame; i++) {
         const angle = Math.random() * Math.PI * 2;
         const distance = inWave1 
-        ? Math.random() * 200      // Wave 1: original speed
-        : Math.random() * 45;      // Wave 2: slower/tighter
+        ? Math.random() * 35      // Wave 1: original speed
+        : Math.random() * 35;      // Wave 2: slower/tighter
         
         const clientX = centerX + Math.cos(angle) * distance;
         const clientY = centerY + Math.sin(angle) * distance;
@@ -93,7 +93,7 @@ function createFluidSimulation(canvas) {
   let config = {
     TEXTURE_DOWNSAMPLE: 1,
     DENSITY_DISSIPATION: 1, // Keep this for stability
-    VELOCITY_DISSIPATION: 0.997,
+    VELOCITY_DISSIPATION: 0.9999,
     PRESSURE_DISSIPATION: 0.8,
     PRESSURE_ITERATIONS: 8,
     CURL: 6,                 // ⬆️ Increased from 6 to add much more detail
@@ -881,7 +881,6 @@ let palette = buildPaletteFromDiv('paletteDefine');
   });
   
   canvas.addEventListener('touchmove', e => {
-    e.preventDefault();
     const touches = e.targetTouches;
     for (let i = 0; i < touches.length; i++) {
       let pointer = pointers[i];
@@ -899,7 +898,6 @@ let palette = buildPaletteFromDiv('paletteDefine');
   });
   
   canvas.addEventListener('touchstart', e => {
-    e.preventDefault();
     const touches = e.targetTouches;
     for (let i = 0; i < touches.length; i++) {
       if (i >= pointers.length)

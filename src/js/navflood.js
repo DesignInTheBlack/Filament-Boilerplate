@@ -22,8 +22,8 @@ function autoSplatFromCenter(canvas, options = {}) {
     wave1Start = 50,
     wave1End = 100,
     wave2Start = 100,
-    wave2End = 101,
-    splatsPerFrame = 1
+    wave2End = 300,
+    splatsPerFrame = 2
   } = options;
 
   let currentFrame = 0;
@@ -43,8 +43,8 @@ function autoSplatFromCenter(canvas, options = {}) {
       for (let i = 0; i < splatsPerFrame; i++) {
         const angle = Math.random() * Math.PI * 2;
         const distance = inWave1 
-        ? Math.random() * 200      // Wave 1: original speed
-        : Math.random() * 45;      // Wave 2: slower/tighter
+        ? Math.random() * 35      // Wave 1: original speed
+        : Math.random() * 25;      // Wave 2: slower/tighter
         
         const clientX = centerX + Math.cos(angle) * distance;
         const clientY = centerY + Math.sin(angle) * distance;
