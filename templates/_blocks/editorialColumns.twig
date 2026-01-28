@@ -2,9 +2,9 @@
     <div class = "contain col gap:d4 /lg/ grid:gap-d8:rows-2:cols-3-fr h:s6 ctx:end">
 
         <div class = "ctx:editorialColumns1 /lg/ h:auto col-spans:from-1:to-2 row-spans:from-1:to-3 col gap:d8">
-            <div class = "font:fancy:h3:bold text:darkgrey">{{block.heading}}</div>
+            <div class = "font:fancy:h3:bold text:darkgrey:normal">{{block.heading}}</div>
             <div class = "text:left:spacious:grey font:regular:sans:h6 mg-t:d4">{{block.firstParagraph}}</div>
-           <div class="-shadowimg min-h:s1 bg-color:grey child:grow bd:round-d2 ctx:end" style = "background-image:url('{{block.firstImage.one().url}}');background-size:cover;background-position:center"></div>
+           <div class="-shadowimg min-h:s1 bg-color:grey child:grow bd:round-d2 mg-t:d10 /lg/ mg-b:d0 ctx:end" style = "background-image:url('{{block.firstImage.one().url}}');background-size:cover;background-position:center"></div>
         </div>
 
 
@@ -16,10 +16,10 @@
 
 
         <div class = "ctx:editorialColumns3 /lg/ h:auto col-spans:from-3:to-4 row-spans:from-1:to-3 col gap:d8"> 
-            <div class="-shadowimg min-h:s1 bg-color:grey child:grow bd:round-d2" style = "background-image:url('{{block.thirdImage.one().url}}');background-size:cover;background-position:center"></div>
+            <div class="-shadowimg min-h:s1 bg-color:grey child:grow bd:round-d2 mg-b:d10 /lg/ mg-b:d0" style = "background-image:url('{{block.thirdImage.one().url}}');background-size:cover;background-position:center"></div>
             <div class = "text:left:spacious:grey font:regular:sans:h6 mg-b:d4">{{block.secondParagraph}}</div>
             <div class = "text:left:spacious:grey font:regular:sans:h6 ctx:end">{{block.thirdParagraph}}</div>
         </div>
 
     </div> 
-</section> 
+</section>  
