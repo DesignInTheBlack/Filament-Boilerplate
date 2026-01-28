@@ -98,8 +98,12 @@ function createFluidSimulation(canvas) {
     PRESSURE_ITERATIONS: 8,
     CURL: 6,                 // ⬆️ Increased from 6 to add much more detail
   };
-  
-  
+
+  if (canvas.width > 0 && canvas.height > 0) {
+    config.SPLAT_RADIUS = SPLAT_RADIUS_PX / Math.min(canvas.width, canvas.height);
+  }
+
+
 'use strict';
 
 const DEFAULT_PALETTE_HEX = [
