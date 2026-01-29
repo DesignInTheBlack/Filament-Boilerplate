@@ -779,20 +779,21 @@ border-bottom-width: 0.125rem;
 border-bottom-color: rgba(255, 255, 255, 0.045);
 }
 
-.font\:sans,  .font\:sans {
+.font\:sans\:h6,  .font\:sans\:h6 {
 font-family: Open Sans, sans-serif;
+font-size: 1.125rem;
 }
 
-.text\:lightgrey,  .text\:lightgrey {
-color: #BABABA;
+.mg-b\:d3,  .mg-b\:d3 {
+margin-bottom: 0.75rem;
 }
 
 .text\:white,  .text\:white {
 color: #F7F7F7;
 }
 
-.font\:h4\:fancy\:bold,  .font\:h4\:fancy\:bold {
-font-size: 2.25rem;
+.font\:h3\:fancy\:bold,  .font\:h3\:fancy\:bold {
+font-size: 3rem;
 font-family: Caviar, sans-serif;
 font-weight: 700;
 }
@@ -988,21 +989,6 @@ height: 100vh;
 
 .ctx\:mobileButton.w\:wScreen, .ctx\:mobileButton .w\:wScreen {
 width: 100vw;
-}
-
-.font\:sans\:h6,  .font\:sans\:h6 {
-font-family: Open Sans, sans-serif;
-font-size: 1.125rem;
-}
-
-.mg-b\:d4,  .mg-b\:d4 {
-margin-bottom: 1rem;
-}
-
-.font\:h3\:fancy\:bold,  .font\:h3\:fancy\:bold {
-font-size: 3rem;
-font-family: Caviar, sans-serif;
-font-weight: 700;
 }
 
 .ctx\:navigationDesk.font\:h5, .ctx\:navigationDesk .font\:h5 {
@@ -1970,6 +1956,10 @@ background-color: #eeeeee;
 .pd-y\:c3,  .pd-y\:c3 {
 padding-top: 5rem;
 padding-bottom: 5rem;
+}
+
+.mg-b\:d4,  .mg-b\:d4 {
+margin-bottom: 1rem;
 }
 
 .font\:fancy\:h5\:bold,  .font\:fancy\:h5\:bold {

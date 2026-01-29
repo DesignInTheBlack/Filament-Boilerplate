@@ -610,10 +610,21 @@ const blit = (() => {
   };
 })();
 
+const START_DELAY_MS = 6000;
+let isPaintActive = false;
 let lastTime = Date.now();
-multipleSplats(parseInt(Math.random() * 20) + 5);
-update();
-console.log('[paint] update loop started');
+
+function startPaintLoop() {
+  if (isPaintActive) return;
+  isPaintActive = true;
+  lastTime = Date.now();
+  multipleSplats(parseInt(Math.random() * 20) + 5);
+  update();
+  console.log('[paint] update loop started', { delayMs: START_DELAY_MS });
+}
+
+setTimeout(startPaintLoop, START_DELAY_MS);
+console.log('[paint] start delayed', { delayMs: START_DELAY_MS });
 
 function update() {
   resizeCanvas();
@@ -875,12 +886,14 @@ const updatePointer = (pointer, point, dxScale, dyScale) => {
 };
 
 const handleMouseMove = e => {
+  if (!isPaintActive) return;
   if (hasActiveTouch) return;
   const point = getCanvasPoint(e.clientX, e.clientY);
   updatePointer(pointers[0], point, 18.0, 9.0);
 };
 
 const handleTouchMove = e => {
+  if (!isPaintActive) return;
   const touch = e.touches[0];
   if (!touch) {
     hasActiveTouch = false;
@@ -896,6 +909,7 @@ const handleTouchMove = e => {
 };
 
 const handleTouchStart = e => {
+  if (!isPaintActive) return;
   const touch = e.touches[0];
   if (!touch) return;
   hasActiveTouch = true;
@@ -913,6 +927,7 @@ window.addEventListener('mouseleave', () => {
 });
 
 const handleTouchEnd = e => {
+  if (!isPaintActive) return;
   if (e.touches.length === 0) {
     hasActiveTouch = false;
     pointers[0].down = false;
