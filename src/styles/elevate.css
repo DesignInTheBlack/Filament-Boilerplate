@@ -80,22 +80,22 @@ textarea:not([rows]) {
 @media only screen and (min-width:20rem) {
 .contain {
     margin:auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     }
 }
 @media only screen and (min-width:30rem) {
 .contain {
     margin:auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     }
 }
 @media only screen and (min-width:40rem) {
 .contain {
     margin:auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     }
 }
 @media only screen and (min-width:48rem) {
@@ -1953,9 +1953,9 @@ min-height: 2rem;
 background-color: #eeeeee;
 }
 
-.pd-y\:c3,  .pd-y\:c3 {
-padding-top: 5rem;
-padding-bottom: 5rem;
+.pd-y\:c2,  .pd-y\:c2 {
+padding-top: 4.5rem;
+padding-bottom: 4.5rem;
 }
 
 .mg-b\:d4,  .mg-b\:d4 {
