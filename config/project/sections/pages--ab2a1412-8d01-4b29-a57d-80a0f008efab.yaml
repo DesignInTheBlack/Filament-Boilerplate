@@ -2,22 +2,15 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: aa15edf9-5fc0-40cc-8eb1-570557b0c72f # StandardPage
+    uid: 7f030e40-f1e9-4283-ae32-cc39aad9dd6b # pageStandard
 handle: pages
 maxAuthors: 1
 name: Pages
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   48eabee0-5886-430a-ac24-e708a30e425a: # Filament-Boilerplate

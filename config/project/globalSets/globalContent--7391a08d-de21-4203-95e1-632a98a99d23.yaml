@@ -9,7 +9,7 @@ fieldLayouts:
             dateAdded: '2025-12-30T01:23:21+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 144593fe-da30-41d5-8ec8-b757273bb41b # Announcement
+            fieldUid: 144593fe-da30-41d5-8ec8-b757273bb41b
             handle: null
             includeInCards: false
             instructions: null
@@ -26,7 +26,7 @@ fieldLayouts:
             dateAdded: '2026-01-10T18:30:19+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: ffa62b38-7996-4d0e-9542-8dfcce600f43 # About
+            fieldUid: ffa62b38-7996-4d0e-9542-8dfcce600f43
             handle: null
             includeInCards: false
             instructions: null
@@ -43,7 +43,7 @@ fieldLayouts:
             dateAdded: '2026-01-10T18:30:19+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 4b62f1ab-cb3e-490e-ad54-2a72dc774c37 # Blogs
+            fieldUid: 4b62f1ab-cb3e-490e-ad54-2a72dc774c37
             handle: null
             includeInCards: false
             instructions: null
@@ -60,7 +60,7 @@ fieldLayouts:
             dateAdded: '2026-01-10T18:30:19+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: affe6a11-2e34-40ec-a742-3766960fdfd3 # Gallery
+            fieldUid: affe6a11-2e34-40ec-a742-3766960fdfd3
             handle: null
             includeInCards: false
             instructions: null
@@ -77,7 +77,7 @@ fieldLayouts:
             dateAdded: '2026-01-10T18:30:54+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 768f6b29-6796-4341-baed-ce919fde46a6 # Shop
+            fieldUid: 768f6b29-6796-4341-baed-ce919fde46a6
             handle: null
             includeInCards: false
             instructions: null
@@ -94,7 +94,7 @@ fieldLayouts:
             dateAdded: '2026-01-24T18:27:07+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: b704b163-8691-4188-8137-e13a150de06f # Instagram
+            fieldUid: b704b163-8691-4188-8137-e13a150de06f
             handle: null
             includeInCards: false
             instructions: null
@@ -111,7 +111,7 @@ fieldLayouts:
             dateAdded: '2026-01-24T18:27:07+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: ad5cdce3-fa36-4921-bd62-e683266578bc # Facebook
+            fieldUid: ad5cdce3-fa36-4921-bd62-e683266578bc
             handle: null
             includeInCards: false
             instructions: null

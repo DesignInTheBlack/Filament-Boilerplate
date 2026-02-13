@@ -1,8 +1,8 @@
 const options = {
     Watch:'./templates', // Folder to watch for changes
-    FileTypes:['html', 'jsx', 'tsx', 'astro','twig'], //Valid filetypes to watch for changes
-    Output:'./src/styles', //Where to put the compiled CSS
-    Extend:['./elevate/ext/fonts.css','./elevate/ext/overrides.css'], //CSS files to include as well
+    FileTypes:['twig'], //Valid filetypes to watch for changes
+    Output:'./', //Where to put the compiled CSS
+    Extend:[], //CSS files to include as well
     ClassRegex: [
       /\bclass\s*=\s*"([^"]*)"/g,                // class="..."
       /\bclass\s*=\s*'([^']*)'/g,                // class='...'
@@ -12,7 +12,7 @@ const options = {
       /\bclassName\s*=\s*{\s*"([^"]*)"\s*}/g,   // className={"..."}
       /\bclassName\s*=\s*{\s*'([^']*)'\s*}/g,   // className={'...'}
       ],
-    SafeList:['glide__slides','glide__slide','glide__track','glide','fa-brands','fa-square-facebook','fa-square-instagram','fa-solid', 'fa-bars','fa-xmark','fade-in-hold-out','masonry','masonry-sizer','masonry-item','masonry-img','gallery-drawer','gallery-drawer__content','fa-arrow-right-long','fa-minus'  ]
+    SafeList:[]
 }
 
 export const config = options
